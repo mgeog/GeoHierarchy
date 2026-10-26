@@ -1,11 +1,11 @@
-export type AdminLevel = 1 | 2 | 3 | 4;
+export type AdminLevel = 1 | 2 | 3;
 
 export interface Municipality {
   id: string;
   name: string;
   nameLocal: string;
   nameEn: string;
-  level: 3 | 4;
+  level: 3;
   subDivisionId: string; // parent level 2
   macroRegionId: string; // parent level 1
   coordinates: [number, number]; // [lon, lat]
@@ -64,7 +64,6 @@ export interface CountryAdministrativeData {
     level1: number;
     level2: number;
     level3: number;
-    level4: number;
   };
   geoJsonUrl?: string;
   geoJsonNameProp?: string;
@@ -73,7 +72,6 @@ export interface CountryAdministrativeData {
     level1: { ja: string; local: string; desc: string };
     level2: { ja: string; local: string; desc: string };
     level3: { ja: string; local: string; desc: string };
-    level4: { ja: string; local: string; desc: string };
   };
   macroRegions: MacroRegion[];
   subDivisions: SubDivision[];
@@ -89,6 +87,6 @@ export interface CountryAdministrativeData {
 
 export type MapMode = 'explore' | 'quiz' | 'compare';
 
-export type HierarchyDisplayMode = 'auto' | 1 | 2 | 3 | 4;
+export type HierarchyDisplayMode = 'auto' | 1 | 2 | 3;
 
 export type MapTheme = 'educational' | 'textbook' | 'blueprint' | 'minimal';

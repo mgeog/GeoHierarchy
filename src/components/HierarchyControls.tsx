@@ -49,19 +49,19 @@ export const HierarchyControls: React.FC<HierarchyControlsProps> = ({
         <div className="inline-flex p-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-xs overflow-x-auto max-w-[85vw] sm:max-w-none">
           <button
             onClick={() => onChangeDisplayMode('auto')}
-            className={`px-2.5 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
+            className={`px-3 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
               displayMode === 'auto'
                 ? 'bg-white dark:bg-stone-700 text-stone-900 dark:text-white shadow-xs font-bold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white'
             }`}
-            title="拡大・縮小に合わせて階層（第1〜第4）を自動切り替え"
+            title="拡大・縮小に合わせて3つの階層を自動切り替え"
           >
             <span>縮尺連動 (Auto)</span>
           </button>
 
           <button
             onClick={() => onChangeDisplayMode(1)}
-            className={`px-2.5 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
+            className={`px-3 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
               displayMode === 1
                 ? 'bg-amber-600 text-white shadow-xs font-bold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white'
@@ -74,7 +74,7 @@ export const HierarchyControls: React.FC<HierarchyControlsProps> = ({
 
           <button
             onClick={() => onChangeDisplayMode(2)}
-            className={`px-2.5 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
+            className={`px-3 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
               displayMode === 2
                 ? 'bg-sky-600 text-white shadow-xs font-bold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white'
@@ -87,7 +87,7 @@ export const HierarchyControls: React.FC<HierarchyControlsProps> = ({
 
           <button
             onClick={() => onChangeDisplayMode(3)}
-            className={`px-2.5 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
+            className={`px-3 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
               displayMode === 3
                 ? 'bg-emerald-600 text-white shadow-xs font-bold'
                 : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white'
@@ -96,19 +96,6 @@ export const HierarchyControls: React.FC<HierarchyControlsProps> = ({
           >
             <span>第3階層: {country.levelNames.level3.ja}</span>
             <span className="ml-1 opacity-75 text-[10px] font-normal">Z{country.zoomLevels.level3.toFixed(1)}</span>
-          </button>
-
-          <button
-            onClick={() => onChangeDisplayMode(4)}
-            className={`px-2.5 py-1.5 font-medium rounded-md transition-all cursor-pointer whitespace-nowrap ${
-              displayMode === 4
-                ? 'bg-violet-600 text-white shadow-xs font-bold'
-                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white'
-            }`}
-            title={`第4階層: ${country.levelNames.level4.ja} (Zoom ${country.zoomLevels.level4.toFixed(1)})`}
-          >
-            <span>第4階層: {country.levelNames.level4.ja}</span>
-            <span className="ml-1 opacity-75 text-[10px] font-normal">Z{country.zoomLevels.level4.toFixed(1)}</span>
           </button>
         </div>
       </div>

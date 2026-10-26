@@ -171,20 +171,17 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
     if (displayMode !== 'auto') {
       return displayMode;
     }
-    const { level1, level2, level3, level4 } = country.zoomLevels || {
-      level1: 4.0,
-      level2: 5.0,
-      level3: 6.0,
-      level4: 7.0,
+    const { level1, level2, level3 } = country.zoomLevels || {
+      level1: 4.5,
+      level2: 5.8,
+      level3: 7.2,
     };
     const t12 = (level1 + level2) / 2;
     const t23 = (level2 + level3) / 2;
-    const t34 = (level3 + level4) / 2;
 
     if (currentZoom < t12) return 1;
     if (currentZoom < t23) return 2;
-    if (currentZoom < t34) return 3;
-    return 4;
+    return 3;
   }, [displayMode, currentZoom, country.zoomLevels]);
 
   // Quick lookup for MacroRegions
@@ -399,7 +396,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
         safeNavigateTo(
           mun.coordinates[1],
           mun.coordinates[0],
-          Math.max(country.zoomLevels.level4, 7.2)
+          country.zoomLevels.level3
         );
       }
     }
@@ -826,12 +823,9 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
           selectedEntity.item.id === city.id;
 
         const isCapitalCity = city.isCapital || city.isPrefecturalCapital;
-        const isShowPermanentBadge =
-          isSelected ||
-          effectiveLevel === 4 ||
-          (effectiveLevel === 3 && (isCapitalCity || (city.population && city.population > 250000)));
+        const isShowPermanentBadge = isSelected || effectiveLevel === 3;
 
-        const radius = city.isCapital ? 7 : city.isPrefecturalCapital ? 5.5 : effectiveLevel === 4 ? 4.5 : 3.5;
+        const radius = city.isCapital ? 7 : city.isPrefecturalCapital ? 5.5 : 4.5;
         const color = city.isCapital ? '#e11d48' : city.isPrefecturalCapital ? '#0284c7' : '#10b981';
 
         const marker = L.circleMarker([lat, lon], {
@@ -854,7 +848,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
             `<div class="flex items-center gap-1 font-bold">
               <span>${labelText}</span>
               ${city.isCapital ? '<span class="text-[9px] px-1 bg-rose-600 text-white rounded">首都</span>' : ''}
-              ${effectiveLevel === 4 && city.population ? `<span class="text-[9px] font-normal text-slate-300">(${(city.population / 10000).toFixed(0)}万)</span>` : ''}
+              ${city.population ? `<span class="text-[9px] font-normal text-slate-300">(${(city.population / 10000).toFixed(0)}万)</span>` : ''}
             </div>`,
             {
               permanent: true,
@@ -952,7 +946,6 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
             {effectiveLevel === 1 && `第1階層: ${country.levelNames.level1.ja}`}
             {effectiveLevel === 2 && `第2階層: ${country.levelNames.level2.ja}`}
             {effectiveLevel === 3 && `第3階層: ${country.levelNames.level3.ja}`}
-            {effectiveLevel === 4 && `第4階層: ${country.levelNames.level4.ja}`}
           </span>
           <span className="text-stone-400">·</span>
           <span className="text-stone-500 font-mono">
