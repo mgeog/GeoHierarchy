@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
+/* 本文は Noto Sans JP（自前配信）。読み込み前や非対応環境では、OS 標準のゴシック体で表示する */
+@theme {
+  --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
 /* Leaflet clean cartographic styling */
 .leaflet-container {
   font-family: inherit;

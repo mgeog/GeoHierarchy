@@ -85,7 +85,9 @@ G7主要国（日本、アメリカ、イギリス、フランス、ドイツ、
    - 取得経路：上記機関の公表値を、Wikipedia の統計表（各表の脚注が当該機関の資料を参照）から2026年11月3日に転記しました。**一次資料での再照合は未実施**です。詳細は `src/data/statistics.json` に記録しています。
 4. **都市圏人口（第3階層の選定に使用）**
    - European Commission, Joint Research Centre. GHS-FUA R2019A（CC BY 4.0、2015年）。都市圏の境界は、投影変換・単純化・座標の丸めを行っています（改変あり）
-5. **首府・都市の位置**
+5. **フォント**
+   - [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP)（Google、SIL Open Font License 1.1）。[Fontsource](https://fontsource.org/) 経由で自前配信しており、外部のフォント配信サービスには接続しません。ライセンス文は [`public/licenses/NotoSansJP-OFL.txt`](public/licenses/NotoSansJP-OFL.txt)。
+6. **首府・都市の位置**
    - 各国の公式な首府・都市を基に、本プロジェクトが作成（座標の整合は第2階層・都市圏ポリゴンとの包含関係で検査）
 
 ---
