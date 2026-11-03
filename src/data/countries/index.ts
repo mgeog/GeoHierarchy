@@ -6,8 +6,9 @@ import { germanyData } from './germany';
 import { franceData } from './france';
 import { italyData } from './italy';
 import { canadaData } from './canada';
-import { southKoreaData } from './southKorea';
 
+// 韓国 (southKorea.ts, public/data/south-korea.json) は第2階層が未完成のため未登録。
+// 17市道の整備後に再登録する。
 export const COUNTRIES: Record<string, CountryAdministrativeData> = {
   japan: japanData,
   usa: usaData,
@@ -16,7 +17,6 @@ export const COUNTRIES: Record<string, CountryAdministrativeData> = {
   france: franceData,
   italy: italyData,
   canada: canadaData,
-  'south-korea': southKoreaData,
 };
 
 export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: string; isG7: boolean }[] = [
