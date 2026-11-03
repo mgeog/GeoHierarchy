@@ -49,6 +49,9 @@ export interface SubDivision {
   geoCoordinates?: number[][][]; // MultiPolygon / Polygon [[[lon, lat], ...]]
   population?: number;
   areaKm2?: number;
+  /** 人口・面積の出典 ID（src/data/statistics.json の sources） */
+  populationSource?: string;
+  areaSource?: string;
   color?: string;
   description?: string;
   mnemonic?: string; // 暗記・特徴のポイント

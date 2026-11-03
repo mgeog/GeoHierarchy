@@ -1,0 +1,1107 @@
+{
+ "retrieved": "2026-11-03",
+ "via": "各国統計機関の公表値を、Wikipedia の統計表（脚注が当該機関の資料を参照）から転記した。一次資料での再照合は未実施。",
+ "sources": {
+  "jp-census": {
+   "agency": "総務省統計局",
+   "title": "令和2年国勢調査",
+   "date": "2020-10-01"
+  },
+  "jp-gsi": {
+   "agency": "国土地理院",
+   "title": "全国都道府県市区町村別面積調（2020年10月1日時点）",
+   "date": "2020-10-01",
+   "areaBasis": "total"
+  },
+  "us-census": {
+   "agency": "U.S. Census Bureau",
+   "title": "2020 Census",
+   "date": "2020-04-01"
+  },
+  "us-census-area": {
+   "agency": "U.S. Census Bureau",
+   "title": "State area measurements（総面積）",
+   "date": null,
+   "areaBasis": "total"
+  },
+  "de-destatis": {
+   "agency": "Statistisches Bundesamt (Destatis)",
+   "title": "Bevölkerungsstand／Gebietsfläche",
+   "date": "2023-12-31",
+   "areaBasis": "total"
+  },
+  "fr-insee": {
+   "agency": "INSEE",
+   "title": "Populations légales（情報源の表記は2022年1月1日時点）",
+   "date": "2022-01-01"
+  },
+  "fr-area": {
+   "agency": "INSEE／IGN",
+   "title": "Superficie des régions（本土）",
+   "date": null,
+   "areaBasis": "total"
+  },
+  "it-istat": {
+   "agency": "ISTAT",
+   "title": "Popolazione residente e superficie（情報源の表記は2026年1月1日時点）",
+   "date": "2026-01-01",
+   "areaBasis": "total"
+  },
+  "ca-statcan": {
+   "agency": "Statistics Canada",
+   "title": "2021 Census of Population",
+   "date": "2021-05-11",
+   "areaBasis": "total"
+  },
+  "uk-ons": {
+   "agency": "Office for National Statistics",
+   "title": "Mid-year population estimates（mid-2025）",
+   "date": "2025-06-30"
+  },
+  "uk-ons-2021": {
+   "agency": "Office for National Statistics",
+   "title": "Mid-year population estimates（mid-2021、千人単位に丸め）",
+   "date": "2021-06-30"
+  },
+  "uk-ons-land": {
+   "agency": "Office for National Statistics",
+   "title": "Land area（土地面積。内水面を含まない）",
+   "date": null,
+   "areaBasis": "land"
+  }
+ },
+ "units": {
+  "jp-13": {
+   "population": 14047594,
+   "areaKm2": 2194.0,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-14": {
+   "population": 9237337,
+   "areaKm2": 2416.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-27": {
+   "population": 8837685,
+   "areaKm2": 1905.3,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-23": {
+   "population": 7542415,
+   "areaKm2": 5173.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-11": {
+   "population": 7344765,
+   "areaKm2": 3797.8,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-12": {
+   "population": 6284480,
+   "areaKm2": 5157.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-28": {
+   "population": 5465002,
+   "areaKm2": 8401.0,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-40": {
+   "population": 5135214,
+   "areaKm2": 4986.5,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-01": {
+   "population": 5224614,
+   "areaKm2": 83424.4,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-22": {
+   "population": 3633202,
+   "areaKm2": 7777.4,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-08": {
+   "population": 2867009,
+   "areaKm2": 6097.4,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-34": {
+   "population": 2799702,
+   "areaKm2": 8479.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-26": {
+   "population": 2578087,
+   "areaKm2": 4612.2,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-04": {
+   "population": 2301996,
+   "areaKm2": 7282.3,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-15": {
+   "population": 2201272,
+   "areaKm2": 12584.0,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-20": {
+   "population": 2048011,
+   "areaKm2": 13561.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-21": {
+   "population": 1978742,
+   "areaKm2": 10621.3,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-10": {
+   "population": 1939110,
+   "areaKm2": 6362.3,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-09": {
+   "population": 1933146,
+   "areaKm2": 6408.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-33": {
+   "population": 1888432,
+   "areaKm2": 7114.3,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-07": {
+   "population": 1833152,
+   "areaKm2": 13784.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-24": {
+   "population": 1770254,
+   "areaKm2": 5774.5,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-43": {
+   "population": 1738301,
+   "areaKm2": 7409.5,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-46": {
+   "population": 1588256,
+   "areaKm2": 9187.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-47": {
+   "population": 1467480,
+   "areaKm2": 2282.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-25": {
+   "population": 1413610,
+   "areaKm2": 4017.4,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-29": {
+   "population": 1324473,
+   "areaKm2": 3690.9,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-35": {
+   "population": 1342059,
+   "areaKm2": 6112.5,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-38": {
+   "population": 1334841,
+   "areaKm2": 5676.2,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-42": {
+   "population": 1312317,
+   "areaKm2": 4131.0,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-02": {
+   "population": 1237984,
+   "areaKm2": 9645.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-03": {
+   "population": 1210534,
+   "areaKm2": 15275.0,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-17": {
+   "population": 1132526,
+   "areaKm2": 4190.9,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-44": {
+   "population": 1123852,
+   "areaKm2": 6340.8,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-45": {
+   "population": 1069576,
+   "areaKm2": 7735.2,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-06": {
+   "population": 1068027,
+   "areaKm2": 9323.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-16": {
+   "population": 1034814,
+   "areaKm2": 4247.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-37": {
+   "population": 950244,
+   "areaKm2": 1876.8,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-05": {
+   "population": 959502,
+   "areaKm2": 11637.5,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-30": {
+   "population": 922584,
+   "areaKm2": 4724.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-41": {
+   "population": 811442,
+   "areaKm2": 2440.7,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-19": {
+   "population": 809974,
+   "areaKm2": 4465.3,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-18": {
+   "population": 766863,
+   "areaKm2": 4190.5,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-36": {
+   "population": 719559,
+   "areaKm2": 4146.8,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-39": {
+   "population": 691527,
+   "areaKm2": 7103.6,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-32": {
+   "population": 671126,
+   "areaKm2": 6707.9,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "jp-31": {
+   "population": 553407,
+   "areaKm2": 3507.1,
+   "populationSource": "jp-census",
+   "areaSource": "jp-gsi"
+  },
+  "us-ca": {
+   "population": 39538223,
+   "areaKm2": 423967.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-tx": {
+   "population": 29145505,
+   "areaKm2": 695662.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-fl": {
+   "population": 21538187,
+   "areaKm2": 170312.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ny": {
+   "population": 20201249,
+   "areaKm2": 141297.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-pa": {
+   "population": 13002700,
+   "areaKm2": 119280.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-il": {
+   "population": 12812508,
+   "areaKm2": 149995.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-oh": {
+   "population": 11799448,
+   "areaKm2": 116098.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ga": {
+   "population": 10711908,
+   "areaKm2": 153910.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-nc": {
+   "population": 10439388,
+   "areaKm2": 139391.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-mi": {
+   "population": 10077331,
+   "areaKm2": 250487.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-nj": {
+   "population": 9288994,
+   "areaKm2": 22591.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-va": {
+   "population": 8631393,
+   "areaKm2": 110787.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-wa": {
+   "population": 7705281,
+   "areaKm2": 184661.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-az": {
+   "population": 7151502,
+   "areaKm2": 295234.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-tn": {
+   "population": 6910840,
+   "areaKm2": 109153.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ma": {
+   "population": 7029917,
+   "areaKm2": 27336.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-in": {
+   "population": 6785528,
+   "areaKm2": 94326.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-mo": {
+   "population": 6154913,
+   "areaKm2": 180540.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-md": {
+   "population": 6177224,
+   "areaKm2": 32131.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-co": {
+   "population": 5773714,
+   "areaKm2": 269601.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-wi": {
+   "population": 5893718,
+   "areaKm2": 169635.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-mn": {
+   "population": 5706494,
+   "areaKm2": 225163.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-sc": {
+   "population": 5118425,
+   "areaKm2": 82933.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-al": {
+   "population": 5024279,
+   "areaKm2": 135767.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-la": {
+   "population": 4657757,
+   "areaKm2": 135659.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ky": {
+   "population": 4505836,
+   "areaKm2": 104656.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-or": {
+   "population": 4237256,
+   "areaKm2": 254799.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ok": {
+   "population": 3959353,
+   "areaKm2": 181037.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ct": {
+   "population": 3605944,
+   "areaKm2": 14357.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ut": {
+   "population": 3271616,
+   "areaKm2": 219882.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-nv": {
+   "population": 3104614,
+   "areaKm2": 286382.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ia": {
+   "population": 3190369,
+   "areaKm2": 145746.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ar": {
+   "population": 3011524,
+   "areaKm2": 137732.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ks": {
+   "population": 2937880,
+   "areaKm2": 213100.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ms": {
+   "population": 2961279,
+   "areaKm2": 125438.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-nm": {
+   "population": 2117522,
+   "areaKm2": 314917.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-id": {
+   "population": 1839106,
+   "areaKm2": 216443.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ne": {
+   "population": 1961504,
+   "areaKm2": 200330.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-wv": {
+   "population": 1793716,
+   "areaKm2": 62756.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-hi": {
+   "population": 1455271,
+   "areaKm2": 28313.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-nh": {
+   "population": 1377529,
+   "areaKm2": 24214.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-me": {
+   "population": 1362359,
+   "areaKm2": 91633.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-mt": {
+   "population": 1084225,
+   "areaKm2": 380831.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ri": {
+   "population": 1097379,
+   "areaKm2": 4001.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-de": {
+   "population": 989948,
+   "areaKm2": 6446.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-sd": {
+   "population": 886667,
+   "areaKm2": 199729.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-nd": {
+   "population": 779094,
+   "areaKm2": 183108.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-ak": {
+   "population": 733391,
+   "areaKm2": 1723337.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-dc": {
+   "population": 689545,
+   "areaKm2": 177.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-vt": {
+   "population": 643077,
+   "areaKm2": 24906.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "us-wy": {
+   "population": 576851,
+   "areaKm2": 253335.0,
+   "populationSource": "us-census",
+   "areaSource": "us-census-area"
+  },
+  "uk-ne": {
+   "population": 2762746,
+   "areaKm2": 8581.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-nw": {
+   "population": 7772854,
+   "areaKm2": 14108.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-yh": {
+   "population": 5672166,
+   "areaKm2": 15404.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-em": {
+   "population": 5085641,
+   "areaKm2": 15623.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-wm": {
+   "population": 6205854,
+   "areaKm2": 12998.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-ee": {
+   "population": 6613801,
+   "areaKm2": 19116.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-lon": {
+   "population": 9122909,
+   "areaKm2": 1572.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-se": {
+   "population": 9691844,
+   "areaKm2": 19072.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-sw": {
+   "population": 5906997,
+   "areaKm2": 23836.0,
+   "populationSource": "uk-ons",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-sco": {
+   "population": 5480000,
+   "areaKm2": 78803,
+   "populationSource": "uk-ons-2021",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-wal": {
+   "population": 3105000,
+   "areaKm2": 20782,
+   "populationSource": "uk-ons-2021",
+   "areaSource": "uk-ons-land"
+  },
+  "uk-nir": {
+   "population": 1905000,
+   "areaKm2": 14333,
+   "populationSource": "uk-ons-2021",
+   "areaSource": "uk-ons-land"
+  },
+  "de-bw": {
+   "population": 11230740,
+   "areaKm2": 35748.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-by": {
+   "population": 13176426,
+   "areaKm2": 70541.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-be": {
+   "population": 3662381,
+   "areaKm2": 891.1,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-bb": {
+   "population": 2554464,
+   "areaKm2": 29654.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-hb": {
+   "population": 702655,
+   "areaKm2": 419.4,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-hh": {
+   "population": 1851596,
+   "areaKm2": 755.1,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-he": {
+   "population": 6267546,
+   "areaKm2": 21116.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-ni": {
+   "population": 8008135,
+   "areaKm2": 47710.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-mv": {
+   "population": 1578041,
+   "areaKm2": 23295.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-nw": {
+   "population": 18017520,
+   "areaKm2": 34112.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-rp": {
+   "population": 4125163,
+   "areaKm2": 19858.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-sl": {
+   "population": 1014047,
+   "areaKm2": 2572.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-sn": {
+   "population": 4054689,
+   "areaKm2": 18450.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-st": {
+   "population": 2144570,
+   "areaKm2": 20464.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-sh": {
+   "population": 2953202,
+   "areaKm2": 15804.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "de-th": {
+   "population": 2114870,
+   "areaKm2": 16202.0,
+   "populationSource": "de-destatis",
+   "areaSource": "de-destatis"
+  },
+  "fr-ara": {
+   "population": 8042936,
+   "areaKm2": 69711.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-bfc": {
+   "population": 2805580,
+   "areaKm2": 47784.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-bre": {
+   "population": 3354854,
+   "areaKm2": 27208.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-cvl": {
+   "population": 2573180,
+   "areaKm2": 39151.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-cor": {
+   "population": 340440,
+   "areaKm2": 8680.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-ges": {
+   "population": 5556219,
+   "areaKm2": 57441.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-hdf": {
+   "population": 6004947,
+   "areaKm2": 31806.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-idf": {
+   "population": 12262544,
+   "areaKm2": 12011.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-nor": {
+   "population": 3325032,
+   "areaKm2": 29907.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-naq": {
+   "population": 6010289,
+   "areaKm2": 84036.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-occ": {
+   "population": 5933185,
+   "areaKm2": 72724.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-pdl": {
+   "population": 3806461,
+   "areaKm2": 32082.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "fr-pac": {
+   "population": 5081101,
+   "areaKm2": 31400.0,
+   "populationSource": "fr-insee",
+   "areaSource": "fr-area"
+  },
+  "it-abr": {
+   "population": 1267222,
+   "areaKm2": 10832.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-vda": {
+   "population": 122554,
+   "areaKm2": 3261.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-pug": {
+   "population": 3865277,
+   "areaKm2": 19541.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-bas": {
+   "population": 525281,
+   "areaKm2": 10073.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-cal": {
+   "population": 1827571,
+   "areaKm2": 15222.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-cam": {
+   "population": 5568703,
+   "areaKm2": 13671.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-emr": {
+   "population": 4477009,
+   "areaKm2": 22453.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-fvg": {
+   "population": 1193496,
+   "areaKm2": 7924.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-laz": {
+   "population": 5709444,
+   "areaKm2": 17232.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-lig": {
+   "population": 1511988,
+   "areaKm2": 5416.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-lom": {
+   "population": 10065694,
+   "areaKm2": 23864.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-mar": {
+   "population": 1479832,
+   "areaKm2": 9401.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-mol": {
+   "population": 285940,
+   "areaKm2": 4461.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-pie": {
+   "population": 4255006,
+   "areaKm2": 25387.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-sar": {
+   "population": 1554490,
+   "areaKm2": 24100.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-sic": {
+   "population": 4775194,
+   "areaKm2": 25832.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-taa": {
+   "population": 1090818,
+   "areaKm2": 13606.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-tos": {
+   "population": 3659222,
+   "areaKm2": 22987.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-umb": {
+   "population": 850627,
+   "areaKm2": 8464.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "it-ven": {
+   "population": 4857460,
+   "areaKm2": 18345.0,
+   "populationSource": "it-istat",
+   "areaSource": "it-istat"
+  },
+  "ca-on": {
+   "population": 14223942,
+   "areaKm2": 1076395.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-qc": {
+   "population": 8501833,
+   "areaKm2": 1542056.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-ns": {
+   "population": 969383,
+   "areaKm2": 55284.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-nb": {
+   "population": 775610,
+   "areaKm2": 72908.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-mb": {
+   "population": 1342153,
+   "areaKm2": 647797.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-bc": {
+   "population": 5000879,
+   "areaKm2": 944735.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-pe": {
+   "population": 154331,
+   "areaKm2": 5660.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-sk": {
+   "population": 1132505,
+   "areaKm2": 651036.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-ab": {
+   "population": 4262635,
+   "areaKm2": 661848.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-nl": {
+   "population": 510550,
+   "areaKm2": 405212.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-nt": {
+   "population": 41070,
+   "areaKm2": 1346106.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-yt": {
+   "population": 40232,
+   "areaKm2": 482443.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  },
+  "ca-nu": {
+   "population": 36858,
+   "areaKm2": 2093190.0,
+   "populationSource": "ca-statcan",
+   "areaSource": "ca-statcan"
+  }
+ }
+}

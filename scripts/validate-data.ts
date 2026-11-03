@@ -14,6 +14,7 @@ import { franceSelection } from '../src/data/selection/france.ts';
 import { italySelection } from '../src/data/selection/italy.ts';
 import { canadaSelection } from '../src/data/selection/canada.ts';
 import type { CountrySelection } from '../src/data/selection/apply.ts';
+import stat from '../src/data/statistics.json' with { type: 'json' };
 import fuaSelected from '../src/data/fua-selected.json' with { type: 'json' };
 import { buildSelectedJson } from './select-fua.ts';
 
@@ -50,8 +51,10 @@ for (const [countryId, c] of Object.entries(COUNTRIES)) {
   for (const s of c.subDivisions) {
     if (!macroIds.has(s.macroRegionId)) err(countryId, `第2階層 ${s.id}: 未定義の広域区分 ${s.macroRegionId}`);
     if (!s.capitalCity) err(countryId, `第2階層 ${s.id}: 首府が未設定`);
-    if (!s.population) warn(countryId, `第2階層 ${s.id}: 人口が未設定`);
-    if (!s.areaKm2) warn(countryId, `第2階層 ${s.id}: 面積が未設定`);
+    if (!s.population || !s.areaKm2) err(countryId, `第2階層 ${s.id}: 人口または面積が未設定`);
+    const sources = stat.sources as Record<string, unknown>;
+    if (!s.populationSource || !(s.populationSource in sources)) err(countryId, `第2階層 ${s.id}: 人口の出典が未設定または未定義`);
+    if (!s.areaSource || !(s.areaSource in sources)) err(countryId, `第2階層 ${s.id}: 面積の出典が未設定または未定義`);
     if (s.municipalities.length === 0) warn(countryId, `第2階層 ${s.id}: 第3階層が 0 件`);
   }
   for (const mr of c.macroRegions) {

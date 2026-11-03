@@ -7,6 +7,7 @@ import { franceData } from './france';
 import { italyData } from './italy';
 import { canadaData } from './canada';
 import { applySelection } from '../selection/apply';
+import { applyStatistics } from '../statistics';
 import { japanSelection } from '../selection/japan';
 import { usaSelection } from '../selection/usa';
 import { ukSelection } from '../selection/uk';
@@ -19,13 +20,13 @@ import { canadaSelection } from '../selection/canada';
 // 17市道の整備後に再登録する。
 // 第3階層は、元データに第3階層の選定基準（docs/ROADMAP.md）を適用して導出する。
 export const COUNTRIES: Record<string, CountryAdministrativeData> = {
-  japan: applySelection(japanData, japanSelection),
-  usa: applySelection(usaData, usaSelection),
-  uk: applySelection(ukData, ukSelection),
-  germany: applySelection(germanyData, germanySelection),
-  france: applySelection(franceData, franceSelection),
-  italy: applySelection(italyData, italySelection),
-  canada: applySelection(canadaData, canadaSelection),
+  japan: applyStatistics(applySelection(japanData, japanSelection)),
+  usa: applyStatistics(applySelection(usaData, usaSelection)),
+  uk: applyStatistics(applySelection(ukData, ukSelection)),
+  germany: applyStatistics(applySelection(germanyData, germanySelection)),
+  france: applyStatistics(applySelection(franceData, franceSelection)),
+  italy: applyStatistics(applySelection(italyData, italySelection)),
+  canada: applyStatistics(applySelection(canadaData, canadaSelection)),
 };
 
 export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: string; isG7: boolean }[] = [

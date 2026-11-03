@@ -1,4 +1,5 @@
 import React from 'react';
+import { STAT_SOURCES } from '../data/statistics';
 import {
   CountryAdministrativeData,
   MacroRegion,
@@ -25,6 +26,14 @@ const CRITERION_LABEL: Record<SelectionCriterion, string> = {
   R2p: '第2階層の代表都市（地域内で都市圏人口が最大）',
   R3: '主要都市圏の中心都市（都市圏人口100万以上、または国内上位20）',
 };
+
+function formatStatSource(id: string | undefined, withBasis = false): string {
+  const src = id ? STAT_SOURCES[id] : undefined;
+  if (!src) return '';
+  const year = src.date ? `${src.date.slice(0, 4)}年` : '';
+  const basis = withBasis && src.areaBasis ? (src.areaBasis === 'land' ? '・土地面積' : '・総面積') : '';
+  return `出典: ${src.agency}${year ? `（${year}）` : ''}${basis}`;
+}
 
 interface EducationalDrawerProps {
   country: CountryAdministrativeData;
@@ -188,6 +197,9 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
               <div className="font-bold text-sm text-stone-900 dark:text-stone-100">
                 {displayPopulation.toLocaleString()} 人
               </div>
+              {type === 'subdivision' && (item as SubDivision).populationSource && (
+                <div className="text-[10px] text-stone-500 mt-1">{formatStatSource((item as SubDivision).populationSource)}</div>
+              )}
             </div>
           ) : null}
 
@@ -200,6 +212,9 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
               <div className="font-bold text-sm text-stone-900 dark:text-stone-100">
                 {(item as SubDivision).areaKm2?.toLocaleString()} km²
               </div>
+              {(item as SubDivision).areaSource && (
+                <div className="text-[10px] text-stone-500 mt-1">{formatStatSource((item as SubDivision).areaSource, true)}</div>
+              )}
             </div>
           )}
         </div>
