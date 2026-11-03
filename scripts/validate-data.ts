@@ -14,6 +14,8 @@ import { germanySelection } from '../src/data/selection/germany.ts';
 import { franceSelection } from '../src/data/selection/france.ts';
 import { italySelection } from '../src/data/selection/italy.ts';
 import { canadaSelection } from '../src/data/selection/canada.ts';
+import { chinaSelection } from '../src/data/selection/china.ts';
+import { indiaSelection } from '../src/data/selection/india.ts';
 import type { CountrySelection } from '../src/data/selection/apply.ts';
 import stat from '../src/data/statistics.json' with { type: 'json' };
 import fuaSelected from '../src/data/fua-selected.json' with { type: 'json' };
@@ -22,6 +24,7 @@ import { buildSelectedJson } from './select-fua.ts';
 const SELECTIONS: Record<string, CountrySelection> = {
   japan: japanSelection, usa: usaSelection, uk: ukSelection, germany: germanySelection,
   france: franceSelection, italy: italySelection, canada: canadaSelection,
+  china: chinaSelection, india: indiaSelection,
 };
 
 const publicDir = path.resolve(import.meta.dirname, '../public');
@@ -52,7 +55,7 @@ if (buildSelectedJson() !== fs.readFileSync(path.resolve(import.meta.dirname, '.
   }
   for (const id of rows.keys()) if (!seen.has(id)) err('fua-geometry', `FUA ${id} (${rows.get(id)!.name}) の境界がない`);
   const kb = fs.statSync(file).size / 1024;
-  if (kb > 800) err('fua-geometry', `fua.json が ${Math.round(kb)} KB（予算 800 KB 超）`);
+  if (kb > 1200) err('fua-geometry', `fua.json が ${Math.round(kb)} KB（予算 1,200 KB 超）`);
   console.log(`  ${gj.features.length} 件 / ${Math.round(kb)} KB`);
 }
 
@@ -77,7 +80,7 @@ for (const [countryId, c] of Object.entries(COUNTRIES)) {
     const sources = stat.sources as Record<string, unknown>;
     if (!s.populationSource || !(s.populationSource in sources)) err(countryId, `第2階層 ${s.id}: 人口の出典が未設定または未定義`);
     if (!s.areaSource || !(s.areaSource in sources)) err(countryId, `第2階層 ${s.id}: 面積の出典が未設定または未定義`);
-    if (s.municipalities.length === 0) warn(countryId, `第2階層 ${s.id}: 第3階層が 0 件`);
+    if (s.municipalities.length === 0 && !SELECTIONS[countryId]?.sharedCapitals?.[s.id]) warn(countryId, `第2階層 ${s.id}: 第3階層が 0 件`);
   }
   for (const mr of c.macroRegions) {
     for (const sid of mr.subDivisionIds) if (!subIds.has(sid)) err(countryId, `広域区分 ${mr.id}: 未定義の第2階層 ${sid}`);
@@ -103,10 +106,18 @@ for (const [countryId, c] of Object.entries(COUNTRIES)) {
     if (!munis.some(({ m }) => m.id === sel.nationalCapital)) err(countryId, `nationalCapital ${sel.nationalCapital} が存在しない`);
     for (const s of c.subDivisions) {
       const mid = sel.capitals[s.id];
-      if (!mid) { err(countryId, `第2階層 ${s.id}: 首府（R2 / R2p）が未指定`); continue; }
-      if (!s.municipalities.some((m) => m.id === mid)) err(countryId, `第2階層 ${s.id}: 首府 ${mid} が当該第2階層に存在しない`);
+      const shared = sel.sharedCapitals?.[s.id];
+      if (mid && shared) err(countryId, `第2階層 ${s.id}: capitals と sharedCapitals の両方に指定されている`);
+      if (!mid && !shared) { err(countryId, `第2階層 ${s.id}: 首府（R2 / R2p）が未指定`); continue; }
+      if (mid && !s.municipalities.some((m) => m.id === mid)) err(countryId, `第2階層 ${s.id}: 首府 ${mid} が当該第2階層に存在しない`);
+      if (shared) {
+        const owner = munis.find(({ m }) => m.id === shared);
+        if (!owner) err(countryId, `第2階層 ${s.id}: 共同首府 ${shared} が存在しない`);
+        else if (owner.s.id === s.id) err(countryId, `第2階層 ${s.id}: 共同首府が自らの第2階層にある（capitals に指定する）`);
+        else if (sel.capitals[owner.s.id] !== shared) err(countryId, `第2階層 ${s.id}: 共同首府 ${shared} が、所属先 ${owner.s.id} の首府になっていない`);
+      }
     }
-    for (const sid of Object.keys(sel.capitals)) if (!subIds.has(sid)) err(countryId, `capitals に未定義の第2階層 ${sid}`);
+    for (const sid of [...Object.keys(sel.capitals), ...Object.keys(sel.sharedCapitals ?? {})]) if (!subIds.has(sid)) err(countryId, `首府の指定に未定義の第2階層 ${sid}`);
     // R3: 選定された各 FUA にちょうど 1 つの代表都市
     const selected = (fuaSelected.fuas as { id: number; iso: string; name: string }[]).filter((f) => f.iso === sel.iso3);
     const selectedIds = new Set(selected.map((f) => f.id));

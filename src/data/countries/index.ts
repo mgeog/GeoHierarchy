@@ -6,6 +6,8 @@ import { germanyData } from './germany';
 import { franceData } from './france';
 import { italyData } from './italy';
 import { canadaData } from './canada';
+import { chinaData } from './china';
+import { indiaData } from './india';
 import { applySelection } from '../selection/apply';
 import { applyStatistics } from '../statistics';
 import { japanSelection } from '../selection/japan';
@@ -15,6 +17,8 @@ import { germanySelection } from '../selection/germany';
 import { franceSelection } from '../selection/france';
 import { italySelection } from '../selection/italy';
 import { canadaSelection } from '../selection/canada';
+import { chinaSelection } from '../selection/china';
+import { indiaSelection } from '../selection/india';
 
 // 韓国 (southKorea.ts, public/data/south-korea.json) は第2階層が未完成のため未登録。
 // 17市道の整備後に再登録する。
@@ -27,6 +31,8 @@ export const COUNTRIES: Record<string, CountryAdministrativeData> = {
   france: applyStatistics(applySelection(franceData, franceSelection)),
   italy: applyStatistics(applySelection(italyData, italySelection)),
   canada: applyStatistics(applySelection(canadaData, canadaSelection)),
+  china: applyStatistics(applySelection(chinaData, chinaSelection)),
+  india: applyStatistics(applySelection(indiaData, indiaSelection)),
 };
 
 export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: string; isG7: boolean }[] = [
@@ -37,6 +43,8 @@ export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: 
   { id: 'france', name: 'フランス (France)', flag: '🇫🇷', continent: 'ヨーロッパ', isG7: true },
   { id: 'italy', name: 'イタリア (Italy)', flag: '🇮🇹', continent: 'ヨーロッパ', isG7: true },
   { id: 'canada', name: 'カナダ (Canada)', flag: '🇨🇦', continent: '北米', isG7: true },
+  { id: 'china', name: '中華人民共和国 (China)', flag: '🇨🇳', continent: 'アジア', isG7: false },
+  { id: 'india', name: 'インド (India)', flag: '🇮🇳', continent: 'アジア', isG7: false },
 ];
 
 export function getCountryData(id: string): CountryAdministrativeData {

@@ -14,6 +14,11 @@ export interface CountrySelection {
   nationalCapital: string;
   /** R2 / R2p: 第2階層 ID → 首府（または代表都市）の都市 ID */
   capitals: Record<string, string>;
+  /**
+   * 首府が他の第2階層にある場合（例：インドのパンジャーブ州・ハリヤーナー州の共同首府チャンディーガルは、連邦直轄領にある）。
+   * 第2階層 ID → 首府の都市 ID。都市側の基準は、本来の所属先の capitals で付与される。
+   */
+  sharedCapitals?: Record<string, string>;
   /** capitals のうち、制度上の首府ではなく R2p（地域内 FUA 最大）で選んだ第2階層 ID */
   representativeSubs?: string[];
   /** R3: 都市 ID → GHS-FUA の eFUA_ID（中心都市として代表させる FUA） */

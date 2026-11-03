@@ -68,6 +68,28 @@
    "title": "Land area（土地面積。内水面を含まない）",
    "date": null,
    "areaBasis": "land"
+  },
+  "cn-census": {
+   "agency": "国家統計局（中華人民共和国）",
+   "title": "第七次全国人口普査（2020年）",
+   "date": "2020-11-01"
+  },
+  "cn-area": {
+   "agency": "中華人民共和国（公表値）",
+   "title": "行政区画の面積（総面積）",
+   "date": null,
+   "areaBasis": "total"
+  },
+  "in-census": {
+   "agency": "Registrar General & Census Commissioner, India",
+   "title": "Census of India 2011",
+   "date": "2011-03-01"
+  },
+  "in-area": {
+   "agency": "Registrar General & Census Commissioner, India",
+   "title": "Census of India 2011（州・連邦直轄領の面積。政府の公式な領域に基づく）",
+   "date": "2011-03-01",
+   "areaBasis": "total"
   }
  },
  "units": {
@@ -1102,6 +1124,408 @@
    "areaKm2": 2093190.0,
    "populationSource": "ca-statcan",
    "areaSource": "ca-statcan"
+  },
+  "cn-he": {
+   "population": 74610235,
+   "areaKm2": 189809.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-sx": {
+   "population": 34915616,
+   "areaKm2": 156713.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-ln": {
+   "population": 42591407,
+   "areaKm2": 147076.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-jl": {
+   "population": 24073453,
+   "areaKm2": 190282.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-hl": {
+   "population": 31850088,
+   "areaKm2": 472766.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-js": {
+   "population": 84748016,
+   "areaKm2": 99949.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-zj": {
+   "population": 64567588,
+   "areaKm2": 104873.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-ah": {
+   "population": 61027171,
+   "areaKm2": 139879.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-fj": {
+   "population": 41540086,
+   "areaKm2": 123756.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-jx": {
+   "population": 45188635,
+   "areaKm2": 166939.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-sd": {
+   "population": 101527453,
+   "areaKm2": 157704.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-ha": {
+   "population": 99365519,
+   "areaKm2": 165467.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-hb": {
+   "population": 57752557,
+   "areaKm2": 185776.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-hn": {
+   "population": 66444864,
+   "areaKm2": 211842.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-gd": {
+   "population": 126012510,
+   "areaKm2": 180013.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-hi": {
+   "population": 10081232,
+   "areaKm2": 34259.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-sc": {
+   "population": 83674866,
+   "areaKm2": 484056.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-gz": {
+   "population": 38562148,
+   "areaKm2": 176140.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-yn": {
+   "population": 47209277,
+   "areaKm2": 383195.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-sn": {
+   "population": 39528999,
+   "areaKm2": 205624.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-gs": {
+   "population": 25019831,
+   "areaKm2": 457382.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-qh": {
+   "population": 5923957,
+   "areaKm2": 720000.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "in-ap": {
+   "population": 49506799,
+   "areaKm2": 162975.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ar": {
+   "population": 1383727,
+   "areaKm2": 83743.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-as": {
+   "population": 31205576,
+   "areaKm2": 78438.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-br": {
+   "population": 104099452,
+   "areaKm2": 94163.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ct": {
+   "population": 25545198,
+   "areaKm2": 135194.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ga": {
+   "population": 1458545,
+   "areaKm2": 3702.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-gj": {
+   "population": 60439692,
+   "areaKm2": 196024.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-hr": {
+   "population": 25351462,
+   "areaKm2": 44212.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-hp": {
+   "population": 6864602,
+   "areaKm2": 55673.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-jh": {
+   "population": 32988134,
+   "areaKm2": 79714.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ka": {
+   "population": 61095297,
+   "areaKm2": 191791.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-kl": {
+   "population": 33406061,
+   "areaKm2": 38863.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-mp": {
+   "population": 72626809,
+   "areaKm2": 308252.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-mh": {
+   "population": 112374333,
+   "areaKm2": 307713.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-mn": {
+   "population": 2855794,
+   "areaKm2": 22327.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ml": {
+   "population": 2966889,
+   "areaKm2": 22429.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-mz": {
+   "population": 1097206,
+   "areaKm2": 21081.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-nl": {
+   "population": 1978502,
+   "areaKm2": 16579.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-od": {
+   "population": 41974218,
+   "areaKm2": 155707.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-pb": {
+   "population": 27743338,
+   "areaKm2": 50362.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-rj": {
+   "population": 68548437,
+   "areaKm2": 342239.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-sk": {
+   "population": 610577,
+   "areaKm2": 7096.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-tn": {
+   "population": 72147030,
+   "areaKm2": 130058.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-tg": {
+   "population": 35193978,
+   "areaKm2": 112077.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-tr": {
+   "population": 3673917,
+   "areaKm2": 10491.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-up": {
+   "population": 199812341,
+   "areaKm2": 240928.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ut": {
+   "population": 10086292,
+   "areaKm2": 53483.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-wb": {
+   "population": 91276115,
+   "areaKm2": 88752.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-an": {
+   "population": 380581,
+   "areaKm2": 8249.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ch": {
+   "population": 1055450,
+   "areaKm2": 114.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-dh": {
+   "population": 587106,
+   "areaKm2": 603.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-dl": {
+   "population": 16787941,
+   "areaKm2": 1484.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-jk": {
+   "population": 12258433,
+   "areaKm2": 42241.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-la": {
+   "population": 290492,
+   "areaKm2": 59146.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-ld": {
+   "population": 64473,
+   "areaKm2": 32.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "in-py": {
+   "population": 1247953,
+   "areaKm2": 479.0,
+   "populationSource": "in-census",
+   "areaSource": "in-area"
+  },
+  "cn-bj": {
+   "population": 21893095,
+   "areaKm2": 16801.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-tj": {
+   "population": 13866009,
+   "areaKm2": 11760.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-sh": {
+   "population": 24870895,
+   "areaKm2": 6340.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-cq": {
+   "population": 32054159,
+   "areaKm2": 82300.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-gx": {
+   "population": 50126804,
+   "areaKm2": 237600.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-nm": {
+   "population": 24049155,
+   "areaKm2": 1183000.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-nx": {
+   "population": 7202654,
+   "areaKm2": 66400.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-xz": {
+   "population": 3648100,
+   "areaKm2": 1228400.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
+  },
+  "cn-xj": {
+   "population": 25852345,
+   "areaKm2": 1664897.0,
+   "populationSource": "cn-census",
+   "areaSource": "cn-area"
   }
  }
 }

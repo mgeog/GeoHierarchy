@@ -12,9 +12,12 @@ export const R3_TOP_N = 20;
 
 interface Fua { id: number; name: string; iso: string; fuaPop2015: number; fuaAreaKm2: number; ucPop2015: number; ucAreaKm2: number; commutingPop2015: number }
 
-export function selectFuas(all: Fua[]): Fua[] {
+export function selectFuas(all: Fua[], excludedIds: ReadonlySet<number> = new Set()): Fua[] {
   const byIso = new Map<string, Fua[]>();
-  for (const f of all) byIso.set(f.iso, [...(byIso.get(f.iso) ?? []), f]);
+  for (const f of all) {
+    if (excludedIds.has(f.id)) continue; // 除外を先に適用してから、国内順位を数える
+    byIso.set(f.iso, [...(byIso.get(f.iso) ?? []), f]);
+  }
   const out: Fua[] = [];
   for (const list of byIso.values()) {
     list.sort((a, b) => b.fuaPop2015 - a.fuaPop2015);
@@ -26,7 +29,8 @@ export function selectFuas(all: Fua[]): Fua[] {
 const root = path.resolve(import.meta.dirname, '..');
 export function buildSelectedJson(): string {
   const src = JSON.parse(fs.readFileSync(path.join(root, 'data-src/fua-attributes.json'), 'utf8'));
-  const selected = selectFuas(src.fuas).map(({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, ucAreaKm2, commutingPop2015 }) => ({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, ucAreaKm2, commutingPop2015 }));
+  const excluded = JSON.parse(fs.readFileSync(path.join(root, 'data-src/fua-exclusions.json'), 'utf8')).exclusions as { id: number }[];
+  const selected = selectFuas(src.fuas, new Set(excluded.map((e) => e.id))).map(({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, ucAreaKm2, commutingPop2015 }) => ({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, ucAreaKm2, commutingPop2015 }));
   return JSON.stringify({ source: src.source, rule: `FUA 人口 ${R3_MIN_POPULATION.toLocaleString()} 以上、または国内上位 ${R3_TOP_N}`, fuas: selected }, null, 1) + '\n';
 }
 
