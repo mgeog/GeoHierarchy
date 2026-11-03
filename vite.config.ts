@@ -16,10 +16,20 @@ const dropWoffFallback = (): Plugin => ({
   },
 });
 
+/**
+ * index.html の %SITE_URL% を、公開 URL に置き換える（OGP や canonical は絶対 URL が必要なため）。
+ * CI では、GitHub Pages が返す URL を SITE_URL として渡す。未指定のときは、既定値を使う。
+ */
+const siteUrl = (process.env.SITE_URL ?? 'https://mgeog.github.io/GeoHierarchy/').replace(/\/?$/, '/');
+const injectSiteUrl = (): Plugin => ({
+  name: 'inject-site-url',
+  transformIndexHtml: (html) => html.replaceAll('%SITE_URL%', siteUrl),
+});
+
 // GitHub Pages のサブパス配信に対応するため、相対ベースパスを用いる。
 export default defineConfig({
   base: './',
-  plugins: [dropWoffFallback(), react(), tailwindcss()],
+  plugins: [dropWoffFallback(), injectSiteUrl(), react(), tailwindcss()],
   build: {
     rolldownOptions: {
       output: {

@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: 'pages'
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -44,11 +44,15 @@ jobs:
       - name: Unit tests
         run: bun run test
 
+      - name: Setup GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build production app
         run: bun run build
-
-      - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
+        env:
+          # OGP・canonical の絶対 URL。GitHub Pages が返す公開 URL を使うので、リポジトリ名を変えても追従する
+          SITE_URL: ${{ steps.pages.outputs.base_url }}/
 
       - name: Upload dist artifact
         uses: actions/upload-pages-artifact@v3

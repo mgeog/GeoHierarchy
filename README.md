@@ -66,13 +66,13 @@ G7主要国（日本、アメリカ、イギリス、フランス、ドイツ、
 
 1. **地理境界・ベクターデータ**
    - [Natural Earth](https://www.naturalearthdata.com/) - Admin-1 States & Provinces（各国の第2階層境界データの一部）
-   - 国土交通省 [国土数値情報](https://nlftp.mlit.go.jp/ksj/)（行政区域データ・位置参照情報）
+   - 中国・インドの境界は Natural Earth から抽出しています。米国・カナダの境界は、Natural Earth と一致しており（IoU 0.985以上）、その由来と推定しています。日本・英国・ドイツ・フランス・イタリアの境界は、各国の公開データを簡略化したもので、**来歴とライセンスの確認を進めています**（[`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md)）。
    - European Commission, Joint Research Centre. [GHSL: GHS-FUA R2019A](https://human-settlement.emergency.copernicus.eu/ghs_fua.php)（機能的都市圏の属性。CC BY 4.0。都市圏人口の抽出と集計は本プロジェクトによる改変）
 2. **タイル・地図レイヤー**
    - © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL)
    - OpenStreetMap France
    - [OpenTopoMap](https://opentopomap.org/) (SRTM & OSM data)
-   - Esri (Environmental Systems Research Institute, Inc.) World Basemap Tiles
+   - Esri (Environmental Systems Research Institute, Inc.) World Basemap Tiles（利用条件を確認中。[`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) の 4）
 3. **行政統計・人口・面積（第2階層）**
    - 総務省統計局『令和2年国勢調査』（2020年）／国土地理院『全国都道府県市区町村別面積調』
    - U.S. Census Bureau（2020 Census）
@@ -125,24 +125,13 @@ bun run build
 
 ---
 
-## 🌐 GitHub Pages での公開手順
+## 🌐 GitHub Pages での公開
 
-本リポジトリは Vite の相対ベースパス（`base: './'`）に設定済みで、自動デプロイ用 GitHub Actions ワークフロー（`.github/workflows/deploy.yml`）が同梱されています。
+公開手順は [`docs/DEPLOY.md`](docs/DEPLOY.md)、データ・ライセンスの出典と確認状況は [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) にまとめています。
 
-### 方法1: GitHub Actions による自動公開（推奨）
-
-1. このリポジトリを GitHub にプッシュします。
-2. GitHub のリポジトリページで **Settings** → **Pages** を開きます。
-3. **Build and deployment** の **Source** を **`GitHub Actions`** に設定します。
-4. `main`（または `master`）ブランチにプッシュすると自動的に GitHub Actions が走り、数分で `https://<ユーザー名>.github.io/<リポジトリ名>/` に公開されます。
-
-### 方法2: 手動ビルドによる公開
-
-```bash
-# ビルド実行（distフォルダに静的HTML・JS・CSS・GeoJSONが出力されます）
-bun run build
-```
-出力された `dist` ディレクトリの内容を `gh-pages` ブランチに配置することで公開可能です。
+- 公開先：`https://<ユーザー名>.github.io/<リポジトリ名>/`（想定：`https://<ユーザー名>.github.io/GeoHierarchy/`）。
+- `main` へのプッシュで、型検査・データ検証・単体テスト・ビルドを行い、成功すると、GitHub Pages に公開されます。プルリクエストでは、公開せず、確認だけを行います。
+- ベースパスは相対指定（`base: './'`）で、サブパスでも動作します。OGP の絶対 URL は、ビルド時に、公開 URL から自動で設定されます。
 
 ---
 

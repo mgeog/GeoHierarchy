@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Layers, Lightbulb, Trophy, BookOpen, Sparkles, Map } from 'lucide-react';
+import { CREDIT_GROUPS } from '../data/credits';
 
 interface AboutModalProps {
   onClose: () => void;
@@ -93,6 +94,39 @@ export const AboutModal: React.FC<AboutModalProps> = ({ onClose }) => {
                 <strong>各国の制度比較: </strong>日本、アメリカ、イギリス、ドイツ、フランス、イタリア、カナダの主要7カ国（G7）に、中国とインドを加えた9か国の行政区画の構造を、一目で比較できます。
               </li>
             </ul>
+          </div>
+
+          <div className="mt-6 pt-5 border-t border-stone-200 dark:border-stone-800">
+            <h4 className="text-sm font-bold text-stone-900 dark:text-white mb-2 flex items-center gap-1.5">
+              <BookOpen className="w-4 h-4 text-amber-600" />
+              出典とライセンス
+            </h4>
+            <p className="text-[11px] text-stone-500 dark:text-stone-400 mb-3">
+              本アプリは教育用です。表示する境界線・名称は、いかなる国家・地域の政治的立場も表明しません。地図データの誤りは、各提供元の訂正窓口にお寄せください（OpenStreetMap の誤りは
+              <a className="underline" href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener noreferrer">fixthemap</a>）。
+            </p>
+            <dl className="space-y-3 text-xs">
+              {CREDIT_GROUPS.map((g) => (
+                <div key={g.title}>
+                  <dt className="font-bold text-stone-800 dark:text-stone-200">{g.title}</dt>
+                  <dd>
+                    <ul className="mt-1 space-y-1 text-stone-600 dark:text-stone-400">
+                      {g.items.map((c) => (
+                        <li key={c.name}>
+                          {c.url ? (
+                            <a className="underline text-sky-700 dark:text-sky-400" href={c.url} target="_blank" rel="noopener noreferrer">{c.name}</a>
+                          ) : (
+                            <span className="font-medium">{c.name}</span>
+                          )}
+                          {c.licence && <span className="ml-1 text-[10px] px-1.5 py-0.5 rounded bg-stone-100 dark:bg-stone-800">{c.licence}</span>}
+                          {c.note && <span className="block text-[11px] text-stone-500">{c.note}</span>}
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
 
