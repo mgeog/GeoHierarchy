@@ -41,6 +41,9 @@ jobs:
       - name: Validate data integrity
         run: bun run validate
 
+      - name: Unit tests
+        run: bun run test
+
       - name: Build production app
         run: bun run build
 

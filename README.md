@@ -106,7 +106,10 @@ bun install
 # 3. 開発サーバーの起動 (ポート 3000)
 bun run dev
 
-# 4. プロダクションビルドの確認
+# 4. 型検査・データ検証・単体テスト
+bun run lint && bun run validate && bun run test
+
+# 5. プロダクションビルドの確認
 bun run build
 ```
 

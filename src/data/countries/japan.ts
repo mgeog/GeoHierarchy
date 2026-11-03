@@ -21,12 +21,6 @@ export const japanData: CountryAdministrativeData = {
     level2: { ja: '都道府県・首府', local: '都道府県 (47)', desc: '1都1道2府43県の広域自治体および県庁所在地' },
     level3: { ja: '主要都市・特別区', local: '市区町村・主要都市', desc: '政令指定都市、東京23特別区、主要中核都市' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [137.5, 37.0],
-    parallels: [30, 42],
-    scaleMultiplier: 2400,
-  },
   macroRegions: [
     {
       id: 'hokkaido',

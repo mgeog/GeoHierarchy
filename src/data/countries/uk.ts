@@ -21,12 +21,6 @@ export const ukData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: 'Regions & Capitals', desc: 'ロンドン、スコットランド等の12地域および各首府' },
     level3: { ja: '主要都市・特別区', local: 'Major Cities & Boroughs', desc: 'ロンドン特別区、バーミンガム、マンチェスター等の主要都市' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [-2.5, 54.5],
-    parallels: [50, 58],
-    scaleMultiplier: 2800,
-  },
   macroRegions: [
     {
       id: 'uk-england-s',

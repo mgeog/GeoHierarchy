@@ -21,12 +21,6 @@ export const franceData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: 'Régions & Préfectures', desc: 'イル＝ド＝フランス等の13地域圏および各首府' },
     level3: { ja: '主要都市・特別区', local: 'Métropoles & Communes', desc: 'パリ、リヨン、マルセイユ等の主要大都市圏' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [2.5, 46.5],
-    parallels: [44, 49],
-    scaleMultiplier: 2700,
-  },
   macroRegions: [
     {
       id: 'fr-paris',

@@ -88,7 +88,10 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
       : undefined);
 
   return (
-    <aside className="w-80 sm:w-96 bg-white dark:bg-stone-900 border-l border-stone-200 dark:border-stone-800 h-full flex flex-col shadow-xl z-20 overflow-y-auto">
+    <aside
+      aria-label="地域の詳細"
+      className="absolute inset-x-0 bottom-0 max-h-[58%] rounded-t-2xl border-t sm:static sm:inset-auto sm:w-96 sm:max-h-none sm:h-full sm:rounded-none sm:border-t-0 sm:border-l bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 flex flex-col shadow-2xl sm:shadow-xl z-20 overflow-y-auto"
+    >
       {/* Header */}
       <div className="p-4 border-b border-stone-200 dark:border-stone-800 flex items-start justify-between bg-stone-50/70 dark:bg-stone-800/40">
         <div>

@@ -7,9 +7,23 @@ import {defineConfig} from 'vite';
 export default defineConfig({
   base: './',
   plugins: [react(), tailwindcss()],
+  build: {
+    rolldownOptions: {
+      output: {
+        // 変更頻度の低いライブラリを別チャンクにして、キャッシュを効かせる
+        codeSplitting: {
+          groups: [
+            { name: 'vendor-leaflet', test: /node_modules[\\/]leaflet/ },
+            { name: 'vendor-d3', test: /node_modules[\\/]d3-/ },
+            { name: 'vendor-react', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ },
+          ],
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '.'),
+      '@': path.resolve(import.meta.dirname, '.'),
     },
   },
 });

@@ -21,12 +21,6 @@ export const italyData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: 'Regioni & Capoluoghi', desc: 'ロンバルディア、トスカーナ等の20州および州都' },
     level3: { ja: '主要都市・特別区', local: 'Città & Comuni', desc: 'ローマ、ミラノ、ナポリ、フィレンツェ等の主要都市' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [12.5, 42.0],
-    parallels: [37, 46],
-    scaleMultiplier: 3200,
-  },
   macroRegions: [
     {
       id: 'it-nw',

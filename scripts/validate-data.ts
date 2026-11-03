@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { geoContains } from 'd3-geo';
 import { COUNTRIES } from '../src/data/countries/index.ts';
+import { buildFeatureIndex, findKeyCollisions, matchSubDivision } from '../src/utils/featureMatching.ts';
 import { japanSelection } from '../src/data/selection/japan.ts';
 import { usaSelection } from '../src/data/selection/usa.ts';
 import { ukSelection } from '../src/data/selection/uk.ts';
@@ -100,21 +101,17 @@ for (const [countryId, c] of Object.entries(COUNTRIES)) {
     console.log(`  Tier A ${tierA} / Tier B ${munis.length - tierA}（R3 対象 FUA ${selected.length}）`);
   }
 
-  // GeoJSON と第2階層の 1 対 1 対応（完全一致のみ。部分一致には依存しない）
+  // GeoJSON と第2階層の 1 対 1 対応（アプリと同じ照合関数・完全一致のみ）
+  findKeyCollisions(c).forEach((x) => err(countryId, `第2階層のキーが衝突: ${x}`));
   if (c.geoJsonUrl) {
     const gj = JSON.parse(fs.readFileSync(path.join(publicDir, c.geoJsonUrl), 'utf8'));
-    const key = new Map<string, string>();
-    for (const s of c.subDivisions) {
-      for (const k of [s.name, s.nameEn, s.nameLocal, s.code, s.id, ...(s.aliases ?? [])]) {
-        if (k) key.set(k.toLowerCase(), s.id);
-      }
-    }
+    const featureIndex = buildFeatureIndex(c);
     const hit = new Map<string, string[]>();
     for (const f of gj.features) {
       const label = String(f.properties?.[c.geoJsonNameProp ?? 'name'] ?? '(名称なし)');
-      const sid = key.get(label.trim().toLowerCase());
-      if (!sid) { err(countryId, `GeoJSON 地物 "${label}" に対応する第2階層がない`); continue; }
-      hit.set(sid, [...(hit.get(sid) ?? []), label]);
+      const sub = matchSubDivision(f.properties, c, featureIndex);
+      if (!sub) { err(countryId, `GeoJSON 地物 "${label}" に対応する第2階層がない`); continue; }
+      hit.set(sub.id, [...(hit.get(sub.id) ?? []), label]);
     }
     for (const s of c.subDivisions) {
       const h = hit.get(s.id);
@@ -122,18 +119,18 @@ for (const [countryId, c] of Object.entries(COUNTRIES)) {
       else if (h.length > 1) err(countryId, `第2階層 ${s.id} に GeoJSON 地物が複数対応: ${h.join(' | ')}`);
     }
   }
+
   if (c.geoJsonUrl) {
     const gj = JSON.parse(fs.readFileSync(path.join(publicDir, c.geoJsonUrl), 'utf8'));
-    const featureOf = new Map<string, any>();
+    const featureIndex = buildFeatureIndex(c);
+    const featureOf = new Map<string, unknown>();
     for (const f of gj.features) {
-      const label = String(f.properties?.[c.geoJsonNameProp ?? 'name']).trim().toLowerCase();
-      for (const sub of c.subDivisions) {
-        if ([sub.name, sub.nameEn, sub.nameLocal, sub.code, sub.id, ...(sub.aliases ?? [])].some((k) => k && k.toLowerCase() === label)) featureOf.set(sub.id, f);
-      }
+      const sub = matchSubDivision(f.properties, c, featureIndex);
+      if (sub) featureOf.set(sub.id, f);
     }
     for (const { m, s } of munis) {
       const f = featureOf.get(s.id);
-      if (f && !geoContains(f, m.coordinates)) warn(countryId, `第3階層 ${m.id} (${m.nameEn}) の座標が第2階層 ${s.id} のポリゴン外（簡略化境界による誤差の可能性）`);
+      if (f && !geoContains(f as Parameters<typeof geoContains>[0], m.coordinates)) warn(countryId, `第3階層 ${m.id} (${m.nameEn}) の座標が第2階層 ${s.id} のポリゴン外（簡略化境界による誤差の可能性）`);
     }
   }
   console.log(`  広域 ${c.macroRegions.length} / 第2階層 ${c.subDivisions.length} / 第3階層 ${munis.length}`);

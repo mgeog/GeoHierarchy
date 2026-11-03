@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import confetti from 'canvas-confetti';
 import {
   AdminLevel,
   CountryAdministrativeData,
@@ -8,6 +7,11 @@ import {
   SubDivision,
 } from '../types/geo';
 import { playSuccessSound, playFailureSound } from '../utils/sound';
+import { shuffle } from '../utils/shuffle';
+
+// 紙吹雪は初回の正解時まで読み込まない（初期バンドルを小さくするため）
+const fireConfetti = (options: Record<string, unknown>) =>
+  import('canvas-confetti').then((m) => m.default(options)).catch(() => {});
 import {
   Trophy,
   Flame,
@@ -116,13 +120,13 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
       });
     }
 
-    // Shuffle and pick 10
-    const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 10);
-    return shuffled;
+    // Fisher–Yates で無作為に 10 問を選ぶ
+    return shuffle(pool).slice(0, 10);
   };
 
   // Start new quiz round
   const startNewQuiz = (levelChoice = selectedLevel) => {
+    answerLockRef.current = false;
     const newQuestions = generateQuestions(levelChoice);
     setQuestions(newQuestions);
     setCurrentIndex(0);
@@ -154,7 +158,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
 
   // Timer interval
   useEffect(() => {
-    let interval: NodeJS.Timeout | null = null;
+    let interval: ReturnType<typeof setInterval> | null = null;
     if (isTimerRunning && !quizFinished) {
       interval = setInterval(() => {
         setTimerSeconds((prev) => prev + 1);
@@ -165,12 +169,21 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
     };
   }, [isTimerRunning, quizFinished]);
 
+  // 回答後の遷移待ち（700ms）の間は、次の回答を受け付けない
+  const answerLockRef = useRef(false);
+  const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+  }, []);
+
   // Handle incoming answer from Map click
   useEffect(() => {
     if (!incomingAnswer || quizFinished || questions.length === 0) return;
+    if (answerLockRef.current) return;
 
     const currentQ = questions[currentIndex];
     if (!currentQ) return;
+    answerLockRef.current = true;
 
     const isMatch =
       incomingAnswer.level === currentQ.level &&
@@ -184,13 +197,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
       onFeedback({ correct: true, id: currentQ.targetId });
 
       // Trigger Confetti
-      try {
-        confetti({
-          particleCount: 40,
-          spread: 60,
-          origin: { y: 0.6 },
-        });
-      } catch {}
+      fireConfetti({ particleCount: 40, spread: 60, origin: { y: 0.6 } });
 
       setAnswerLog((prev) => [...prev, { question: currentQ, correct: true }]);
     } else {
@@ -202,7 +209,8 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
     }
 
     // Advance to next question after small delay
-    setTimeout(() => {
+    advanceTimerRef.current = setTimeout(() => {
+      answerLockRef.current = false;
       onFeedback(null);
       setShowHint(false);
       if (currentIndex + 1 < questions.length) {
@@ -218,13 +226,7 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
         setIsTimerRunning(false);
         setQuizFinished(true);
         onSetQuizTarget(null);
-        try {
-          confetti({
-            particleCount: 100,
-            spread: 90,
-            origin: { y: 0.5 },
-          });
-        } catch {}
+        fireConfetti({ particleCount: 100, spread: 90, origin: { y: 0.5 } });
       }
     }, 700);
   }, [incomingAnswer]);

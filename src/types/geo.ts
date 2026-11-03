@@ -45,8 +45,6 @@ export interface SubDivision {
   macroRegionId: string; // parent level 1
   capitalCity: string;
   centroid: [number, number]; // [lon, lat]
-  pathD?: string; // pre-projected or geoJSON coordinates
-  geoCoordinates?: number[][][]; // MultiPolygon / Polygon [[[lon, lat], ...]]
   population?: number;
   areaKm2?: number;
   /** 人口・面積の出典 ID（src/data/statistics.json の sources） */
@@ -56,6 +54,8 @@ export interface SubDivision {
   description?: string;
   mnemonic?: string; // 暗記・特徴のポイント
   aliases?: string[]; // alternative names for matching
+  /** 簡易ポリゴン（韓国の未完成データが使用。GeoJSON が無い国向けの予備） */
+  geoCoordinates?: number[][][];
   municipalities: Municipality[];
 }
 
@@ -95,14 +95,6 @@ export interface CountryAdministrativeData {
   };
   macroRegions: MacroRegion[];
   subDivisions: SubDivision[];
-  // Projection settings
-  projectionConfig: {
-    type: 'mercator' | 'albers' | 'conicConformal' | 'transverseMercator';
-    center?: [number, number];
-    rotate?: [number, number, number];
-    parallels?: [number, number];
-    scaleMultiplier: number;
-  };
 }
 
 export type MapMode = 'explore' | 'quiz' | 'compare';
@@ -110,3 +102,21 @@ export type MapMode = 'explore' | 'quiz' | 'compare';
 export type HierarchyDisplayMode = 'auto' | 1 | 2 | 3;
 
 export type MapTheme = 'educational' | 'textbook' | 'blueprint' | 'minimal';
+
+export type EntityType = 'macro' | 'subdivision' | 'municipality';
+
+export interface SelectedEntity {
+  type: EntityType;
+  item: MacroRegion | SubDivision | Municipality;
+}
+
+export interface QuizTarget {
+  level: AdminLevel;
+  id: string;
+  name: string;
+}
+
+export interface AnswerFeedback {
+  correct: boolean;
+  id: string;
+}

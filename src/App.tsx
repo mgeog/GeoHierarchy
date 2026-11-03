@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { Suspense, lazy, useState, useEffect, useCallback } from 'react';
 import {
   AdminLevel,
   CountryAdministrativeData,
@@ -14,10 +14,13 @@ import { Header } from './components/Header';
 import { HierarchyControls } from './components/HierarchyControls';
 import { MapCanvas } from './components/MapCanvas';
 import { EducationalDrawer } from './components/EducationalDrawer';
-import { QuizPanel } from './components/QuizPanel';
-import { HierarchyComparisonView } from './components/HierarchyComparisonView';
-import { SearchModal } from './components/SearchModal';
-import { AboutModal } from './components/AboutModal';
+// 初回表示に不要な画面は、開くときに読み込む
+const QuizPanel = lazy(() => import('./components/QuizPanel').then((m) => ({ default: m.QuizPanel })));
+const HierarchyComparisonView = lazy(() =>
+  import('./components/HierarchyComparisonView').then((m) => ({ default: m.HierarchyComparisonView })),
+);
+const SearchModal = lazy(() => import('./components/SearchModal').then((m) => ({ default: m.SearchModal })));
+const AboutModal = lazy(() => import('./components/AboutModal').then((m) => ({ default: m.AboutModal })));
 
 export default function App() {
   const [countryId, setCountryId] = useState<string>('japan');
@@ -25,7 +28,7 @@ export default function App() {
   const [displayMode, setDisplayMode] = useState<HierarchyDisplayMode>(2);
   const [theme, setTheme] = useState<MapTheme>('educational');
   const [isBlindMode, setIsBlindMode] = useState<boolean>(false);
-  const [isBilingual, setIsBilingual] = useState<boolean>(true);
+  const [isBilingual, setIsBilingual] = useState<boolean>(() => typeof window === 'undefined' || window.innerWidth >= 640);
 
   // Selected item for Educational Inspection Drawer
   const [selectedEntity, setSelectedEntity] = useState<{
@@ -178,6 +181,7 @@ export default function App() {
 
           {/* Gamified Quiz Panel Overlay when Quiz Mode is active */}
           {mode === 'quiz' && (
+            <Suspense fallback={null}>
             <QuizPanel
               country={currentCountry}
               onClose={() => setMode('explore')}
@@ -185,6 +189,7 @@ export default function App() {
               incomingAnswer={incomingAnswer}
               onFeedback={setLastAnswerFeedback}
             />
+            </Suspense>
           )}
         </main>
 
@@ -211,6 +216,7 @@ export default function App() {
       </div>
 
       {/* Modals */}
+      <Suspense fallback={null}>
       {isSearchOpen && (
         <SearchModal
           onClose={() => setIsSearchOpen(false)}
@@ -229,6 +235,7 @@ export default function App() {
       )}
 
       {isAboutOpen && <AboutModal onClose={() => setIsAboutOpen(false)} />}
+      </Suspense>
     </div>
   );
 }
