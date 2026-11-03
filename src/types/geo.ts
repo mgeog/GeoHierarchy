@@ -54,8 +54,6 @@ export interface SubDivision {
   description?: string;
   mnemonic?: string; // 暗記・特徴のポイント
   aliases?: string[]; // alternative names for matching
-  /** 簡易ポリゴン（韓国の未完成データが使用。GeoJSON が無い国向けの予備） */
-  geoCoordinates?: number[][][];
   municipalities: Municipality[];
 }
 

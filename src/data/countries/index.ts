@@ -8,6 +8,7 @@ import { italyData } from './italy';
 import { canadaData } from './canada';
 import { chinaData } from './china';
 import { indiaData } from './india';
+import { southKoreaData } from './southKorea';
 import { applySelection } from '../selection/apply';
 import { applyStatistics } from '../statistics';
 import { japanSelection } from '../selection/japan';
@@ -19,9 +20,8 @@ import { italySelection } from '../selection/italy';
 import { canadaSelection } from '../selection/canada';
 import { chinaSelection } from '../selection/china';
 import { indiaSelection } from '../selection/india';
+import { southKoreaSelection } from '../selection/southKorea';
 
-// 韓国 (southKorea.ts, public/data/south-korea.json) は第2階層が未完成のため未登録。
-// 17市道の整備後に再登録する。
 // 第3階層は、元データに第3階層の選定基準（docs/ROADMAP.md）を適用して導出する。
 export const COUNTRIES: Record<string, CountryAdministrativeData> = {
   japan: applyStatistics(applySelection(japanData, japanSelection)),
@@ -33,6 +33,7 @@ export const COUNTRIES: Record<string, CountryAdministrativeData> = {
   canada: applyStatistics(applySelection(canadaData, canadaSelection)),
   china: applyStatistics(applySelection(chinaData, chinaSelection)),
   india: applyStatistics(applySelection(indiaData, indiaSelection)),
+  'south-korea': applyStatistics(applySelection(southKoreaData, southKoreaSelection)),
 };
 
 export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: string; isG7: boolean }[] = [
@@ -45,6 +46,7 @@ export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: 
   { id: 'canada', name: 'カナダ (Canada)', flag: '🇨🇦', continent: '北米', isG7: true },
   { id: 'china', name: '中華人民共和国 (China)', flag: '🇨🇳', continent: 'アジア', isG7: false },
   { id: 'india', name: 'インド (India)', flag: '🇮🇳', continent: 'アジア', isG7: false },
+  { id: 'south-korea', name: '大韓民国 (South Korea)', flag: '🇰🇷', continent: 'アジア', isG7: false },
 ];
 
 export function getCountryData(id: string): CountryAdministrativeData {

@@ -46,7 +46,7 @@ svg{width:520px;height:520px;flex:none}
 </style></head><body><div class="wrap"><div class="txt">
 <h1><small>EDUMAP</small>GeoHierarchy</h1>
 <p>世界の行政区画と都市を、<br>3つの階層で学ぶ地図アプリ</p>
-<div class="chips"><span>G7＋中国・インド</span><span>地図クイズ</span><span>368都市圏を同縮尺で比較</span></div>
+<div class="chips"><span>G7＋中国・インド・韓国</span><span>地図クイズ</span><span>388都市圏を同縮尺で比較</span></div>
 </div>
 <svg viewBox="0 0 ${cell * 2} ${cell * 2}" preserveAspectRatio="xMidYMid meet">${cells}</svg></div></body></html>`;
 const out = process.argv[2];

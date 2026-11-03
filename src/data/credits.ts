@@ -15,8 +15,8 @@ export const CREDIT_GROUPS: CreditGroup[] = [
   {
     title: '行政境界',
     items: [
-      { name: 'Natural Earth', url: 'https://www.naturalearthdata.com/', licence: 'パブリックドメイン', note: '中国・インド（米国・カナダも、一致から由来と推定）。係争地域の描画も、その標準に従う' },
-      { name: 'その他の国（日本・英国・ドイツ・フランス・イタリア）', note: '各国の公開データを簡略化したもの。出典を整理中です（docs/DATA_SOURCES.md）' },
+      { name: 'Natural Earth', url: 'https://www.naturalearthdata.com/', licence: 'パブリックドメイン', note: '中国・インド。係争地域の描画も、その標準に従う' },
+      { name: '日本・米国・英国・ドイツ・フランス・イタリア・カナダ・韓国', note: '各国の統計機関・測量機関の行政界データを、簡略化したものです（作成時の出典の申告を記録しており、一次資料での照合は途中です。docs/DATA_SOURCES.md）' },
     ],
   },
   {
@@ -33,7 +33,7 @@ export const CREDIT_GROUPS: CreditGroup[] = [
   {
     title: '人口・面積',
     items: [
-      { name: '各国の統計機関の公表値', note: '総務省統計局、U.S. Census Bureau、ONS、Destatis、INSEE、ISTAT、Statistics Canada、国家統計局（中国）、Census of India。基準年は国により異なります' },
+      { name: '各国の統計機関の公表値', note: '総務省統計局、U.S. Census Bureau、ONS、Destatis、INSEE、ISTAT、Statistics Canada、国家統計局（中国）、Census of India、Statistics Korea。基準年は国により異なります' },
     ],
   },
   {
