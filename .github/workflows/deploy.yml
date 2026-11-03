@@ -38,6 +38,9 @@ jobs:
       - name: Type check
         run: bun run lint
 
+      - name: Validate data integrity
+        run: bun run validate
+
       - name: Build production app
         run: bun run build
 
