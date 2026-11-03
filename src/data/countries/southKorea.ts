@@ -21,12 +21,6 @@ export const southKoreaData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: '광역자치단체 & 도청소재지', desc: 'ソウル特別市、釜山広域市、京畿道等の17広域自治団体および各首府' },
     level3: { ja: '主要都市・特別区', local: '주요도시 & 기초구', desc: 'ソウル特別市各区、水原市、城南市等の主要都市' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [127.8, 36.2],
-    parallels: [34, 38],
-    scaleMultiplier: 4200,
-  },
   macroRegions: [
     {
       id: 'kr-capital',

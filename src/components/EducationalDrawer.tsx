@@ -1,8 +1,10 @@
 import React from 'react';
+import { STAT_SOURCES } from '../data/statistics';
 import {
   CountryAdministrativeData,
   MacroRegion,
   Municipality,
+  SelectionCriterion,
   SubDivision,
 } from '../types/geo';
 import {
@@ -18,6 +20,21 @@ import {
   Award,
 } from 'lucide-react';
 
+const CRITERION_LABEL: Record<SelectionCriterion, string> = {
+  R1: '国の首都',
+  R2: '第2階層の首府',
+  R2p: '第2階層の代表都市（地域内で都市圏人口が最大）',
+  R3: '主要都市圏の中心都市（都市圏人口100万以上、または国内上位20）',
+};
+
+function formatStatSource(id: string | undefined, withBasis = false): string {
+  const src = id ? STAT_SOURCES[id] : undefined;
+  if (!src) return '';
+  const year = src.date ? `${src.date.slice(0, 4)}年` : '';
+  const basis = withBasis && src.areaBasis ? (src.areaBasis === 'land' ? '・土地面積' : '・総面積') : '';
+  return `出典: ${src.agency}${year ? `（${year}）` : ''}${basis}`;
+}
+
 interface EducationalDrawerProps {
   country: CountryAdministrativeData;
   selectedEntity: {
@@ -28,6 +45,8 @@ interface EducationalDrawerProps {
   onSelectSubdivision: (sub: SubDivision) => void;
   onSelectMunicipality: (m: Municipality) => void;
   onStartQuizForEntity: (item: MacroRegion | SubDivision | Municipality) => void;
+  /** 都市圏比較を、指定した FUA を選択した状態で開く */
+  onOpenMetro: (fuaId: number) => void;
 }
 
 export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
@@ -37,6 +56,7 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
   onSelectSubdivision,
   onSelectMunicipality,
   onStartQuizForEntity,
+  onOpenMetro,
 }) => {
   if (!selectedEntity) return null;
 
@@ -71,7 +91,10 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
       : undefined);
 
   return (
-    <aside className="w-80 sm:w-96 bg-white dark:bg-stone-900 border-l border-stone-200 dark:border-stone-800 h-full flex flex-col shadow-xl z-20 overflow-y-auto">
+    <aside
+      aria-label="地域の詳細"
+      className="absolute inset-x-0 bottom-0 max-h-[58%] rounded-t-2xl border-t sm:static sm:inset-auto sm:w-96 sm:max-h-none sm:h-full sm:rounded-none sm:border-t-0 sm:border-l bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 flex flex-col shadow-2xl sm:shadow-xl z-20 overflow-y-auto"
+    >
       {/* Header */}
       <div className="p-4 border-b border-stone-200 dark:border-stone-800 flex items-start justify-between bg-stone-50/70 dark:bg-stone-800/40">
         <div>
@@ -152,6 +175,33 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
             </div>
           )}
 
+          {type === 'municipality' && (item as Municipality).tier && (
+            <div className="p-2.5 rounded-lg bg-stone-50 dark:bg-stone-800/60 border border-stone-200/60 dark:border-stone-700/60 col-span-2">
+              <div className="text-[10px] text-stone-500 dark:text-stone-400 flex items-center gap-1 mb-0.5">
+                <Award className="w-3 h-3 text-sky-600" />
+                <span>選定基準</span>
+              </div>
+              <div className="text-xs text-stone-900 dark:text-stone-100">
+                {(item as Municipality).tier === 'A'
+                  ? ((item as Municipality).criteria ?? []).map((c) => CRITERION_LABEL[c]).join(' / ')
+                  : '補助枠（国別の学習用。共通基準には該当しない）'}
+              </div>
+              {(item as Municipality).metroPopulation ? (
+                <div className="text-[10px] text-stone-500 mt-1">
+                  都市圏人口 {(item as Municipality).metroPopulation!.toLocaleString()} 人（GHS-FUA R2019A、2015年の推計値）
+                </div>
+              ) : null}
+              {(item as Municipality).fuaId !== undefined && (
+                <button
+                  onClick={() => onOpenMetro((item as Municipality).fuaId!)}
+                  className="mt-2 text-xs font-semibold text-sky-700 dark:text-sky-400 hover:underline cursor-pointer"
+                >
+                  この都市圏を、他と同じ縮尺で比べる →
+                </button>
+              )}
+            </div>
+          )}
+
           {displayPopulation ? (
             <div className="p-2.5 rounded-lg bg-stone-50 dark:bg-stone-800/60 border border-stone-200/60 dark:border-stone-700/60">
               <div className="text-[10px] text-stone-500 dark:text-stone-400 flex items-center gap-1 mb-0.5">
@@ -161,6 +211,9 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
               <div className="font-bold text-sm text-stone-900 dark:text-stone-100">
                 {displayPopulation.toLocaleString()} 人
               </div>
+              {type === 'subdivision' && (item as SubDivision).populationSource && (
+                <div className="text-[10px] text-stone-500 mt-1">{formatStatSource((item as SubDivision).populationSource)}</div>
+              )}
             </div>
           ) : null}
 
@@ -173,6 +226,9 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
               <div className="font-bold text-sm text-stone-900 dark:text-stone-100">
                 {(item as SubDivision).areaKm2?.toLocaleString()} km²
               </div>
+              {(item as SubDivision).areaSource && (
+                <div className="text-[10px] text-stone-500 mt-1">{formatStatSource((item as SubDivision).areaSource, true)}</div>
+              )}
             </div>
           )}
         </div>
@@ -270,9 +326,19 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
                           首府
                         </span>
                       )}
+                      {m.tier === 'B' && (
+                        <span className="text-[9px] px-1 py-0.2 rounded bg-stone-200 text-stone-600 font-bold">
+                          補助
+                        </span>
+                      )}
                     </div>
                     <div className="text-[10px] text-stone-500">
-                      {m.designation || '都市'} · {m.population?.toLocaleString()}人
+                      {m.designation || '都市'}
+                      {m.population
+                        ? ` · ${m.population.toLocaleString()}人`
+                        : m.metroPopulation
+                        ? ` · 都市圏 約${Math.round(m.metroPopulation / 10000).toLocaleString()}万人`
+                        : ''}
                     </div>
                   </div>
                   <ChevronRight className="w-3.5 h-3.5 text-stone-400 group-hover:translate-x-0.5 transition-transform" />

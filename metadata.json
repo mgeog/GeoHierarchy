@@ -1,6 +1,0 @@
-{
-  "name": "GeoHierarchy - 世界の行政区画・都市学習マップ",
-  "description": "世界各国の第一階層（広域圏）、第二階層（州・県・省）、第三階層（市区町村・主要都市）を縮尺に応じてシンプルかつ美しく学べる教育特化型Webマップ＆パズル・クイズ学習アプリ。",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

@@ -1,0 +1,3686 @@
+{
+ "source": "European Commission, JRC. GHS-FUA R2019A (GHS_FUA_UCDB2015_GLOBE_R2019A). CC BY 4.0. 基準年 2015。人口は 1km 格子からの推計値。",
+ "rule": "FUA 人口 1,000,000 以上、または国内上位 20",
+ "fuas": [
+  {
+   "id": 2626,
+   "name": "Toronto",
+   "iso": "CAN",
+   "fuaPop2015": 7278248,
+   "fuaAreaKm2": 8223,
+   "ucPop2015": 6543842,
+   "ucAreaKm2": 2251,
+   "commutingPop2015": 734406
+  },
+  {
+   "id": 3485,
+   "name": "Montreal",
+   "iso": "CAN",
+   "fuaPop2015": 4089586,
+   "fuaAreaKm2": 5027,
+   "ucPop2015": 3345918,
+   "ucAreaKm2": 1201,
+   "commutingPop2015": 743668
+  },
+  {
+   "id": 375,
+   "name": "Vancouver",
+   "iso": "CAN",
+   "fuaPop2015": 2407756,
+   "fuaAreaKm2": 1601,
+   "ucPop2015": 2192046,
+   "ucAreaKm2": 770,
+   "commutingPop2015": 215710
+  },
+  {
+   "id": 1276,
+   "name": "Calgary",
+   "iso": "CAN",
+   "fuaPop2015": 1382751,
+   "fuaAreaKm2": 2051,
+   "ucPop2015": 1183235,
+   "ucAreaKm2": 512,
+   "commutingPop2015": 199517
+  },
+  {
+   "id": 3343,
+   "name": "Ottawa",
+   "iso": "CAN",
+   "fuaPop2015": 1277528,
+   "fuaAreaKm2": 2325,
+   "ucPop2015": 973243,
+   "ucAreaKm2": 392,
+   "commutingPop2015": 304285
+  },
+  {
+   "id": 1572,
+   "name": "Edmonton",
+   "iso": "CAN",
+   "fuaPop2015": 1232005,
+   "fuaAreaKm2": 2816,
+   "ucPop2015": 975001,
+   "ucAreaKm2": 490,
+   "commutingPop2015": 257004
+  },
+  {
+   "id": 3789,
+   "name": "Quebec",
+   "iso": "CAN",
+   "fuaPop2015": 875582,
+   "fuaAreaKm2": 3177,
+   "ucPop2015": 581981,
+   "ucAreaKm2": 289,
+   "commutingPop2015": 293601
+  },
+  {
+   "id": 1837,
+   "name": "Winnipeg",
+   "iso": "CAN",
+   "fuaPop2015": 796277,
+   "fuaAreaKm2": 2789,
+   "ucPop2015": 675489,
+   "ucAreaKm2": 299,
+   "commutingPop2015": 120787
+  },
+  {
+   "id": 2360,
+   "name": "Kitchener",
+   "iso": "CAN",
+   "fuaPop2015": 544450,
+   "fuaAreaKm2": 1271,
+   "ucPop2015": 431698,
+   "ucAreaKm2": 195,
+   "commutingPop2015": 112752
+  },
+  {
+   "id": 2220,
+   "name": "London",
+   "iso": "CAN",
+   "fuaPop2015": 522401,
+   "fuaAreaKm2": 2505,
+   "ucPop2015": 339167,
+   "ucAreaKm2": 153,
+   "commutingPop2015": 183234
+  },
+  {
+   "id": 3865,
+   "name": "Halifax",
+   "iso": "CAN",
+   "fuaPop2015": 382061,
+   "fuaAreaKm2": 1271,
+   "ucPop2015": 209670,
+   "ucAreaKm2": 105,
+   "commutingPop2015": 172391
+  },
+  {
+   "id": 28,
+   "name": "Victoria",
+   "iso": "CAN",
+   "fuaPop2015": 354631,
+   "fuaAreaKm2": 523,
+   "ucPop2015": 227671,
+   "ucAreaKm2": 103,
+   "commutingPop2015": 126960
+  },
+  {
+   "id": 1996,
+   "name": "Detroit",
+   "iso": "CAN",
+   "fuaPop2015": 352425,
+   "fuaAreaKm2": 1227,
+   "ucPop2015": 263078,
+   "ucAreaKm2": 182,
+   "commutingPop2015": 89346
+  },
+  {
+   "id": 2751,
+   "name": "St. Catharines",
+   "iso": "CAN",
+   "fuaPop2015": 347173,
+   "fuaAreaKm2": 825,
+   "ucPop2015": 215144,
+   "ucAreaKm2": 135,
+   "commutingPop2015": 132029
+  },
+  {
+   "id": 1751,
+   "name": "Saskatoon",
+   "iso": "CAN",
+   "fuaPop2015": 274495,
+   "fuaAreaKm2": 1131,
+   "ucPop2015": 233298,
+   "ucAreaKm2": 116,
+   "commutingPop2015": 41197
+  },
+  {
+   "id": 3035,
+   "name": "Barrie",
+   "iso": "CAN",
+   "fuaPop2015": 231165,
+   "fuaAreaKm2": 1317,
+   "ucPop2015": 131835,
+   "ucAreaKm2": 76,
+   "commutingPop2015": 99330
+  },
+  {
+   "id": 1663,
+   "name": "Regina",
+   "iso": "CAN",
+   "fuaPop2015": 221924,
+   "fuaAreaKm2": 720,
+   "ucPop2015": 198023,
+   "ucAreaKm2": 95,
+   "commutingPop2015": 23900
+  },
+  {
+   "id": 3709,
+   "name": "Sherbrooke",
+   "iso": "CAN",
+   "fuaPop2015": 216776,
+   "fuaAreaKm2": 956,
+   "ucPop2015": 110652,
+   "ucAreaKm2": 55,
+   "commutingPop2015": 106124
+  },
+  {
+   "id": 3902,
+   "name": "St. John's",
+   "iso": "CAN",
+   "fuaPop2015": 203238,
+   "fuaAreaKm2": 534,
+   "ucPop2015": 85082,
+   "ucAreaKm2": 44,
+   "commutingPop2015": 118156
+  },
+  {
+   "id": 934,
+   "name": "Abbotsford",
+   "iso": "CAN",
+   "fuaPop2015": 197337,
+   "fuaAreaKm2": 395,
+   "ucPop2015": 112679,
+   "ucAreaKm2": 47,
+   "commutingPop2015": 84657
+  },
+  {
+   "id": 10097,
+   "name": "Shanghai",
+   "iso": "CHN",
+   "fuaPop2015": 26920218,
+   "fuaAreaKm2": 5878,
+   "ucPop2015": 25105991,
+   "ucAreaKm2": 3527,
+   "commutingPop2015": 1814227
+  },
+  {
+   "id": 7704,
+   "name": "Beijing",
+   "iso": "CHN",
+   "fuaPop2015": 21279474,
+   "fuaAreaKm2": 5536,
+   "ucPop2015": 19184584,
+   "ucAreaKm2": 2439,
+   "commutingPop2015": 2094890
+  },
+  {
+   "id": 9711,
+   "name": "Guangzhou",
+   "iso": "CHN",
+   "fuaPop2015": 16746844,
+   "fuaAreaKm2": 4413,
+   "ucPop2015": 15555157,
+   "ucAreaKm2": 2410,
+   "commutingPop2015": 1191687
+  },
+  {
+   "id": 10153,
+   "name": "Jieyang",
+   "iso": "CHN",
+   "fuaPop2015": 12657025,
+   "fuaAreaKm2": 5922,
+   "ucPop2015": 11088160,
+   "ucAreaKm2": 2614,
+   "commutingPop2015": 1568866
+  },
+  {
+   "id": 5723,
+   "name": "Chengdu",
+   "iso": "CHN",
+   "fuaPop2015": 11749963,
+   "fuaAreaKm2": 4034,
+   "ucPop2015": 9790013,
+   "ucAreaKm2": 1424,
+   "commutingPop2015": 1959950
+  },
+  {
+   "id": 9963,
+   "name": "Suzhou",
+   "iso": "CHN",
+   "fuaPop2015": 11403059,
+   "fuaAreaKm2": 5056,
+   "ucPop2015": 9452373,
+   "ucAreaKm2": 2196,
+   "commutingPop2015": 1950686
+  },
+  {
+   "id": 10078,
+   "name": "Hangzhou",
+   "iso": "CHN",
+   "fuaPop2015": 9581084,
+   "fuaAreaKm2": 4634,
+   "ucPop2015": 7799828,
+   "ucAreaKm2": 1758,
+   "commutingPop2015": 1781256
+  },
+  {
+   "id": 9725,
+   "name": "Guangzhou",
+   "iso": "CHN",
+   "fuaPop2015": 8742536,
+   "fuaAreaKm2": 1573,
+   "ucPop2015": 8542067,
+   "ucAreaKm2": 1086,
+   "commutingPop2015": 200469
+  },
+  {
+   "id": 8989,
+   "name": "Wuhan",
+   "iso": "CHN",
+   "fuaPop2015": 8534061,
+   "fuaAreaKm2": 2682,
+   "ucPop2015": 7778941,
+   "ucAreaKm2": 917,
+   "commutingPop2015": 755120
+  },
+  {
+   "id": 8055,
+   "name": "Tianjin",
+   "iso": "CHN",
+   "fuaPop2015": 8317096,
+   "fuaAreaKm2": 2413,
+   "ucPop2015": 7307238,
+   "ucAreaKm2": 882,
+   "commutingPop2015": 1009858
+  },
+  {
+   "id": 9701,
+   "name": "Nanjing",
+   "iso": "CHN",
+   "fuaPop2015": 6914261,
+   "fuaAreaKm2": 2419,
+   "ucPop2015": 5865536,
+   "ucAreaKm2": 742,
+   "commutingPop2015": 1048725
+  },
+  {
+   "id": 9718,
+   "name": "Guangzhou",
+   "iso": "CHN",
+   "fuaPop2015": 6730966,
+   "fuaAreaKm2": 2458,
+   "ucPop2015": 6166558,
+   "ucAreaKm2": 1415,
+   "commutingPop2015": 564409
+  },
+  {
+   "id": 7094,
+   "name": "Xi'an",
+   "iso": "CHN",
+   "fuaPop2015": 6576880,
+   "fuaAreaKm2": 2083,
+   "ucPop2015": 5437614,
+   "ucAreaKm2": 735,
+   "commutingPop2015": 1139266
+  },
+  {
+   "id": 10331,
+   "name": "Quanzhou",
+   "iso": "CHN",
+   "fuaPop2015": 6446307,
+   "fuaAreaKm2": 3186,
+   "ucPop2015": 5348243,
+   "ucAreaKm2": 1581,
+   "commutingPop2015": 1098064
+  },
+  {
+   "id": 8630,
+   "name": "Shenyang",
+   "iso": "CHN",
+   "fuaPop2015": 6219708,
+   "fuaAreaKm2": 2024,
+   "ucPop2015": 5542615,
+   "ucAreaKm2": 566,
+   "commutingPop2015": 677094
+  },
+  {
+   "id": 7578,
+   "name": "Chongqing",
+   "iso": "CHN",
+   "fuaPop2015": 6036834,
+   "fuaAreaKm2": 2267,
+   "ucPop2015": 5157726,
+   "ucAreaKm2": 618,
+   "commutingPop2015": 879108
+  },
+  {
+   "id": 8189,
+   "name": "Zhengzhou",
+   "iso": "CHN",
+   "fuaPop2015": 5884051,
+   "fuaAreaKm2": 2310,
+   "ucPop2015": 4890986,
+   "ucAreaKm2": 752,
+   "commutingPop2015": 993066
+  },
+  {
+   "id": 10339,
+   "name": "Wenzhou",
+   "iso": "CHN",
+   "fuaPop2015": 5211421,
+   "fuaAreaKm2": 1415,
+   "ucPop2015": 4836730,
+   "ucAreaKm2": 714,
+   "commutingPop2015": 374691
+  },
+  {
+   "id": 10286,
+   "name": "Xiamen",
+   "iso": "CHN",
+   "fuaPop2015": 5142192,
+   "fuaAreaKm2": 1702,
+   "ucPop2015": 4639502,
+   "ucAreaKm2": 694,
+   "commutingPop2015": 502690
+  },
+  {
+   "id": 9309,
+   "name": "Qingdao",
+   "iso": "CHN",
+   "fuaPop2015": 4856058,
+   "fuaAreaKm2": 2542,
+   "ucPop2015": 4073804,
+   "ucAreaKm2": 779,
+   "commutingPop2015": 782254
+  },
+  {
+   "id": 9459,
+   "name": "Hefei",
+   "iso": "CHN",
+   "fuaPop2015": 4730880,
+   "fuaAreaKm2": 2608,
+   "ucPop2015": 3998647,
+   "ucAreaKm2": 566,
+   "commutingPop2015": 732233
+  },
+  {
+   "id": 8332,
+   "name": "Harbin",
+   "iso": "CHN",
+   "fuaPop2015": 4590553,
+   "fuaAreaKm2": 1548,
+   "ucPop2015": 4130657,
+   "ucAreaKm2": 457,
+   "commutingPop2015": 459896
+  },
+  {
+   "id": 9715,
+   "name": "Guangzhou",
+   "iso": "CHN",
+   "fuaPop2015": 4521578,
+   "fuaAreaKm2": 2151,
+   "ucPop2015": 3738457,
+   "ucAreaKm2": 895,
+   "commutingPop2015": 783120
+  },
+  {
+   "id": 8476,
+   "name": "Jinan",
+   "iso": "CHN",
+   "fuaPop2015": 4264024,
+   "fuaAreaKm2": 1923,
+   "ucPop2015": 3460771,
+   "ucAreaKm2": 529,
+   "commutingPop2015": 803254
+  },
+  {
+   "id": 7744,
+   "name": "Shijiazhuang",
+   "iso": "CHN",
+   "fuaPop2015": 4232107,
+   "fuaAreaKm2": 1780,
+   "ucPop2015": 3314770,
+   "ucAreaKm2": 586,
+   "commutingPop2015": 917336
+  },
+  {
+   "id": 10328,
+   "name": "Fuzhou",
+   "iso": "CHN",
+   "fuaPop2015": 4203945,
+   "fuaAreaKm2": 1516,
+   "ucPop2015": 3746758,
+   "ucAreaKm2": 566,
+   "commutingPop2015": 457186
+  },
+  {
+   "id": 9629,
+   "name": "Nanchang",
+   "iso": "CHN",
+   "fuaPop2015": 3904840,
+   "fuaAreaKm2": 1916,
+   "ucPop2015": 3246961,
+   "ucAreaKm2": 483,
+   "commutingPop2015": 657879
+  },
+  {
+   "id": 9100,
+   "name": "Changsha",
+   "iso": "CHN",
+   "fuaPop2015": 3904011,
+   "fuaAreaKm2": 1496,
+   "ucPop2015": 3325178,
+   "ucAreaKm2": 422,
+   "commutingPop2015": 578832
+  },
+  {
+   "id": 8510,
+   "name": "Changchun",
+   "iso": "CHN",
+   "fuaPop2015": 3868822,
+   "fuaAreaKm2": 1847,
+   "ucPop2015": 3424261,
+   "ucAreaKm2": 450,
+   "commutingPop2015": 444561
+  },
+  {
+   "id": 7359,
+   "name": "Taiyuan",
+   "iso": "CHN",
+   "fuaPop2015": 3818783,
+   "fuaAreaKm2": 1065,
+   "ucPop2015": 3451600,
+   "ucAreaKm2": 375,
+   "commutingPop2015": 367182
+  },
+  {
+   "id": 10282,
+   "name": "Ningbo",
+   "iso": "CHN",
+   "fuaPop2015": 3737732,
+   "fuaAreaKm2": 1653,
+   "ucPop2015": 3048510,
+   "ucAreaKm2": 675,
+   "commutingPop2015": 689222
+  },
+  {
+   "id": 8664,
+   "name": "Zibo",
+   "iso": "CHN",
+   "fuaPop2015": 3699955,
+   "fuaAreaKm2": 2900,
+   "ucPop2015": 2531188,
+   "ucAreaKm2": 770,
+   "commutingPop2015": 1168767
+  },
+  {
+   "id": 8973,
+   "name": "Dalian",
+   "iso": "CHN",
+   "fuaPop2015": 3668894,
+   "fuaAreaKm2": 1290,
+   "ucPop2015": 3379822,
+   "ucAreaKm2": 553,
+   "commutingPop2015": 289072
+  },
+  {
+   "id": 7076,
+   "name": "Kunming",
+   "iso": "CHN",
+   "fuaPop2015": 3554514,
+   "fuaAreaKm2": 1384,
+   "ucPop2015": 3224466,
+   "ucAreaKm2": 401,
+   "commutingPop2015": 330048
+  },
+  {
+   "id": 9917,
+   "name": "Changzhou",
+   "iso": "CHN",
+   "fuaPop2015": 3486423,
+   "fuaAreaKm2": 1506,
+   "ucPop2015": 2731275,
+   "ucAreaKm2": 645,
+   "commutingPop2015": 755148
+  },
+  {
+   "id": 2293,
+   "name": "Ürümqi",
+   "iso": "CHN",
+   "fuaPop2015": 3279550,
+   "fuaAreaKm2": 1047,
+   "ucPop2015": 3057127,
+   "ucAreaKm2": 323,
+   "commutingPop2015": 222423
+  },
+  {
+   "id": 7952,
+   "name": "Guiyang",
+   "iso": "CHN",
+   "fuaPop2015": 3244350,
+   "fuaAreaKm2": 1223,
+   "ucPop2015": 2908575,
+   "ucAreaKm2": 409,
+   "commutingPop2015": 335775
+  },
+  {
+   "id": 10220,
+   "name": "Cixi",
+   "iso": "CHN",
+   "fuaPop2015": 3230913,
+   "fuaAreaKm2": 2155,
+   "ucPop2015": 2372301,
+   "ucAreaKm2": 671,
+   "commutingPop2015": 858612
+  },
+  {
+   "id": 10392,
+   "name": "Taizhou",
+   "iso": "CHN",
+   "fuaPop2015": 3202231,
+   "fuaAreaKm2": 1582,
+   "ucPop2015": 2497214,
+   "ucAreaKm2": 614,
+   "commutingPop2015": 705017
+  },
+  {
+   "id": 8717,
+   "name": "Nanning",
+   "iso": "CHN",
+   "fuaPop2015": 2818095,
+   "fuaAreaKm2": 927,
+   "ucPop2015": 2591094,
+   "ucAreaKm2": 283,
+   "commutingPop2015": 227001
+  },
+  {
+   "id": 3828,
+   "name": "Lanzhou",
+   "iso": "CHN",
+   "fuaPop2015": 2585524,
+   "fuaAreaKm2": 871,
+   "ucPop2015": 2428112,
+   "ucAreaKm2": 261,
+   "commutingPop2015": 157412
+  },
+  {
+   "id": 10118,
+   "name": "Jiaxing",
+   "iso": "CHN",
+   "fuaPop2015": 2487378,
+   "fuaAreaKm2": 1515,
+   "ucPop2015": 1740499,
+   "ucAreaKm2": 409,
+   "commutingPop2015": 746880
+  },
+  {
+   "id": 9008,
+   "name": "Xuzhou",
+   "iso": "CHN",
+   "fuaPop2015": 2483180,
+   "fuaAreaKm2": 1607,
+   "ucPop2015": 1759751,
+   "ucAreaKm2": 408,
+   "commutingPop2015": 723429
+  },
+  {
+   "id": 9062,
+   "name": "Linyi",
+   "iso": "CHN",
+   "fuaPop2015": 2405442,
+   "fuaAreaKm2": 1815,
+   "ucPop2015": 1487547,
+   "ucAreaKm2": 532,
+   "commutingPop2015": 917895
+  },
+  {
+   "id": 7962,
+   "name": "Luoyang",
+   "iso": "CHN",
+   "fuaPop2015": 2359898,
+   "fuaAreaKm2": 1115,
+   "ucPop2015": 1870078,
+   "ucAreaKm2": 390,
+   "commutingPop2015": 489820
+  },
+  {
+   "id": 8159,
+   "name": "Tangshan",
+   "iso": "CHN",
+   "fuaPop2015": 2358087,
+   "fuaAreaKm2": 1676,
+   "ucPop2015": 1710459,
+   "ucAreaKm2": 390,
+   "commutingPop2015": 647628
+  },
+  {
+   "id": 4760,
+   "name": "Baotou",
+   "iso": "CHN",
+   "fuaPop2015": 2206063,
+   "fuaAreaKm2": 638,
+   "ucPop2015": 1995854,
+   "ucAreaKm2": 243,
+   "commutingPop2015": 210209
+  },
+  {
+   "id": 9987,
+   "name": "Nantong",
+   "iso": "CHN",
+   "fuaPop2015": 2162493,
+   "fuaAreaKm2": 1483,
+   "ucPop2015": 1424993,
+   "ucAreaKm2": 399,
+   "commutingPop2015": 737501
+  },
+  {
+   "id": 5335,
+   "name": "Hohhot",
+   "iso": "CHN",
+   "fuaPop2015": 2130822,
+   "fuaAreaKm2": 856,
+   "ucPop2015": 1881076,
+   "ucAreaKm2": 260,
+   "commutingPop2015": 249745
+  },
+  {
+   "id": 9947,
+   "name": "Huizhou",
+   "iso": "CHN",
+   "fuaPop2015": 2079954,
+   "fuaAreaKm2": 974,
+   "ucPop2015": 1708101,
+   "ucAreaKm2": 295,
+   "commutingPop2015": 371853
+  },
+  {
+   "id": 9208,
+   "name": "Yantai",
+   "iso": "CHN",
+   "fuaPop2015": 2046204,
+   "fuaAreaKm2": 1522,
+   "ucPop2015": 1585224,
+   "ucAreaKm2": 418,
+   "commutingPop2015": 460980
+  },
+  {
+   "id": 8157,
+   "name": "Xinxiang",
+   "iso": "CHN",
+   "fuaPop2015": 2044707,
+   "fuaAreaKm2": 1214,
+   "ucPop2015": 1428669,
+   "ucAreaKm2": 311,
+   "commutingPop2015": 616038
+  },
+  {
+   "id": 9511,
+   "name": "Haikou",
+   "iso": "CHN",
+   "fuaPop2015": 1920718,
+   "fuaAreaKm2": 701,
+   "ucPop2015": 1669576,
+   "ucAreaKm2": 235,
+   "commutingPop2015": 251143
+  },
+  {
+   "id": 8753,
+   "name": "Anshan",
+   "iso": "CHN",
+   "fuaPop2015": 1846134,
+   "fuaAreaKm2": 759,
+   "ucPop2015": 1526172,
+   "ucAreaKm2": 232,
+   "commutingPop2015": 319962
+  },
+  {
+   "id": 8935,
+   "name": "Weifang",
+   "iso": "CHN",
+   "fuaPop2015": 1768060,
+   "fuaAreaKm2": 1230,
+   "ucPop2015": 1177264,
+   "ucAreaKm2": 283,
+   "commutingPop2015": 590796
+  },
+  {
+   "id": 8809,
+   "name": "Liuzhou",
+   "iso": "CHN",
+   "fuaPop2015": 1737108,
+   "fuaAreaKm2": 773,
+   "ucPop2015": 1451939,
+   "ucAreaKm2": 232,
+   "commutingPop2015": 285169
+  },
+  {
+   "id": 6640,
+   "name": "Datong",
+   "iso": "CHN",
+   "fuaPop2015": 1733549,
+   "fuaAreaKm2": 827,
+   "ucPop2015": 1501062,
+   "ucAreaKm2": 210,
+   "commutingPop2015": 232486
+  },
+  {
+   "id": 10181,
+   "name": "Yiwu",
+   "iso": "CHN",
+   "fuaPop2015": 1706311,
+   "fuaAreaKm2": 966,
+   "ucPop2015": 1324275,
+   "ucAreaKm2": 305,
+   "commutingPop2015": 382036
+  },
+  {
+   "id": 4150,
+   "name": "Yinchuan",
+   "iso": "CHN",
+   "fuaPop2015": 1704007,
+   "fuaAreaKm2": 1012,
+   "ucPop2015": 1440105,
+   "ucAreaKm2": 266,
+   "commutingPop2015": 263902
+  },
+  {
+   "id": 8043,
+   "name": "Handan",
+   "iso": "CHN",
+   "fuaPop2015": 1698252,
+   "fuaAreaKm2": 856,
+   "ucPop2015": 1220483,
+   "ucAreaKm2": 221,
+   "commutingPop2015": 477769
+  },
+  {
+   "id": 7798,
+   "name": "Baoding",
+   "iso": "CHN",
+   "fuaPop2015": 1697773,
+   "fuaAreaKm2": 905,
+   "ucPop2015": 1251379,
+   "ucAreaKm2": 238,
+   "commutingPop2015": 446394
+  },
+  {
+   "id": 8777,
+   "name": "Jilin",
+   "iso": "CHN",
+   "fuaPop2015": 1690756,
+   "fuaAreaKm2": 659,
+   "ucPop2015": 1501500,
+   "ucAreaKm2": 174,
+   "commutingPop2015": 189256
+  },
+  {
+   "id": 9871,
+   "name": "Zhuhai",
+   "iso": "CHN",
+   "fuaPop2015": 1688794,
+   "fuaAreaKm2": 815,
+   "ucPop2015": 1488210,
+   "ucAreaKm2": 295,
+   "commutingPop2015": 200583
+  },
+  {
+   "id": 8981,
+   "name": "市中区",
+   "iso": "CHN",
+   "fuaPop2015": 1670204,
+   "fuaAreaKm2": 1572,
+   "ucPop2015": 960636,
+   "ucAreaKm2": 349,
+   "commutingPop2015": 709567
+  },
+  {
+   "id": 9769,
+   "name": "Yangzhou",
+   "iso": "CHN",
+   "fuaPop2015": 1638366,
+   "fuaAreaKm2": 958,
+   "ucPop2015": 1115549,
+   "ucAreaKm2": 248,
+   "commutingPop2015": 522817
+  },
+  {
+   "id": 9261,
+   "name": "Tianjia‘an",
+   "iso": "CHN",
+   "fuaPop2015": 1591003,
+   "fuaAreaKm2": 895,
+   "ucPop2015": 1219485,
+   "ucAreaKm2": 257,
+   "commutingPop2015": 371518
+  },
+  {
+   "id": 9525,
+   "name": "Huai'an",
+   "iso": "CHN",
+   "fuaPop2015": 1577761,
+   "fuaAreaKm2": 868,
+   "ucPop2015": 1159773,
+   "ucAreaKm2": 184,
+   "commutingPop2015": 417988
+  },
+  {
+   "id": 8057,
+   "name": "Anyang",
+   "iso": "CHN",
+   "fuaPop2015": 1562152,
+   "fuaAreaKm2": 951,
+   "ucPop2015": 1076264,
+   "ucAreaKm2": 223,
+   "commutingPop2015": 485888
+  },
+  {
+   "id": 10353,
+   "name": "Putian",
+   "iso": "CHN",
+   "fuaPop2015": 1521918,
+   "fuaAreaKm2": 1042,
+   "ucPop2015": 1106639,
+   "ucAreaKm2": 299,
+   "commutingPop2015": 415279
+  },
+  {
+   "id": 9969,
+   "name": "Zhangjiagang",
+   "iso": "CHN",
+   "fuaPop2015": 1509729,
+   "fuaAreaKm2": 717,
+   "ucPop2015": 1184537,
+   "ucAreaKm2": 317,
+   "commutingPop2015": 325192
+  },
+  {
+   "id": 8747,
+   "name": "Fushun",
+   "iso": "CHN",
+   "fuaPop2015": 1470960,
+   "fuaAreaKm2": 837,
+   "ucPop2015": 1080133,
+   "ucAreaKm2": 244,
+   "commutingPop2015": 390827
+  },
+  {
+   "id": 10371,
+   "name": "龙港市",
+   "iso": "CHN",
+   "fuaPop2015": 1419747,
+   "fuaAreaKm2": 497,
+   "ucPop2015": 1248244,
+   "ucAreaKm2": 213,
+   "commutingPop2015": 171504
+  },
+  {
+   "id": 3438,
+   "name": "Xining",
+   "iso": "CHN",
+   "fuaPop2015": 1414921,
+   "fuaAreaKm2": 569,
+   "ucPop2015": 1241840,
+   "ucAreaKm2": 157,
+   "commutingPop2015": 173080
+  },
+  {
+   "id": 8039,
+   "name": "Jiaozuo",
+   "iso": "CHN",
+   "fuaPop2015": 1414485,
+   "fuaAreaKm2": 843,
+   "ucPop2015": 978896,
+   "ucAreaKm2": 249,
+   "commutingPop2015": 435589
+  },
+  {
+   "id": 9263,
+   "name": "Huangshi",
+   "iso": "CHN",
+   "fuaPop2015": 1403773,
+   "fuaAreaKm2": 1089,
+   "ucPop2015": 951444,
+   "ucAreaKm2": 221,
+   "commutingPop2015": 452329
+  },
+  {
+   "id": 8334,
+   "name": "Fancheng",
+   "iso": "CHN",
+   "fuaPop2015": 1401399,
+   "fuaAreaKm2": 930,
+   "ucPop2015": 1067521,
+   "ucAreaKm2": 202,
+   "commutingPop2015": 333878
+  },
+  {
+   "id": 9839,
+   "name": "Zhongshan",
+   "iso": "CHN",
+   "fuaPop2015": 1353908,
+   "fuaAreaKm2": 577,
+   "ucPop2015": 1133016,
+   "ucAreaKm2": 235,
+   "commutingPop2015": 220892
+  },
+  {
+   "id": 9192,
+   "name": "Hengyang",
+   "iso": "CHN",
+   "fuaPop2015": 1340730,
+   "fuaAreaKm2": 968,
+   "ucPop2015": 952976,
+   "ucAreaKm2": 166,
+   "commutingPop2015": 387754
+  },
+  {
+   "id": 10374,
+   "name": "Yueqing",
+   "iso": "CHN",
+   "fuaPop2015": 1326399,
+   "fuaAreaKm2": 604,
+   "ucPop2015": 1138813,
+   "ucAreaKm2": 295,
+   "commutingPop2015": 187586
+  },
+  {
+   "id": 9731,
+   "name": "Wuhu",
+   "iso": "CHN",
+   "fuaPop2015": 1311749,
+   "fuaAreaKm2": 710,
+   "ucPop2015": 1081141,
+   "ucAreaKm2": 184,
+   "commutingPop2015": 230607
+  },
+  {
+   "id": 8891,
+   "name": "Guilin",
+   "iso": "CHN",
+   "fuaPop2015": 1311446,
+   "fuaAreaKm2": 947,
+   "ucPop2015": 1069415,
+   "ucAreaKm2": 232,
+   "commutingPop2015": 242031
+  },
+  {
+   "id": 9182,
+   "name": "Yulin",
+   "iso": "CHN",
+   "fuaPop2015": 1285291,
+   "fuaAreaKm2": 814,
+   "ucPop2015": 814022,
+   "ucAreaKm2": 222,
+   "commutingPop2015": 471269
+  },
+  {
+   "id": 8274,
+   "name": "Nanyang",
+   "iso": "CHN",
+   "fuaPop2015": 1261385,
+   "fuaAreaKm2": 878,
+   "ucPop2015": 775928,
+   "ucAreaKm2": 183,
+   "commutingPop2015": 485457
+  },
+  {
+   "id": 9939,
+   "name": "Jiangyin",
+   "iso": "CHN",
+   "fuaPop2015": 1258761,
+   "fuaAreaKm2": 735,
+   "ucPop2015": 893254,
+   "ucAreaKm2": 202,
+   "commutingPop2015": 365507
+  },
+  {
+   "id": 9136,
+   "name": "Xiangtan",
+   "iso": "CHN",
+   "fuaPop2015": 1228014,
+   "fuaAreaKm2": 823,
+   "ucPop2015": 933234,
+   "ucAreaKm2": 174,
+   "commutingPop2015": 294780
+  },
+  {
+   "id": 8993,
+   "name": "Huaibei",
+   "iso": "CHN",
+   "fuaPop2015": 1220715,
+   "fuaAreaKm2": 607,
+   "ucPop2015": 927672,
+   "ucAreaKm2": 182,
+   "commutingPop2015": 293042
+  },
+  {
+   "id": 9401,
+   "name": "Zhanjiang",
+   "iso": "CHN",
+   "fuaPop2015": 1204127,
+   "fuaAreaKm2": 612,
+   "ucPop2015": 967286,
+   "ucAreaKm2": 157,
+   "commutingPop2015": 236841
+  },
+  {
+   "id": 9307,
+   "name": "Bengbu",
+   "iso": "CHN",
+   "fuaPop2015": 1195820,
+   "fuaAreaKm2": 795,
+   "ucPop2015": 873983,
+   "ucAreaKm2": 197,
+   "commutingPop2015": 321837
+  },
+  {
+   "id": 8448,
+   "name": "Luohe",
+   "iso": "CHN",
+   "fuaPop2015": 1188290,
+   "fuaAreaKm2": 852,
+   "ucPop2015": 676710,
+   "ucAreaKm2": 172,
+   "commutingPop2015": 511580
+  },
+  {
+   "id": 9186,
+   "name": "Zhuzhou",
+   "iso": "CHN",
+   "fuaPop2015": 1182940,
+   "fuaAreaKm2": 521,
+   "ucPop2015": 1015201,
+   "ucAreaKm2": 150,
+   "commutingPop2015": 167740
+  },
+  {
+   "id": 6206,
+   "name": "Baoji",
+   "iso": "CHN",
+   "fuaPop2015": 1182084,
+   "fuaAreaKm2": 693,
+   "ucPop2015": 848686,
+   "ucAreaKm2": 170,
+   "commutingPop2015": 333397
+  },
+  {
+   "id": 9743,
+   "name": "Yancheng",
+   "iso": "CHN",
+   "fuaPop2015": 1176342,
+   "fuaAreaKm2": 917,
+   "ucPop2015": 716529,
+   "ucAreaKm2": 179,
+   "commutingPop2015": 459813
+  },
+  {
+   "id": 8396,
+   "name": "Jinzhou",
+   "iso": "CHN",
+   "fuaPop2015": 1171199,
+   "fuaAreaKm2": 575,
+   "ucPop2015": 947726,
+   "ucAreaKm2": 164,
+   "commutingPop2015": 223474
+  },
+  {
+   "id": 8620,
+   "name": "Shangqiu",
+   "iso": "CHN",
+   "fuaPop2015": 1136815,
+   "fuaAreaKm2": 1005,
+   "ucPop2015": 579328,
+   "ucAreaKm2": 179,
+   "commutingPop2015": 557487
+  },
+  {
+   "id": 9831,
+   "name": "Taizhou",
+   "iso": "CHN",
+   "fuaPop2015": 1131587,
+   "fuaAreaKm2": 867,
+   "ucPop2015": 715534,
+   "ucAreaKm2": 205,
+   "commutingPop2015": 416054
+  },
+  {
+   "id": 5963,
+   "name": "Mianyang",
+   "iso": "CHN",
+   "fuaPop2015": 1129793,
+   "fuaAreaKm2": 649,
+   "ucPop2015": 793265,
+   "ucAreaKm2": 137,
+   "commutingPop2015": 336528
+  },
+  {
+   "id": 7960,
+   "name": "Xingtai",
+   "iso": "CHN",
+   "fuaPop2015": 1111698,
+   "fuaAreaKm2": 674,
+   "ucPop2015": 740827,
+   "ucAreaKm2": 125,
+   "commutingPop2015": 370871
+  },
+  {
+   "id": 8963,
+   "name": "Fuyang",
+   "iso": "CHN",
+   "fuaPop2015": 1100944,
+   "fuaAreaKm2": 783,
+   "ucPop2015": 670972,
+   "ucAreaKm2": 158,
+   "commutingPop2015": 429972
+  },
+  {
+   "id": 10214,
+   "name": "Yongkang",
+   "iso": "CHN",
+   "fuaPop2015": 1091385,
+   "fuaAreaKm2": 816,
+   "ucPop2015": 722904,
+   "ucAreaKm2": 227,
+   "commutingPop2015": 368481
+  },
+  {
+   "id": 7884,
+   "name": "Zunyi",
+   "iso": "CHN",
+   "fuaPop2015": 1079361,
+   "fuaAreaKm2": 511,
+   "ucPop2015": 880924,
+   "ucAreaKm2": 122,
+   "commutingPop2015": 198437
+  },
+  {
+   "id": 8372,
+   "name": "Qinhuangdao",
+   "iso": "CHN",
+   "fuaPop2015": 1044686,
+   "fuaAreaKm2": 443,
+   "ucPop2015": 919739,
+   "ucAreaKm2": 146,
+   "commutingPop2015": 124947
+  },
+  {
+   "id": 10020,
+   "name": "Changshu",
+   "iso": "CHN",
+   "fuaPop2015": 1043191,
+   "fuaAreaKm2": 512,
+   "ucPop2015": 812990,
+   "ucAreaKm2": 146,
+   "commutingPop2015": 230201
+  },
+  {
+   "id": 9471,
+   "name": "Maoming",
+   "iso": "CHN",
+   "fuaPop2015": 1031335,
+   "fuaAreaKm2": 545,
+   "ucPop2015": 777455,
+   "ucAreaKm2": 197,
+   "commutingPop2015": 253879
+  },
+  {
+   "id": 8644,
+   "name": "Jining",
+   "iso": "CHN",
+   "fuaPop2015": 1023093,
+   "fuaAreaKm2": 525,
+   "ucPop2015": 724604,
+   "ucAreaKm2": 108,
+   "commutingPop2015": 298489
+  },
+  {
+   "id": 8356,
+   "name": "Xuchang",
+   "iso": "CHN",
+   "fuaPop2015": 1021674,
+   "fuaAreaKm2": 657,
+   "ucPop2015": 667580,
+   "ucAreaKm2": 156,
+   "commutingPop2015": 354094
+  },
+  {
+   "id": 8366,
+   "name": "Yichang",
+   "iso": "CHN",
+   "fuaPop2015": 1019239,
+   "fuaAreaKm2": 639,
+   "ucPop2015": 863221,
+   "ucAreaKm2": 143,
+   "commutingPop2015": 156018
+  },
+  {
+   "id": 8298,
+   "name": "Pingdingshan",
+   "iso": "CHN",
+   "fuaPop2015": 1018607,
+   "fuaAreaKm2": 435,
+   "ucPop2015": 802739,
+   "ucAreaKm2": 134,
+   "commutingPop2015": 215868
+  },
+  {
+   "id": 9793,
+   "name": "Ganzhou",
+   "iso": "CHN",
+   "fuaPop2015": 1008165,
+   "fuaAreaKm2": 608,
+   "ucPop2015": 805577,
+   "ucAreaKm2": 154,
+   "commutingPop2015": 202588
+  },
+  {
+   "id": 8604,
+   "name": "Tai'an",
+   "iso": "CHN",
+   "fuaPop2015": 1006438,
+   "fuaAreaKm2": 562,
+   "ucPop2015": 709078,
+   "ucAreaKm2": 124,
+   "commutingPop2015": 297360
+  },
+  {
+   "id": 8909,
+   "name": "Shaoyang",
+   "iso": "CHN",
+   "fuaPop2015": 1000826,
+   "fuaAreaKm2": 567,
+   "ucPop2015": 760307,
+   "ucAreaKm2": 128,
+   "commutingPop2015": 240519
+  },
+  {
+   "id": 536,
+   "name": "Dortmund",
+   "iso": "DEU",
+   "fuaPop2015": 5837625,
+   "fuaAreaKm2": 6303,
+   "ucPop2015": 3691645,
+   "ucAreaKm2": 1423,
+   "commutingPop2015": 2145980
+  },
+  {
+   "id": 4946,
+   "name": "Berlin",
+   "iso": "DEU",
+   "fuaPop2015": 4290483,
+   "fuaAreaKm2": 3572,
+   "ucPop2015": 3390225,
+   "ucAreaKm2": 728,
+   "commutingPop2015": 900258
+  },
+  {
+   "id": 1064,
+   "name": "Cologne",
+   "iso": "DEU",
+   "fuaPop2015": 3178672,
+   "fuaAreaKm2": 3263,
+   "ucPop2015": 1968584,
+   "ucAreaKm2": 738,
+   "commutingPop2015": 1210088
+  },
+  {
+   "id": 3093,
+   "name": "Frankfurt am Main",
+   "iso": "DEU",
+   "fuaPop2015": 3025700,
+   "fuaAreaKm2": 3323,
+   "ucPop2015": 1523828,
+   "ucAreaKm2": 494,
+   "commutingPop2015": 1501872
+  },
+  {
+   "id": 3793,
+   "name": "Hamburg",
+   "iso": "DEU",
+   "fuaPop2015": 2686300,
+   "fuaAreaKm2": 3206,
+   "ucPop2015": 1677733,
+   "ucAreaKm2": 549,
+   "commutingPop2015": 1008567
+  },
+  {
+   "id": 4736,
+   "name": "Munich",
+   "iso": "DEU",
+   "fuaPop2015": 2435209,
+   "fuaAreaKm2": 2638,
+   "ucPop2015": 1573652,
+   "ucAreaKm2": 349,
+   "commutingPop2015": 861557
+  },
+  {
+   "id": 3580,
+   "name": "Stuttgart",
+   "iso": "DEU",
+   "fuaPop2015": 2234166,
+   "fuaAreaKm2": 2159,
+   "ucPop2015": 1160180,
+   "ucAreaKm2": 404,
+   "commutingPop2015": 1073986
+  },
+  {
+   "id": 3041,
+   "name": "Mannheim",
+   "iso": "DEU",
+   "fuaPop2015": 1695403,
+   "fuaAreaKm2": 2160,
+   "ucPop2015": 663125,
+   "ucAreaKm2": 260,
+   "commutingPop2015": 1032277
+  },
+  {
+   "id": 4454,
+   "name": "Nuremberg",
+   "iso": "DEU",
+   "fuaPop2015": 1230839,
+   "fuaAreaKm2": 1874,
+   "ucPop2015": 679088,
+   "ucAreaKm2": 229,
+   "commutingPop2015": 551750
+  },
+  {
+   "id": 3667,
+   "name": "Hanover",
+   "iso": "DEU",
+   "fuaPop2015": 1111170,
+   "fuaAreaKm2": 1883,
+   "ucPop2015": 599164,
+   "ucAreaKm2": 215,
+   "commutingPop2015": 512006
+  },
+  {
+   "id": 815,
+   "name": "Dusseldorf",
+   "iso": "DEU",
+   "fuaPop2015": 1003149,
+   "fuaAreaKm2": 661,
+   "ucPop2015": 744020,
+   "ucAreaKm2": 221,
+   "commutingPop2015": 259129
+  },
+  {
+   "id": 4996,
+   "name": "Dresden",
+   "iso": "DEU",
+   "fuaPop2015": 869884,
+   "fuaAreaKm2": 1587,
+   "ucPop2015": 513723,
+   "ucAreaKm2": 178,
+   "commutingPop2015": 356161
+  },
+  {
+   "id": 2877,
+   "name": "Bremen",
+   "iso": "DEU",
+   "fuaPop2015": 868843,
+   "fuaAreaKm2": 1287,
+   "ucPop2015": 506342,
+   "ucAreaKm2": 200,
+   "commutingPop2015": 362502
+  },
+  {
+   "id": 1178,
+   "name": "Wuppertal",
+   "iso": "DEU",
+   "fuaPop2015": 843373,
+   "fuaAreaKm2": 596,
+   "ucPop2015": 604861,
+   "ucAreaKm2": 243,
+   "commutingPop2015": 238513
+  },
+  {
+   "id": 2988,
+   "name": "Karlsruhe",
+   "iso": "DEU",
+   "fuaPop2015": 794086,
+   "fuaAreaKm2": 1298,
+   "ucPop2015": 286982,
+   "ucAreaKm2": 120,
+   "commutingPop2015": 507104
+  },
+  {
+   "id": 2818,
+   "name": "Bielefeld",
+   "iso": "DEU",
+   "fuaPop2015": 750189,
+   "fuaAreaKm2": 947,
+   "ucPop2015": 264947,
+   "ucAreaKm2": 114,
+   "commutingPop2015": 485242
+  },
+  {
+   "id": 4788,
+   "name": "Leipzig",
+   "iso": "DEU",
+   "fuaPop2015": 698929,
+   "fuaAreaKm2": 1140,
+   "ucPop2015": 455581,
+   "ucAreaKm2": 163,
+   "commutingPop2015": 243348
+  },
+  {
+   "id": 388,
+   "name": "Mönchengladbach",
+   "iso": "DEU",
+   "fuaPop2015": 573225,
+   "fuaAreaKm2": 820,
+   "ucPop2015": 192285,
+   "ucAreaKm2": 72,
+   "commutingPop2015": 380940
+  },
+  {
+   "id": 1287,
+   "name": "Saarbruecken",
+   "iso": "DEU",
+   "fuaPop2015": 570240,
+   "fuaAreaKm2": 830,
+   "ucPop2015": 146109,
+   "ucAreaKm2": 65,
+   "commutingPop2015": 424131
+  },
+  {
+   "id": 4520,
+   "name": "Augsburg",
+   "iso": "DEU",
+   "fuaPop2015": 547175,
+   "fuaAreaKm2": 984,
+   "ucPop2015": 312094,
+   "ucAreaKm2": 101,
+   "commutingPop2015": 235081
+  },
+  {
+   "id": 2702,
+   "name": "Paris",
+   "iso": "FRA",
+   "fuaPop2015": 11236407,
+   "fuaAreaKm2": 6778,
+   "ucPop2015": 9775034,
+   "ucAreaKm2": 1662,
+   "commutingPop2015": 1461373
+  },
+  {
+   "id": 3718,
+   "name": "Lyon",
+   "iso": "FRA",
+   "fuaPop2015": 2056576,
+   "fuaAreaKm2": 3516,
+   "ucPop2015": 1152368,
+   "ucAreaKm2": 270,
+   "commutingPop2015": 904208
+  },
+  {
+   "id": 3911,
+   "name": "Marseille",
+   "iso": "FRA",
+   "fuaPop2015": 1357311,
+   "fuaAreaKm2": 1599,
+   "ucPop2015": 979223,
+   "ucAreaKm2": 295,
+   "commutingPop2015": 378087
+  },
+  {
+   "id": 2304,
+   "name": "Toulouse",
+   "iso": "FRA",
+   "fuaPop2015": 1264263,
+   "fuaAreaKm2": 3321,
+   "ucPop2015": 658107,
+   "ucAreaKm2": 246,
+   "commutingPop2015": 606155
+  },
+  {
+   "id": 4426,
+   "name": "Nice",
+   "iso": "FRA",
+   "fuaPop2015": 1206198,
+   "fuaAreaKm2": 2109,
+   "ucPop2015": 733095,
+   "ucAreaKm2": 290,
+   "commutingPop2015": 473103
+  },
+  {
+   "id": 3200,
+   "name": "Lille",
+   "iso": "FRA",
+   "fuaPop2015": 1205008,
+   "fuaAreaKm2": 966,
+   "ucPop2015": 868705,
+   "ucAreaKm2": 218,
+   "commutingPop2015": 336302
+  },
+  {
+   "id": 1397,
+   "name": "Bordeaux",
+   "iso": "FRA",
+   "fuaPop2015": 1045641,
+   "fuaAreaKm2": 2165,
+   "ucPop2015": 585031,
+   "ucAreaKm2": 194,
+   "commutingPop2015": 460609
+  },
+  {
+   "id": 2993,
+   "name": "Lens",
+   "iso": "FRA",
+   "fuaPop2015": 951275,
+   "fuaAreaKm2": 1629,
+   "ucPop2015": 287222,
+   "ucAreaKm2": 141,
+   "commutingPop2015": 664053
+  },
+  {
+   "id": 954,
+   "name": "Nantes",
+   "iso": "FRA",
+   "fuaPop2015": 895937,
+   "fuaAreaKm2": 2682,
+   "ucPop2015": 436853,
+   "ucAreaKm2": 144,
+   "commutingPop2015": 459084
+  },
+  {
+   "id": 4558,
+   "name": "Strasbourg",
+   "iso": "FRA",
+   "fuaPop2015": 735029,
+   "fuaAreaKm2": 1355,
+   "ucPop2015": 406840,
+   "ucAreaKm2": 127,
+   "commutingPop2015": 328188
+  },
+  {
+   "id": 2159,
+   "name": "Rouen",
+   "iso": "FRA",
+   "fuaPop2015": 671639,
+   "fuaAreaKm2": 1876,
+   "ucPop2015": 320960,
+   "ucAreaKm2": 113,
+   "commutingPop2015": 350679
+  },
+  {
+   "id": 3541,
+   "name": "Montpellier",
+   "iso": "FRA",
+   "fuaPop2015": 649423,
+   "fuaAreaKm2": 1303,
+   "ucPop2015": 293865,
+   "ucAreaKm2": 73,
+   "commutingPop2015": 355558
+  },
+  {
+   "id": 4158,
+   "name": "Toulon",
+   "iso": "FRA",
+   "fuaPop2015": 617368,
+   "fuaAreaKm2": 1265,
+   "ucPop2015": 368851,
+   "ucAreaKm2": 208,
+   "commutingPop2015": 248517
+  },
+  {
+   "id": 3984,
+   "name": "Grenoble",
+   "iso": "FRA",
+   "fuaPop2015": 610377,
+   "fuaAreaKm2": 1279,
+   "ucPop2015": 338199,
+   "ucAreaKm2": 84,
+   "commutingPop2015": 272177
+  },
+  {
+   "id": 824,
+   "name": "Rennes",
+   "iso": "FRA",
+   "fuaPop2015": 569011,
+   "fuaAreaKm2": 1613,
+   "ucPop2015": 227572,
+   "ucAreaKm2": 65,
+   "commutingPop2015": 341439
+  },
+  {
+   "id": 4393,
+   "name": "Mulhouse",
+   "iso": "FRA",
+   "fuaPop2015": 456369,
+   "fuaAreaKm2": 1176,
+   "ucPop2015": 189297,
+   "ucAreaKm2": 73,
+   "commutingPop2015": 267072
+  },
+  {
+   "id": 3628,
+   "name": "Saint-Étienne",
+   "iso": "FRA",
+   "fuaPop2015": 453895,
+   "fuaAreaKm2": 1031,
+   "ucPop2015": 172766,
+   "ucAreaKm2": 46,
+   "commutingPop2015": 281129
+  },
+  {
+   "id": 2085,
+   "name": "Tours",
+   "iso": "FRA",
+   "fuaPop2015": 445493,
+   "fuaAreaKm2": 1606,
+   "ucPop2015": 211591,
+   "ucAreaKm2": 75,
+   "commutingPop2015": 233903
+  },
+  {
+   "id": 3759,
+   "name": "Avignon",
+   "iso": "FRA",
+   "fuaPop2015": 430725,
+   "fuaAreaKm2": 1144,
+   "ucPop2015": 82995,
+   "ucAreaKm2": 38,
+   "commutingPop2015": 347730
+  },
+  {
+   "id": 3353,
+   "name": "Clermont-Ferrand",
+   "iso": "FRA",
+   "fuaPop2015": 422421,
+   "fuaAreaKm2": 1134,
+   "ucPop2015": 191311,
+   "ucAreaKm2": 70,
+   "commutingPop2015": 231110
+  },
+  {
+   "id": 5288,
+   "name": "London",
+   "iso": "GBR",
+   "fuaPop2015": 12598186,
+   "fuaAreaKm2": 6605,
+   "ucPop2015": 10765370,
+   "ucAreaKm2": 2219,
+   "commutingPop2015": 1832817
+  },
+  {
+   "id": 3304,
+   "name": "Manchester",
+   "iso": "GBR",
+   "fuaPop2015": 3270370,
+   "fuaAreaKm2": 2182,
+   "ucPop2015": 2686209,
+   "ucAreaKm2": 865,
+   "commutingPop2015": 584161
+  },
+  {
+   "id": 3799,
+   "name": "Birmingham",
+   "iso": "GBR",
+   "fuaPop2015": 2958885,
+   "fuaAreaKm2": 1786,
+   "ucPop2015": 2561609,
+   "ucAreaKm2": 718,
+   "commutingPop2015": 397276
+  },
+  {
+   "id": 4159,
+   "name": "Leeds",
+   "iso": "GBR",
+   "fuaPop2015": 2922158,
+   "fuaAreaKm2": 3044,
+   "ucPop2015": 2054748,
+   "ucAreaKm2": 781,
+   "commutingPop2015": 867409
+  },
+  {
+   "id": 955,
+   "name": "Glasgow",
+   "iso": "GBR",
+   "fuaPop2015": 1743356,
+   "fuaAreaKm2": 2350,
+   "ucPop2015": 1284148,
+   "ucAreaKm2": 426,
+   "commutingPop2015": 459208
+  },
+  {
+   "id": 4227,
+   "name": "Newcastle upon Tyne",
+   "iso": "GBR",
+   "fuaPop2015": 1687395,
+   "fuaAreaKm2": 2249,
+   "ucPop2015": 1008259,
+   "ucAreaKm2": 335,
+   "commutingPop2015": 679136
+  },
+  {
+   "id": 2374,
+   "name": "Liverpool",
+   "iso": "GBR",
+   "fuaPop2015": 1676212,
+   "fuaAreaKm2": 1038,
+   "ucPop2015": 1333733,
+   "ucAreaKm2": 446,
+   "commutingPop2015": 342479
+  },
+  {
+   "id": 4767,
+   "name": "Nottingham",
+   "iso": "GBR",
+   "fuaPop2015": 1562399,
+   "fuaAreaKm2": 2248,
+   "ucPop2015": 1008707,
+   "ucAreaKm2": 313,
+   "commutingPop2015": 553692
+  },
+  {
+   "id": 4867,
+   "name": "Portsmouth",
+   "iso": "GBR",
+   "fuaPop2015": 1338018,
+   "fuaAreaKm2": 2051,
+   "ucPop2015": 886540,
+   "ucAreaKm2": 307,
+   "commutingPop2015": 451477
+  },
+  {
+   "id": 3099,
+   "name": "Bristol",
+   "iso": "GBR",
+   "fuaPop2015": 1213639,
+   "fuaAreaKm2": 1951,
+   "ucPop2015": 684661,
+   "ucAreaKm2": 191,
+   "commutingPop2015": 528978
+  },
+  {
+   "id": 4460,
+   "name": "Sheffield",
+   "iso": "GBR",
+   "fuaPop2015": 1145122,
+   "fuaAreaKm2": 1325,
+   "ucPop2015": 778066,
+   "ucAreaKm2": 272,
+   "commutingPop2015": 367056
+  },
+  {
+   "id": 2086,
+   "name": "Cardiff",
+   "iso": "GBR",
+   "fuaPop2015": 1141469,
+   "fuaAreaKm2": 1537,
+   "ucPop2015": 484227,
+   "ucAreaKm2": 166,
+   "commutingPop2015": 657242
+  },
+  {
+   "id": 242,
+   "name": "Belfast",
+   "iso": "GBR",
+   "fuaPop2015": 947014,
+   "fuaAreaKm2": 2815,
+   "ucPop2015": 457659,
+   "ucAreaKm2": 163,
+   "commutingPop2015": 489355
+  },
+  {
+   "id": 5406,
+   "name": "Brighton",
+   "iso": "GBR",
+   "fuaPop2015": 843635,
+   "fuaAreaKm2": 1133,
+   "ucPop2015": 536047,
+   "ucAreaKm2": 156,
+   "commutingPop2015": 307588
+  },
+  {
+   "id": 4925,
+   "name": "Leicester",
+   "iso": "GBR",
+   "fuaPop2015": 691529,
+   "fuaAreaKm2": 844,
+   "ucPop2015": 481230,
+   "ucAreaKm2": 122,
+   "commutingPop2015": 210299
+  },
+  {
+   "id": 2305,
+   "name": "Edinburgh",
+   "iso": "GBR",
+   "fuaPop2015": 666233,
+   "fuaAreaKm2": 1448,
+   "ucPop2015": 465556,
+   "ucAreaKm2": 123,
+   "commutingPop2015": 200677
+  },
+  {
+   "id": 3912,
+   "name": "Bournemouth",
+   "iso": "GBR",
+   "fuaPop2015": 641528,
+   "fuaAreaKm2": 1585,
+   "ucPop2015": 359117,
+   "ucAreaKm2": 124,
+   "commutingPop2015": 282411
+  },
+  {
+   "id": 4740,
+   "name": "Middlesbrough",
+   "iso": "GBR",
+   "fuaPop2015": 639462,
+   "fuaAreaKm2": 904,
+   "ucPop2015": 423574,
+   "ucAreaKm2": 205,
+   "commutingPop2015": 215888
+  },
+  {
+   "id": 5679,
+   "name": "Southend-on-Sea",
+   "iso": "GBR",
+   "fuaPop2015": 613042,
+   "fuaAreaKm2": 528,
+   "ucPop2015": 350781,
+   "ucAreaKm2": 103,
+   "commutingPop2015": 262261
+  },
+  {
+   "id": 4328,
+   "name": "Coventry",
+   "iso": "GBR",
+   "fuaPop2015": 583972,
+   "fuaAreaKm2": 556,
+   "ucPop2015": 428131,
+   "ucAreaKm2": 126,
+   "commutingPop2015": 155841
+  },
+  {
+   "id": 7466,
+   "name": "Delhi [New Delhi]",
+   "iso": "IND",
+   "fuaPop2015": 30076708,
+   "fuaAreaKm2": 5569,
+   "ucPop2015": 28038346,
+   "ucAreaKm2": 2738,
+   "commutingPop2015": 2038362
+  },
+  {
+   "id": 10452,
+   "name": "Kolkata",
+   "iso": "IND",
+   "fuaPop2015": 23129020,
+   "fuaAreaKm2": 4586,
+   "ucPop2015": 21822366,
+   "ucAreaKm2": 2847,
+   "commutingPop2015": 1306653
+  },
+  {
+   "id": 7163,
+   "name": "Mumbai",
+   "iso": "IND",
+   "fuaPop2015": 22277275,
+   "fuaAreaKm2": 2367,
+   "ucPop2015": 21755882,
+   "ucAreaKm2": 1074,
+   "commutingPop2015": 521393
+  },
+  {
+   "id": 9099,
+   "name": "Bengaluru",
+   "iso": "IND",
+   "fuaPop2015": 11934852,
+   "fuaAreaKm2": 2054,
+   "ucPop2015": 11398101,
+   "ucAreaKm2": 766,
+   "commutingPop2015": 536751
+  },
+  {
+   "id": 9850,
+   "name": "Chennai",
+   "iso": "IND",
+   "fuaPop2015": 10577189,
+   "fuaAreaKm2": 2070,
+   "ucPop2015": 10054514,
+   "ucAreaKm2": 950,
+   "commutingPop2015": 522675
+  },
+  {
+   "id": 9045,
+   "name": "Hyderabad",
+   "iso": "IND",
+   "fuaPop2015": 8859345,
+   "fuaAreaKm2": 1904,
+   "ucPop2015": 8290620,
+   "ucAreaKm2": 907,
+   "commutingPop2015": 568724
+  },
+  {
+   "id": 5991,
+   "name": "Ahmedabad",
+   "iso": "IND",
+   "fuaPop2015": 7293274,
+   "fuaAreaKm2": 1133,
+   "ucPop2015": 6977411,
+   "ucAreaKm2": 432,
+   "commutingPop2015": 315863
+  },
+  {
+   "id": 7617,
+   "name": "Pune",
+   "iso": "IND",
+   "fuaPop2015": 7292985,
+   "fuaAreaKm2": 1558,
+   "ucPop2015": 6852484,
+   "ucAreaKm2": 670,
+   "commutingPop2015": 440501
+  },
+  {
+   "id": 6611,
+   "name": "Surat",
+   "iso": "IND",
+   "fuaPop2015": 5704834,
+   "fuaAreaKm2": 680,
+   "ucPop2015": 5596218,
+   "ucAreaKm2": 263,
+   "commutingPop2015": 108616
+  },
+  {
+   "id": 8848,
+   "name": "Lucknow",
+   "iso": "IND",
+   "fuaPop2015": 5244876,
+   "fuaAreaKm2": 1203,
+   "ucPop2015": 4879403,
+   "ucAreaKm2": 410,
+   "commutingPop2015": 365473
+  },
+  {
+   "id": 9562,
+   "name": "Varanasi",
+   "iso": "IND",
+   "fuaPop2015": 5147432,
+   "fuaAreaKm2": 1417,
+   "ucPop2015": 4188271,
+   "ucAreaKm2": 480,
+   "commutingPop2015": 959162
+  },
+  {
+   "id": 8722,
+   "name": "Kanpur",
+   "iso": "IND",
+   "fuaPop2015": 4341525,
+   "fuaAreaKm2": 807,
+   "ucPop2015": 4209013,
+   "ucAreaKm2": 291,
+   "commutingPop2015": 132512
+  },
+  {
+   "id": 8900,
+   "name": "Kochi",
+   "iso": "IND",
+   "fuaPop2015": 4079939,
+   "fuaAreaKm2": 2029,
+   "ucPop2015": 3387157,
+   "ucAreaKm2": 994,
+   "commutingPop2015": 692783
+  },
+  {
+   "id": 7320,
+   "name": "Jaipur",
+   "iso": "IND",
+   "fuaPop2015": 4070557,
+   "fuaAreaKm2": 799,
+   "ucPop2015": 3898323,
+   "ucAreaKm2": 384,
+   "commutingPop2015": 172235
+  },
+  {
+   "id": 10313,
+   "name": "Asansol",
+   "iso": "IND",
+   "fuaPop2015": 3483729,
+   "fuaAreaKm2": 818,
+   "ucPop2015": 3260360,
+   "ucAreaKm2": 360,
+   "commutingPop2015": 223368
+  },
+  {
+   "id": 7839,
+   "name": "Indore",
+   "iso": "IND",
+   "fuaPop2015": 3288988,
+   "fuaAreaKm2": 809,
+   "ucPop2015": 3043681,
+   "ucAreaKm2": 304,
+   "commutingPop2015": 245307
+  },
+  {
+   "id": 9282,
+   "name": "Prayagraj",
+   "iso": "IND",
+   "fuaPop2015": 3244738,
+   "fuaAreaKm2": 349,
+   "ucPop2015": 3056661,
+   "ucAreaKm2": 159,
+   "commutingPop2015": 188078
+  },
+  {
+   "id": 8952,
+   "name": "Nagpur",
+   "iso": "IND",
+   "fuaPop2015": 3187285,
+   "fuaAreaKm2": 835,
+   "ucPop2015": 2908828,
+   "ucAreaKm2": 260,
+   "commutingPop2015": 278458
+  },
+  {
+   "id": 10017,
+   "name": "Patna",
+   "iso": "IND",
+   "fuaPop2015": 3062410,
+   "fuaAreaKm2": 316,
+   "ucPop2015": 2946260,
+   "ucAreaKm2": 172,
+   "commutingPop2015": 116150
+  },
+  {
+   "id": 8674,
+   "name": "Guruvayur",
+   "iso": "IND",
+   "fuaPop2015": 2981881,
+   "fuaAreaKm2": 1571,
+   "ucPop2015": 2209350,
+   "ucAreaKm2": 665,
+   "commutingPop2015": 772531
+  },
+  {
+   "id": 9157,
+   "name": "Thiruvananthapuram",
+   "iso": "IND",
+   "fuaPop2015": 2850518,
+   "fuaAreaKm2": 1078,
+   "ucPop2015": 2238423,
+   "ucAreaKm2": 475,
+   "commutingPop2015": 612095
+  },
+  {
+   "id": 8997,
+   "name": "Kollam",
+   "iso": "IND",
+   "fuaPop2015": 2802509,
+   "fuaAreaKm2": 1540,
+   "ucPop2015": 2146232,
+   "ucAreaKm2": 674,
+   "commutingPop2015": 656277
+  },
+  {
+   "id": 7957,
+   "name": "Agra",
+   "iso": "IND",
+   "fuaPop2015": 2737028,
+   "fuaAreaKm2": 535,
+   "ucPop2015": 2507029,
+   "ucAreaKm2": 228,
+   "commutingPop2015": 229999
+  },
+  {
+   "id": 9069,
+   "name": "Coimbatore",
+   "iso": "IND",
+   "fuaPop2015": 2672462,
+   "fuaAreaKm2": 1076,
+   "ucPop2015": 2204880,
+   "ucAreaKm2": 366,
+   "commutingPop2015": 467582
+  },
+  {
+   "id": 8673,
+   "name": "Kozhikode",
+   "iso": "IND",
+   "fuaPop2015": 2598494,
+   "fuaAreaKm2": 993,
+   "ucPop2015": 2209629,
+   "ucAreaKm2": 478,
+   "commutingPop2015": 388866
+  },
+  {
+   "id": 6781,
+   "name": "Chandigarh",
+   "iso": "IND",
+   "fuaPop2015": 2513988,
+   "fuaAreaKm2": 769,
+   "ucPop2015": 2249001,
+   "ucAreaKm2": 296,
+   "commutingPop2015": 264988
+  },
+  {
+   "id": 7643,
+   "name": "Meerut",
+   "iso": "IND",
+   "fuaPop2015": 2422104,
+   "fuaAreaKm2": 577,
+   "ucPop2015": 2220266,
+   "ucAreaKm2": 247,
+   "commutingPop2015": 201838
+  },
+  {
+   "id": 6651,
+   "name": "Vadodara",
+   "iso": "IND",
+   "fuaPop2015": 2280235,
+   "fuaAreaKm2": 591,
+   "ucPop2015": 2113535,
+   "ucAreaKm2": 228,
+   "commutingPop2015": 166701
+  },
+  {
+   "id": 8258,
+   "name": "Bhopal",
+   "iso": "IND",
+   "fuaPop2015": 2239296,
+   "fuaAreaKm2": 500,
+   "ucPop2015": 2077320,
+   "ucAreaKm2": 219,
+   "commutingPop2015": 161976
+  },
+  {
+   "id": 10243,
+   "name": "Dhanbad",
+   "iso": "IND",
+   "fuaPop2015": 2233108,
+   "fuaAreaKm2": 755,
+   "ucPop2015": 2087167,
+   "ucAreaKm2": 284,
+   "commutingPop2015": 145942
+  },
+  {
+   "id": 9500,
+   "name": "Gorakhpur",
+   "iso": "IND",
+   "fuaPop2015": 2186426,
+   "fuaAreaKm2": 506,
+   "ucPop2015": 2043655,
+   "ucAreaKm2": 171,
+   "commutingPop2015": 142771
+  },
+  {
+   "id": 10441,
+   "name": "Tamluk",
+   "iso": "IND",
+   "fuaPop2015": 2162558,
+   "fuaAreaKm2": 900,
+   "ucPop2015": 1692840,
+   "ucAreaKm2": 432,
+   "commutingPop2015": 469718
+  },
+  {
+   "id": 6065,
+   "name": "Ludhiana",
+   "iso": "IND",
+   "fuaPop2015": 2130484,
+   "fuaAreaKm2": 627,
+   "ucPop2015": 1800152,
+   "ucAreaKm2": 254,
+   "commutingPop2015": 330331
+  },
+  {
+   "id": 9444,
+   "name": "Madurai",
+   "iso": "IND",
+   "fuaPop2015": 2033425,
+   "fuaAreaKm2": 388,
+   "ucPop2015": 1872298,
+   "ucAreaKm2": 128,
+   "commutingPop2015": 161127
+  },
+  {
+   "id": 9195,
+   "name": "Faizabad",
+   "iso": "IND",
+   "fuaPop2015": 1955326,
+   "fuaAreaKm2": 395,
+   "ucPop2015": 1825357,
+   "ucAreaKm2": 115,
+   "commutingPop2015": 129969
+  },
+  {
+   "id": 10007,
+   "name": "Muzaffarpur",
+   "iso": "IND",
+   "fuaPop2015": 1953556,
+   "fuaAreaKm2": 621,
+   "ucPop2015": 1526372,
+   "ucAreaKm2": 222,
+   "commutingPop2015": 427184
+  },
+  {
+   "id": 7499,
+   "name": "Nashik",
+   "iso": "IND",
+   "fuaPop2015": 1897851,
+   "fuaAreaKm2": 485,
+   "ucPop2015": 1775255,
+   "ucAreaKm2": 179,
+   "commutingPop2015": 122595
+  },
+  {
+   "id": 10142,
+   "name": "Visakhapatnam",
+   "iso": "IND",
+   "fuaPop2015": 1889152,
+   "fuaAreaKm2": 443,
+   "ucPop2015": 1798135,
+   "ucAreaKm2": 242,
+   "commutingPop2015": 91017
+  },
+  {
+   "id": 7961,
+   "name": "Aurangabad",
+   "iso": "IND",
+   "fuaPop2015": 1861222,
+   "fuaAreaKm2": 345,
+   "ucPop2015": 1797578,
+   "ucAreaKm2": 150,
+   "commutingPop2015": 63644
+  },
+  {
+   "id": 7933,
+   "name": "Moradabad",
+   "iso": "IND",
+   "fuaPop2015": 1842998,
+   "fuaAreaKm2": 420,
+   "ucPop2015": 1711315,
+   "ucAreaKm2": 156,
+   "commutingPop2015": 131684
+  },
+  {
+   "id": 9368,
+   "name": "Salem",
+   "iso": "IND",
+   "fuaPop2015": 1831357,
+   "fuaAreaKm2": 518,
+   "ucPop2015": 1596028,
+   "ucAreaKm2": 175,
+   "commutingPop2015": 235329
+  },
+  {
+   "id": 10285,
+   "name": "Jamshedpur",
+   "iso": "IND",
+   "fuaPop2015": 1807392,
+   "fuaAreaKm2": 265,
+   "ucPop2015": 1765135,
+   "ucAreaKm2": 150,
+   "commutingPop2015": 42257
+  },
+  {
+   "id": 10168,
+   "name": "Ranchi",
+   "iso": "IND",
+   "fuaPop2015": 1789434,
+   "fuaAreaKm2": 459,
+   "ucPop2015": 1592224,
+   "ucAreaKm2": 146,
+   "commutingPop2015": 197210
+  },
+  {
+   "id": 8224,
+   "name": "Bareilly",
+   "iso": "IND",
+   "fuaPop2015": 1761174,
+   "fuaAreaKm2": 294,
+   "ucPop2015": 1649587,
+   "ucAreaKm2": 138,
+   "commutingPop2015": 111587
+  },
+  {
+   "id": 7895,
+   "name": "Aligarh",
+   "iso": "IND",
+   "fuaPop2015": 1749765,
+   "fuaAreaKm2": 338,
+   "ucPop2015": 1617980,
+   "ucAreaKm2": 116,
+   "commutingPop2015": 131785
+  },
+  {
+   "id": 9007,
+   "name": "Jabalpur",
+   "iso": "IND",
+   "fuaPop2015": 1706856,
+   "fuaAreaKm2": 362,
+   "ucPop2015": 1609651,
+   "ucAreaKm2": 119,
+   "commutingPop2015": 97204
+  },
+  {
+   "id": 8497,
+   "name": "Kannur",
+   "iso": "IND",
+   "fuaPop2015": 1602873,
+   "fuaAreaKm2": 754,
+   "ucPop2015": 1376494,
+   "ucAreaKm2": 401,
+   "commutingPop2015": 226378
+  },
+  {
+   "id": 8144,
+   "name": "Gwalior",
+   "iso": "IND",
+   "fuaPop2015": 1602740,
+   "fuaAreaKm2": 232,
+   "ucPop2015": 1525101,
+   "ucAreaKm2": 107,
+   "commutingPop2015": 77639
+  },
+  {
+   "id": 9620,
+   "name": "Raipur",
+   "iso": "IND",
+   "fuaPop2015": 1590781,
+   "fuaAreaKm2": 504,
+   "ucPop2015": 1435494,
+   "ucAreaKm2": 191,
+   "commutingPop2015": 155287
+  },
+  {
+   "id": 10432,
+   "name": "Berhampore",
+   "iso": "IND",
+   "fuaPop2015": 1585052,
+   "fuaAreaKm2": 427,
+   "ucPop2015": 1323761,
+   "ucAreaKm2": 179,
+   "commutingPop2015": 261292
+  },
+  {
+   "id": 9266,
+   "name": "Erode",
+   "iso": "IND",
+   "fuaPop2015": 1582499,
+   "fuaAreaKm2": 579,
+   "ucPop2015": 1355557,
+   "ucAreaKm2": 220,
+   "commutingPop2015": 226942
+  },
+  {
+   "id": 8319,
+   "name": "Mangaluru",
+   "iso": "IND",
+   "fuaPop2015": 1574537,
+   "fuaAreaKm2": 764,
+   "ucPop2015": 1319425,
+   "ucAreaKm2": 356,
+   "commutingPop2015": 255112
+  },
+  {
+   "id": 5324,
+   "name": "Jodhpur",
+   "iso": "IND",
+   "fuaPop2015": 1553530,
+   "fuaAreaKm2": 408,
+   "ucPop2015": 1456836,
+   "ucAreaKm2": 182,
+   "commutingPop2015": 96694
+  },
+  {
+   "id": 9794,
+   "name": "Vijayawada",
+   "iso": "IND",
+   "fuaPop2015": 1551705,
+   "fuaAreaKm2": 314,
+   "ucPop2015": 1462128,
+   "ucAreaKm2": 142,
+   "commutingPop2015": 89576
+  },
+  {
+   "id": 9165,
+   "name": "Tiruppur",
+   "iso": "IND",
+   "fuaPop2015": 1537199,
+   "fuaAreaKm2": 569,
+   "ucPop2015": 1390277,
+   "ucAreaKm2": 201,
+   "commutingPop2015": 146922
+  },
+  {
+   "id": 7139,
+   "name": "Vasai-Virar",
+   "iso": "IND",
+   "fuaPop2015": 1487095,
+   "fuaAreaKm2": 292,
+   "ucPop2015": 1410559,
+   "ucAreaKm2": 172,
+   "commutingPop2015": 76536
+  },
+  {
+   "id": 8595,
+   "name": "Thalassery",
+   "iso": "IND",
+   "fuaPop2015": 1480751,
+   "fuaAreaKm2": 610,
+   "ucPop2015": 1217014,
+   "ucAreaKm2": 254,
+   "commutingPop2015": 263736
+  },
+  {
+   "id": 8896,
+   "name": "Mysuru",
+   "iso": "IND",
+   "fuaPop2015": 1460486,
+   "fuaAreaKm2": 377,
+   "ucPop2015": 1396068,
+   "ucAreaKm2": 139,
+   "commutingPop2015": 64418
+  },
+  {
+   "id": 3722,
+   "name": "Rajkot",
+   "iso": "IND",
+   "fuaPop2015": 1454166,
+   "fuaAreaKm2": 323,
+   "ucPop2015": 1379759,
+   "ucAreaKm2": 119,
+   "commutingPop2015": 74407
+  },
+  {
+   "id": 9544,
+   "name": "Tiruchirappalli",
+   "iso": "IND",
+   "fuaPop2015": 1389314,
+   "fuaAreaKm2": 404,
+   "ucPop2015": 1267905,
+   "ucAreaKm2": 151,
+   "commutingPop2015": 121409
+  },
+  {
+   "id": 10496,
+   "name": "Guwahati",
+   "iso": "IND",
+   "fuaPop2015": 1380917,
+   "fuaAreaKm2": 521,
+   "ucPop2015": 1223790,
+   "ucAreaKm2": 234,
+   "commutingPop2015": 157127
+  },
+  {
+   "id": 4396,
+   "name": "Amritsar",
+   "iso": "IND",
+   "fuaPop2015": 1348035,
+   "fuaAreaKm2": 431,
+   "ucPop2015": 1209649,
+   "ucAreaKm2": 150,
+   "commutingPop2015": 138386
+  },
+  {
+   "id": 9570,
+   "name": "Vellore",
+   "iso": "IND",
+   "fuaPop2015": 1342766,
+   "fuaAreaKm2": 497,
+   "ucPop2015": 1162076,
+   "ucAreaKm2": 177,
+   "commutingPop2015": 180690
+  },
+  {
+   "id": 9013,
+   "name": "Ettumanoor",
+   "iso": "IND",
+   "fuaPop2015": 1314887,
+   "fuaAreaKm2": 699,
+   "ucPop2015": 1044045,
+   "ucAreaKm2": 249,
+   "commutingPop2015": 270842
+  },
+  {
+   "id": 2091,
+   "name": "Srinagar",
+   "iso": "IND",
+   "fuaPop2015": 1298095,
+   "fuaAreaKm2": 402,
+   "ucPop2015": 1105045,
+   "ucAreaKm2": 155,
+   "commutingPop2015": 193050
+  },
+  {
+   "id": 7490,
+   "name": "Saharanpur",
+   "iso": "IND",
+   "fuaPop2015": 1260280,
+   "fuaAreaKm2": 225,
+   "ucPop2015": 1134418,
+   "ucAreaKm2": 92,
+   "commutingPop2015": 125862
+  },
+  {
+   "id": 9258,
+   "name": "Sultanpur",
+   "iso": "IND",
+   "fuaPop2015": 1243185,
+   "fuaAreaKm2": 103,
+   "ucPop2015": 1165748,
+   "ucAreaKm2": 31,
+   "commutingPop2015": 77437
+  },
+  {
+   "id": 9564,
+   "name": "Durg",
+   "iso": "IND",
+   "fuaPop2015": 1235053,
+   "fuaAreaKm2": 331,
+   "ucPop2015": 1154996,
+   "ucAreaKm2": 175,
+   "commutingPop2015": 80057
+  },
+  {
+   "id": 8587,
+   "name": "Hardoi",
+   "iso": "IND",
+   "fuaPop2015": 1195724,
+   "fuaAreaKm2": 52,
+   "ucPop2015": 1185764,
+   "ucAreaKm2": 25,
+   "commutingPop2015": 9960
+  },
+  {
+   "id": 5617,
+   "name": "Jalandhar",
+   "iso": "IND",
+   "fuaPop2015": 1193166,
+   "fuaAreaKm2": 369,
+   "ucPop2015": 992193,
+   "ucAreaKm2": 132,
+   "commutingPop2015": 200973
+  },
+  {
+   "id": 8675,
+   "name": "Malappuram",
+   "iso": "IND",
+   "fuaPop2015": 1166412,
+   "fuaAreaKm2": 611,
+   "ucPop2015": 838579,
+   "ucAreaKm2": 260,
+   "commutingPop2015": 327833
+  },
+  {
+   "id": 7581,
+   "name": "Dehradun",
+   "iso": "IND",
+   "fuaPop2015": 1157125,
+   "fuaAreaKm2": 284,
+   "ucPop2015": 1071076,
+   "ucAreaKm2": 116,
+   "commutingPop2015": 86049
+  },
+  {
+   "id": 10354,
+   "name": "Bhubaneshwar",
+   "iso": "IND",
+   "fuaPop2015": 1156974,
+   "fuaAreaKm2": 301,
+   "ucPop2015": 1010642,
+   "ucAreaKm2": 144,
+   "commutingPop2015": 146333
+  },
+  {
+   "id": 3357,
+   "name": "Jammu",
+   "iso": "IND",
+   "fuaPop2015": 1155696,
+   "fuaAreaKm2": 345,
+   "ucPop2015": 1021219,
+   "ucAreaKm2": 134,
+   "commutingPop2015": 134477
+  },
+  {
+   "id": 10152,
+   "name": "Begusarai",
+   "iso": "IND",
+   "fuaPop2015": 1150857,
+   "fuaAreaKm2": 249,
+   "ucPop2015": 993322,
+   "ucAreaKm2": 134,
+   "commutingPop2015": 157535
+  },
+  {
+   "id": 7601,
+   "name": "Kota",
+   "iso": "IND",
+   "fuaPop2015": 1147923,
+   "fuaAreaKm2": 287,
+   "ucPop2015": 1059888,
+   "ucAreaKm2": 129,
+   "commutingPop2015": 88035
+  },
+  {
+   "id": 8341,
+   "name": "Solapur",
+   "iso": "IND",
+   "fuaPop2015": 1145587,
+   "fuaAreaKm2": 280,
+   "ucPop2015": 1059904,
+   "ucAreaKm2": 82,
+   "commutingPop2015": 85683
+  },
+  {
+   "id": 7108,
+   "name": "Silvassa",
+   "iso": "IND",
+   "fuaPop2015": 1139260,
+   "fuaAreaKm2": 374,
+   "ucPop2015": 983328,
+   "ucAreaKm2": 158,
+   "commutingPop2015": 155932
+  },
+  {
+   "id": 10533,
+   "name": "Imphal",
+   "iso": "IND",
+   "fuaPop2015": 1102315,
+   "fuaAreaKm2": 609,
+   "ucPop2015": 833788,
+   "ucAreaKm2": 212,
+   "commutingPop2015": 268528
+  },
+  {
+   "id": 9129,
+   "name": "Gonda",
+   "iso": "IND",
+   "fuaPop2015": 1074100,
+   "fuaAreaKm2": 66,
+   "ucPop2015": 1066419,
+   "ucAreaKm2": 29,
+   "commutingPop2015": 7681
+  },
+  {
+   "id": 7631,
+   "name": "Haridwar",
+   "iso": "IND",
+   "fuaPop2015": 1056635,
+   "fuaAreaKm2": 361,
+   "ucPop2015": 981833,
+   "ucAreaKm2": 151,
+   "commutingPop2015": 74801
+  },
+  {
+   "id": 7881,
+   "name": "Kolhapur",
+   "iso": "IND",
+   "fuaPop2015": 1055484,
+   "fuaAreaKm2": 279,
+   "ucPop2015": 962082,
+   "ucAreaKm2": 132,
+   "commutingPop2015": 93402
+  },
+  {
+   "id": 8433,
+   "name": "Shahjahanpur",
+   "iso": "IND",
+   "fuaPop2015": 1044912,
+   "fuaAreaKm2": 218,
+   "ucPop2015": 992380,
+   "ucAreaKm2": 75,
+   "commutingPop2015": 52532
+  },
+  {
+   "id": 10065,
+   "name": "Gaya",
+   "iso": "IND",
+   "fuaPop2015": 1042313,
+   "fuaAreaKm2": 188,
+   "ucPop2015": 949377,
+   "ucAreaKm2": 88,
+   "commutingPop2015": 92936
+  },
+  {
+   "id": 8419,
+   "name": "Farrukhabad",
+   "iso": "IND",
+   "fuaPop2015": 1028593,
+   "fuaAreaKm2": 76,
+   "ucPop2015": 1013702,
+   "ucAreaKm2": 45,
+   "commutingPop2015": 14891
+  },
+  {
+   "id": 7996,
+   "name": "Sangli",
+   "iso": "IND",
+   "fuaPop2015": 1027679,
+   "fuaAreaKm2": 225,
+   "ucPop2015": 965925,
+   "ucAreaKm2": 97,
+   "commutingPop2015": 61754
+  },
+  {
+   "id": 9710,
+   "name": "Bilaspur",
+   "iso": "IND",
+   "fuaPop2015": 1010598,
+   "fuaAreaKm2": 299,
+   "ucPop2015": 900278,
+   "ucAreaKm2": 95,
+   "commutingPop2015": 110319
+  },
+  {
+   "id": 9834,
+   "name": "Puducherry",
+   "iso": "IND",
+   "fuaPop2015": 1008954,
+   "fuaAreaKm2": 274,
+   "ucPop2015": 876032,
+   "ucAreaKm2": 94,
+   "commutingPop2015": 132922
+  },
+  {
+   "id": 8686,
+   "name": "Lakhimpur",
+   "iso": "IND",
+   "fuaPop2015": 1001347,
+   "fuaAreaKm2": 55,
+   "ucPop2015": 985457,
+   "ucAreaKm2": 27,
+   "commutingPop2015": 15890
+  },
+  {
+   "id": 1600,
+   "name": "Milan",
+   "iso": "ITA",
+   "fuaPop2015": 5121996,
+   "fuaAreaKm2": 3393,
+   "ucPop2015": 3511173,
+   "ucAreaKm2": 939,
+   "commutingPop2015": 1610823
+  },
+  {
+   "id": 4333,
+   "name": "Naples",
+   "iso": "ITA",
+   "fuaPop2015": 4054333,
+   "fuaAreaKm2": 2318,
+   "ucPop2015": 3472375,
+   "ucAreaKm2": 983,
+   "commutingPop2015": 581958
+  },
+  {
+   "id": 3881,
+   "name": "Rome",
+   "iso": "ITA",
+   "fuaPop2015": 3501925,
+   "fuaAreaKm2": 2696,
+   "ucPop2015": 2617091,
+   "ucAreaKm2": 558,
+   "commutingPop2015": 884834
+  },
+  {
+   "id": 85,
+   "name": "Turin",
+   "iso": "ITA",
+   "fuaPop2015": 1784834,
+   "fuaAreaKm2": 1708,
+   "ucPop2015": 1205385,
+   "ucAreaKm2": 207,
+   "commutingPop2015": 579449
+  },
+  {
+   "id": 3106,
+   "name": "Florence",
+   "iso": "ITA",
+   "fuaPop2015": 970041,
+   "fuaAreaKm2": 1205,
+   "ucPop2015": 656570,
+   "ucAreaKm2": 162,
+   "commutingPop2015": 313470
+  },
+  {
+   "id": 1943,
+   "name": "Bergamo",
+   "iso": "ITA",
+   "fuaPop2015": 958534,
+   "fuaAreaKm2": 1119,
+   "ucPop2015": 353586,
+   "ucAreaKm2": 139,
+   "commutingPop2015": 604948
+  },
+  {
+   "id": 4232,
+   "name": "Palermo",
+   "iso": "ITA",
+   "fuaPop2015": 954443,
+   "fuaAreaKm2": 675,
+   "ucPop2015": 758885,
+   "ucAreaKm2": 168,
+   "commutingPop2015": 195558
+  },
+  {
+   "id": 4658,
+   "name": "Catania",
+   "iso": "ITA",
+   "fuaPop2015": 765268,
+   "fuaAreaKm2": 482,
+   "ucPop2015": 555375,
+   "ucAreaKm2": 145,
+   "commutingPop2015": 209892
+  },
+  {
+   "id": 1309,
+   "name": "Genoa",
+   "iso": "ITA",
+   "fuaPop2015": 723323,
+   "fuaAreaKm2": 860,
+   "ucPop2015": 542961,
+   "ucAreaKm2": 107,
+   "commutingPop2015": 180362
+  },
+  {
+   "id": 3360,
+   "name": "Padua",
+   "iso": "ITA",
+   "fuaPop2015": 714151,
+   "fuaAreaKm2": 904,
+   "ucPop2015": 217448,
+   "ucAreaKm2": 81,
+   "commutingPop2015": 496702
+  },
+  {
+   "id": 3157,
+   "name": "Bologna",
+   "iso": "ITA",
+   "fuaPop2015": 648242,
+   "fuaAreaKm2": 900,
+   "ucPop2015": 421342,
+   "ucAreaKm2": 96,
+   "commutingPop2015": 226900
+  },
+  {
+   "id": 5004,
+   "name": "Bari",
+   "iso": "ITA",
+   "fuaPop2015": 605823,
+   "fuaAreaKm2": 487,
+   "ucPop2015": 310239,
+   "ucAreaKm2": 80,
+   "commutingPop2015": 295584
+  },
+  {
+   "id": 2312,
+   "name": "Brescia",
+   "iso": "ITA",
+   "fuaPop2015": 511888,
+   "fuaAreaKm2": 560,
+   "ucPop2015": 190609,
+   "ucAreaKm2": 57,
+   "commutingPop2015": 321279
+  },
+  {
+   "id": 2772,
+   "name": "Verona",
+   "iso": "ITA",
+   "fuaPop2015": 499032,
+   "fuaAreaKm2": 620,
+   "ucPop2015": 200722,
+   "ucAreaKm2": 48,
+   "commutingPop2015": 298310
+  },
+  {
+   "id": 4299,
+   "name": "Pescara",
+   "iso": "ITA",
+   "fuaPop2015": 402707,
+   "fuaAreaKm2": 619,
+   "ucPop2015": 212410,
+   "ucAreaKm2": 81,
+   "commutingPop2015": 190298
+  },
+  {
+   "id": 3454,
+   "name": "Mestre",
+   "iso": "ITA",
+   "fuaPop2015": 380079,
+   "fuaAreaKm2": 394,
+   "ucPop2015": 156228,
+   "ucAreaKm2": 64,
+   "commutingPop2015": 223851
+  },
+  {
+   "id": 4498,
+   "name": "Salerno",
+   "iso": "ITA",
+   "fuaPop2015": 379126,
+   "fuaAreaKm2": 425,
+   "ucPop2015": 227612,
+   "ucAreaKm2": 71,
+   "commutingPop2015": 151513
+  },
+  {
+   "id": 2019,
+   "name": "Cagliari",
+   "iso": "ITA",
+   "fuaPop2015": 374106,
+   "fuaAreaKm2": 390,
+   "ucPop2015": 251635,
+   "ucAreaKm2": 64,
+   "commutingPop2015": 122471
+  },
+  {
+   "id": 3259,
+   "name": "Vicenza",
+   "iso": "ITA",
+   "fuaPop2015": 306587,
+   "fuaAreaKm2": 538,
+   "ucPop2015": 94715,
+   "ucAreaKm2": 29,
+   "commutingPop2015": 211871
+  },
+  {
+   "id": 2832,
+   "name": "Modena",
+   "iso": "ITA",
+   "fuaPop2015": 300393,
+   "fuaAreaKm2": 440,
+   "ucPop2015": 142871,
+   "ucAreaKm2": 31,
+   "commutingPop2015": 157523
+  },
+  {
+   "id": 5129,
+   "name": "Tokyo",
+   "iso": "JPN",
+   "fuaPop2015": 36471787,
+   "fuaAreaKm2": 11971,
+   "ucPop2015": 33538533,
+   "ucAreaKm2": 5582,
+   "commutingPop2015": 2933254
+  },
+  {
+   "id": 3956,
+   "name": "Osaka [Kyoto]",
+   "iso": "JPN",
+   "fuaPop2015": 17621766,
+   "fuaAreaKm2": 10090,
+   "ucPop2015": 15857216,
+   "ucAreaKm2": 3202,
+   "commutingPop2015": 1764549
+  },
+  {
+   "id": 4532,
+   "name": "Nagoya",
+   "iso": "JPN",
+   "fuaPop2015": 9590442,
+   "fuaAreaKm2": 7350,
+   "ucPop2015": 7891116,
+   "ucAreaKm2": 2747,
+   "commutingPop2015": 1699326
+  },
+  {
+   "id": 708,
+   "name": "Fukuoka",
+   "iso": "JPN",
+   "fuaPop2015": 2998821,
+   "fuaAreaKm2": 1938,
+   "ucPop2015": 2341184,
+   "ucAreaKm2": 579,
+   "commutingPop2015": 657637
+  },
+  {
+   "id": 5005,
+   "name": "Takasaki [Maebashi]",
+   "iso": "JPN",
+   "fuaPop2015": 2237876,
+   "fuaAreaKm2": 2717,
+   "ucPop2015": 1173901,
+   "ucAreaKm2": 630,
+   "commutingPop2015": 1063975
+  },
+  {
+   "id": 266,
+   "name": "Sapporo",
+   "iso": "JPN",
+   "fuaPop2015": 2222113,
+   "fuaAreaKm2": 1544,
+   "ucPop2015": 1894557,
+   "ucAreaKm2": 387,
+   "commutingPop2015": 327556
+  },
+  {
+   "id": 2648,
+   "name": "Hiroshima",
+   "iso": "JPN",
+   "fuaPop2015": 1633747,
+   "fuaAreaKm2": 1553,
+   "ucPop2015": 1285669,
+   "ucAreaKm2": 383,
+   "commutingPop2015": 348078
+  },
+  {
+   "id": 843,
+   "name": "Kitakyushu",
+   "iso": "JPN",
+   "fuaPop2015": 1589886,
+   "fuaAreaKm2": 1535,
+   "ucPop2015": 1203250,
+   "ucAreaKm2": 530,
+   "commutingPop2015": 386637
+  },
+  {
+   "id": 4822,
+   "name": "Sendai",
+   "iso": "JPN",
+   "fuaPop2015": 1517061,
+   "fuaAreaKm2": 1419,
+   "ucPop2015": 1142678,
+   "ucAreaKm2": 331,
+   "commutingPop2015": 374383
+  },
+  {
+   "id": 3549,
+   "name": "Okayama",
+   "iso": "JPN",
+   "fuaPop2015": 1417357,
+   "fuaAreaKm2": 1816,
+   "ucPop2015": 829536,
+   "ucAreaKm2": 398,
+   "commutingPop2015": 587820
+  },
+  {
+   "id": 4199,
+   "name": "Naha",
+   "iso": "JPN",
+   "fuaPop2015": 1160097,
+   "fuaAreaKm2": 691,
+   "ucPop2015": 942036,
+   "ucAreaKm2": 267,
+   "commutingPop2015": 218060
+  },
+  {
+   "id": 5222,
+   "name": "Shizuoka",
+   "iso": "JPN",
+   "fuaPop2015": 1153826,
+   "fuaAreaKm2": 1120,
+   "ucPop2015": 897703,
+   "ucAreaKm2": 335,
+   "commutingPop2015": 256123
+  },
+  {
+   "id": 5091,
+   "name": "Hamamatsu",
+   "iso": "JPN",
+   "fuaPop2015": 1099105,
+   "fuaAreaKm2": 1219,
+   "ucPop2015": 718870,
+   "ucAreaKm2": 330,
+   "commutingPop2015": 380235
+  },
+  {
+   "id": 2382,
+   "name": "Kumamoto",
+   "iso": "JPN",
+   "fuaPop2015": 1068108,
+   "fuaAreaKm2": 1123,
+   "ucPop2015": 605471,
+   "ucAreaKm2": 223,
+   "commutingPop2015": 462636
+  },
+  {
+   "id": 5258,
+   "name": "Mishima",
+   "iso": "JPN",
+   "fuaPop2015": 959950,
+   "fuaAreaKm2": 977,
+   "ucPop2015": 658590,
+   "ucAreaKm2": 244,
+   "commutingPop2015": 301360
+  },
+  {
+   "id": 5309,
+   "name": "Mito",
+   "iso": "JPN",
+   "fuaPop2015": 925248,
+   "fuaAreaKm2": 1269,
+   "ucPop2015": 447270,
+   "ucAreaKm2": 196,
+   "commutingPop2015": 477978
+  },
+  {
+   "id": 4400,
+   "name": "Niigata",
+   "iso": "JPN",
+   "fuaPop2015": 885233,
+   "fuaAreaKm2": 981,
+   "ucPop2015": 372503,
+   "ucAreaKm2": 171,
+   "commutingPop2015": 512731
+  },
+  {
+   "id": 4267,
+   "name": "Toyama",
+   "iso": "JPN",
+   "fuaPop2015": 825189,
+   "fuaAreaKm2": 952,
+   "ucPop2015": 355033,
+   "ucAreaKm2": 192,
+   "commutingPop2015": 470155
+  },
+  {
+   "id": 5149,
+   "name": "Utsunomiya",
+   "iso": "JPN",
+   "fuaPop2015": 815284,
+   "fuaAreaKm2": 959,
+   "ucPop2015": 312681,
+   "ucAreaKm2": 109,
+   "commutingPop2015": 502603
+  },
+  {
+   "id": 4367,
+   "name": "Moriyama [Otsu]",
+   "iso": "JPN",
+   "fuaPop2015": 809124,
+   "fuaAreaKm2": 889,
+   "ucPop2015": 514884,
+   "ucAreaKm2": 218,
+   "commutingPop2015": 294241
+  },
+  {
+   "id": 7244,
+   "name": "New York",
+   "iso": "USA",
+   "fuaPop2015": 19523053,
+   "fuaAreaKm2": 17489,
+   "ucPop2015": 16668394,
+   "ucAreaKm2": 6057,
+   "commutingPop2015": 2854659
+  },
+  {
+   "id": 1642,
+   "name": "Los Angeles",
+   "iso": "USA",
+   "fuaPop2015": 15655357,
+   "fuaAreaKm2": 10407,
+   "ucPop2015": 14865831,
+   "ucAreaKm2": 5931,
+   "commutingPop2015": 789527
+  },
+  {
+   "id": 6654,
+   "name": "Chicago",
+   "iso": "USA",
+   "fuaPop2015": 8797569,
+   "fuaAreaKm2": 13185,
+   "ucPop2015": 7398069,
+   "ucAreaKm2": 4302,
+   "commutingPop2015": 1399500
+  },
+  {
+   "id": 5543,
+   "name": "Dallas",
+   "iso": "USA",
+   "fuaPop2015": 7077558,
+   "fuaAreaKm2": 19826,
+   "ucPop2015": 5405265,
+   "ucAreaKm2": 3869,
+   "commutingPop2015": 1672293
+  },
+  {
+   "id": 5511,
+   "name": "Houston",
+   "iso": "USA",
+   "fuaPop2015": 6442256,
+   "fuaAreaKm2": 15114,
+   "ucPop2015": 4989092,
+   "ucAreaKm2": 3496,
+   "commutingPop2015": 1453164
+  },
+  {
+   "id": 7165,
+   "name": "Philadelphia",
+   "iso": "USA",
+   "fuaPop2015": 6113871,
+   "fuaAreaKm2": 11525,
+   "ucPop2015": 3502597,
+   "ucAreaKm2": 1732,
+   "commutingPop2015": 2611274
+  },
+  {
+   "id": 6442,
+   "name": "Miami",
+   "iso": "USA",
+   "fuaPop2015": 5808585,
+   "fuaAreaKm2": 6494,
+   "ucPop2015": 5536125,
+   "ucAreaKm2": 3113,
+   "commutingPop2015": 272461
+  },
+  {
+   "id": 7068,
+   "name": "Washington D.C.",
+   "iso": "USA",
+   "fuaPop2015": 5638694,
+   "fuaAreaKm2": 7446,
+   "ucPop2015": 4047673,
+   "ucAreaKm2": 1926,
+   "commutingPop2015": 1591021
+  },
+  {
+   "id": 6451,
+   "name": "Atlanta",
+   "iso": "USA",
+   "fuaPop2015": 5591339,
+   "fuaAreaKm2": 12348,
+   "ucPop2015": 1775863,
+   "ucAreaKm2": 1406,
+   "commutingPop2015": 3815476
+  },
+  {
+   "id": 1255,
+   "name": "San Jose",
+   "iso": "USA",
+   "fuaPop2015": 5118912,
+   "fuaAreaKm2": 4038,
+   "ucPop2015": 4710667,
+   "ucAreaKm2": 1790,
+   "commutingPop2015": 408245
+  },
+  {
+   "id": 4211,
+   "name": "Phoenix",
+   "iso": "USA",
+   "fuaPop2015": 4567289,
+   "fuaAreaKm2": 9707,
+   "ucPop2015": 3669962,
+   "ucAreaKm2": 2332,
+   "commutingPop2015": 897327
+  },
+  {
+   "id": 6948,
+   "name": "Detroit",
+   "iso": "USA",
+   "fuaPop2015": 4065589,
+   "fuaAreaKm2": 8184,
+   "ucPop2015": 3024761,
+   "ucAreaKm2": 2362,
+   "commutingPop2015": 1040828
+  },
+  {
+   "id": 4510,
+   "name": "Seattle",
+   "iso": "USA",
+   "fuaPop2015": 3866487,
+   "fuaAreaKm2": 8328,
+   "ucPop2015": 2678205,
+   "ucAreaKm2": 1885,
+   "commutingPop2015": 1188282
+  },
+  {
+   "id": 6433,
+   "name": "Minneapolis [Saint Paul]",
+   "iso": "USA",
+   "fuaPop2015": 3273027,
+   "fuaAreaKm2": 9833,
+   "ucPop2015": 1975918,
+   "ucAreaKm2": 1505,
+   "commutingPop2015": 1297109
+  },
+  {
+   "id": 2204,
+   "name": "Tijuana",
+   "iso": "USA",
+   "fuaPop2015": 3177732,
+   "fuaAreaKm2": 3940,
+   "ucPop2015": 2831244,
+   "ucAreaKm2": 1480,
+   "commutingPop2015": 346489
+  },
+  {
+   "id": 5332,
+   "name": "Denver",
+   "iso": "USA",
+   "fuaPop2015": 2928613,
+   "fuaAreaKm2": 6917,
+   "ucPop2015": 2320560,
+   "ucAreaKm2": 1409,
+   "commutingPop2015": 608053
+  },
+  {
+   "id": 7347,
+   "name": "Boston",
+   "iso": "USA",
+   "fuaPop2015": 2703582,
+   "fuaAreaKm2": 2800,
+   "ucPop2015": 2063274,
+   "ucAreaKm2": 935,
+   "commutingPop2015": 640307
+  },
+  {
+   "id": 6237,
+   "name": "Tampa",
+   "iso": "USA",
+   "fuaPop2015": 2678158,
+   "fuaAreaKm2": 4168,
+   "ucPop2015": 1996767,
+   "ucAreaKm2": 1750,
+   "commutingPop2015": 681391
+  },
+  {
+   "id": 6192,
+   "name": "St. Louis",
+   "iso": "USA",
+   "fuaPop2015": 2469860,
+   "fuaAreaKm2": 6517,
+   "ucPop2015": 1498420,
+   "ucAreaKm2": 1206,
+   "commutingPop2015": 971440
+  },
+  {
+   "id": 6487,
+   "name": "Orlando",
+   "iso": "USA",
+   "fuaPop2015": 2399059,
+   "fuaAreaKm2": 5531,
+   "ucPop2015": 1361960,
+   "ucAreaKm2": 1048,
+   "commutingPop2015": 1037098
+  },
+  {
+   "id": 4444,
+   "name": "Portland",
+   "iso": "USA",
+   "fuaPop2015": 2273466,
+   "fuaAreaKm2": 6026,
+   "ucPop2015": 1655686,
+   "ucAreaKm2": 947,
+   "commutingPop2015": 617780
+  },
+  {
+   "id": 7123,
+   "name": "Baltimore",
+   "iso": "USA",
+   "fuaPop2015": 2265091,
+   "fuaAreaKm2": 4070,
+   "ucPop2015": 1360858,
+   "ucAreaKm2": 742,
+   "commutingPop2015": 904233
+  },
+  {
+   "id": 4143,
+   "name": "Las Vegas",
+   "iso": "USA",
+   "fuaPop2015": 2250989,
+   "fuaAreaKm2": 1623,
+   "ucPop2015": 2029110,
+   "ucAreaKm2": 878,
+   "commutingPop2015": 221879
+  },
+  {
+   "id": 5229,
+   "name": "San Antonio",
+   "iso": "USA",
+   "fuaPop2015": 2222516,
+   "fuaAreaKm2": 6233,
+   "ucPop2015": 1483927,
+   "ucAreaKm2": 875,
+   "commutingPop2015": 738589
+  },
+  {
+   "id": 3652,
+   "name": "Sacramento",
+   "iso": "USA",
+   "fuaPop2015": 2051326,
+   "fuaAreaKm2": 3863,
+   "ucPop2015": 1528104,
+   "ucAreaKm2": 811,
+   "commutingPop2015": 523222
+  },
+  {
+   "id": 6851,
+   "name": "Charlotte",
+   "iso": "USA",
+   "fuaPop2015": 2020478,
+   "fuaAreaKm2": 5134,
+   "ucPop2015": 370497,
+   "ucAreaKm2": 325,
+   "commutingPop2015": 1649981
+  },
+  {
+   "id": 7020,
+   "name": "Pittsburgh",
+   "iso": "USA",
+   "fuaPop2015": 1980861,
+   "fuaAreaKm2": 6150,
+   "ucPop2015": 765065,
+   "ucAreaKm2": 550,
+   "commutingPop2015": 1215796
+  },
+  {
+   "id": 5961,
+   "name": "Kansas City",
+   "iso": "USA",
+   "fuaPop2015": 1966035,
+   "fuaAreaKm2": 7540,
+   "ucPop2015": 1129297,
+   "ucAreaKm2": 1026,
+   "commutingPop2015": 836738
+  },
+  {
+   "id": 6790,
+   "name": "Cincinnati",
+   "iso": "USA",
+   "fuaPop2015": 1927622,
+   "fuaAreaKm2": 5802,
+   "ucPop2015": 955725,
+   "ucAreaKm2": 802,
+   "commutingPop2015": 971898
+  },
+  {
+   "id": 6720,
+   "name": "Indianapolis",
+   "iso": "USA",
+   "fuaPop2015": 1897003,
+   "fuaAreaKm2": 7597,
+   "ucPop2015": 1086020,
+   "ucAreaKm2": 1052,
+   "commutingPop2015": 810983
+  },
+  {
+   "id": 5349,
+   "name": "Austin",
+   "iso": "USA",
+   "fuaPop2015": 1894806,
+   "fuaAreaKm2": 6117,
+   "ucPop2015": 1063621,
+   "ucAreaKm2": 606,
+   "commutingPop2015": 831185
+  },
+  {
+   "id": 6887,
+   "name": "Columbus",
+   "iso": "USA",
+   "fuaPop2015": 1885222,
+   "fuaAreaKm2": 8211,
+   "ucPop2015": 1138151,
+   "ucAreaKm2": 848,
+   "commutingPop2015": 747071
+  },
+  {
+   "id": 6990,
+   "name": "Cleveland",
+   "iso": "USA",
+   "fuaPop2015": 1880820,
+   "fuaAreaKm2": 4770,
+   "ucPop2015": 1188875,
+   "ucAreaKm2": 950,
+   "commutingPop2015": 691945
+  },
+  {
+   "id": 7050,
+   "name": "Virginia Beach",
+   "iso": "USA",
+   "fuaPop2015": 1624469,
+   "fuaAreaKm2": 3949,
+   "ucPop2015": 1145098,
+   "ucAreaKm2": 948,
+   "commutingPop2015": 479371
+  },
+  {
+   "id": 6769,
+   "name": "Milwaukee",
+   "iso": "USA",
+   "fuaPop2015": 1617648,
+   "fuaAreaKm2": 4542,
+   "ucPop2015": 1101830,
+   "ucAreaKm2": 774,
+   "commutingPop2015": 515818
+  },
+  {
+   "id": 6942,
+   "name": "Raleigh",
+   "iso": "USA",
+   "fuaPop2015": 1611391,
+   "fuaAreaKm2": 3950,
+   "ucPop2015": 441064,
+   "ucAreaKm2": 307,
+   "commutingPop2015": 1170327
+  },
+  {
+   "id": 7312,
+   "name": "Providence",
+   "iso": "USA",
+   "fuaPop2015": 1448457,
+   "fuaAreaKm2": 3751,
+   "ucPop2015": 752587,
+   "ucAreaKm2": 503,
+   "commutingPop2015": 695870
+  },
+  {
+   "id": 6630,
+   "name": "Louisville",
+   "iso": "USA",
+   "fuaPop2015": 1304467,
+   "fuaAreaKm2": 6849,
+   "ucPop2015": 750695,
+   "ucAreaKm2": 665,
+   "commutingPop2015": 553772
+  },
+  {
+   "id": 6047,
+   "name": "Memphis",
+   "iso": "USA",
+   "fuaPop2015": 1215391,
+   "fuaAreaKm2": 4050,
+   "ucPop2015": 613849,
+   "ucAreaKm2": 542,
+   "commutingPop2015": 601543
+  },
+  {
+   "id": 5705,
+   "name": "Oklahoma City",
+   "iso": "USA",
+   "fuaPop2015": 1177498,
+   "fuaAreaKm2": 4831,
+   "ucPop2015": 784074,
+   "ucAreaKm2": 677,
+   "commutingPop2015": 393425
+  },
+  {
+   "id": 4881,
+   "name": "Salt Lake City",
+   "iso": "USA",
+   "fuaPop2015": 1166374,
+   "fuaAreaKm2": 1738,
+   "ucPop2015": 972715,
+   "ucAreaKm2": 529,
+   "commutingPop2015": 193660
+  },
+  {
+   "id": 6574,
+   "name": "Jacksonville",
+   "iso": "USA",
+   "fuaPop2015": 1136540,
+   "fuaAreaKm2": 3558,
+   "ucPop2015": 458081,
+   "ucAreaKm2": 417,
+   "commutingPop2015": 678459
+  },
+  {
+   "id": 6350,
+   "name": "Nashville",
+   "iso": "USA",
+   "fuaPop2015": 1096307,
+   "fuaAreaKm2": 3489,
+   "ucPop2015": 273129,
+   "ucAreaKm2": 221,
+   "commutingPop2015": 823178
+  },
+  {
+   "id": 7277,
+   "name": "Bridgeport",
+   "iso": "USA",
+   "fuaPop2015": 1091715,
+   "fuaAreaKm2": 2197,
+   "ucPop2015": 541499,
+   "ucAreaKm2": 345,
+   "commutingPop2015": 550216
+  },
+  {
+   "id": 7141,
+   "name": "Buffalo",
+   "iso": "USA",
+   "fuaPop2015": 1085097,
+   "fuaAreaKm2": 3623,
+   "ucPop2015": 659916,
+   "ucAreaKm2": 475,
+   "commutingPop2015": 425182
+  },
+  {
+   "id": 7032,
+   "name": "Richmond",
+   "iso": "USA",
+   "fuaPop2015": 1082918,
+   "fuaAreaKm2": 2792,
+   "ucPop2015": 244212,
+   "ucAreaKm2": 165,
+   "commutingPop2015": 838706
+  },
+  {
+   "id": 7302,
+   "name": "Hartford",
+   "iso": "USA",
+   "fuaPop2015": 1050203,
+   "fuaAreaKm2": 2440,
+   "ucPop2015": 313699,
+   "ucAreaKm2": 183,
+   "commutingPop2015": 736505
+  },
+  {
+   "id": 7195,
+   "name": "Allentown",
+   "iso": "USA",
+   "fuaPop2015": 1036070,
+   "fuaAreaKm2": 4365,
+   "ucPop2015": 465504,
+   "ucAreaKm2": 391,
+   "commutingPop2015": 570565
+  },
+  {
+   "id": 4278,
+   "name": "Tucson",
+   "iso": "USA",
+   "fuaPop2015": 1023085,
+   "fuaAreaKm2": 3229,
+   "ucPop2015": 588176,
+   "ucAreaKm2": 407,
+   "commutingPop2015": 434908
+  }
+ ]
+}

@@ -21,12 +21,6 @@ export const germanyData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: 'Bundesländer & Hauptstädte', desc: 'バイエルン、NRW等16連邦州および各州都' },
     level3: { ja: '主要都市・特別区', local: 'Metropolen & Städte', desc: 'ベルリン特別市、ミュンヘン、ハンブルク等の主要都市' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [10.4, 51.1],
-    parallels: [48, 54],
-    scaleMultiplier: 3300,
-  },
   macroRegions: [
     {
       id: 'de-north',

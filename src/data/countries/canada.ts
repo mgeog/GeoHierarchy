@@ -21,12 +21,6 @@ export const canadaData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: 'Provinces & Territories (13)', desc: 'オンタリオ、ケベック等10州3準州および各州都' },
     level3: { ja: '主要都市・特別区', local: 'Capitals & Metros', desc: '首都オタワ、トロント、モントリオール、バンクーバー等の主要都市' },
   },
-  projectionConfig: {
-    type: 'conicConformal',
-    center: [-96.0, 56.0],
-    parallels: [49, 70],
-    scaleMultiplier: 800,
-  },
   macroRegions: [
     {
       id: 'ca-central',

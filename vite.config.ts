@@ -3,21 +3,27 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
-  return {
-    base: './',
-    plugins: [react(), tailwindcss()],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
+// GitHub Pages のサブパス配信に対応するため、相対ベースパスを用いる。
+export default defineConfig({
+  base: './',
+  plugins: [react(), tailwindcss()],
+  build: {
+    rolldownOptions: {
+      output: {
+        // 変更頻度の低いライブラリを別チャンクにして、キャッシュを効かせる
+        codeSplitting: {
+          groups: [
+            { name: 'vendor-leaflet', test: /node_modules[\\/]leaflet/ },
+            { name: 'vendor-d3', test: /node_modules[\\/]d3-/ },
+            { name: 'vendor-react', test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/ },
+          ],
+        },
       },
     },
-    server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modify—file watching is disabled to prevent flickering during agent edits.
-      hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
-      watch: process.env.DISABLE_HMR === 'true' ? null : {},
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(import.meta.dirname, '.'),
     },
-  };
+  },
 });

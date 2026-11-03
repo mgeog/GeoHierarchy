@@ -21,12 +21,6 @@ export const usaData: CountryAdministrativeData = {
     level2: { ja: '都道府県・州・首府', local: 'States & Capitals', desc: '独自の憲法・議会を持つ50州および州都・連邦特別区' },
     level3: { ja: '主要都市・特別区', local: 'Major Cities & Metros', desc: 'ニューヨーク、ロサンゼルス、シカゴ等全米主要大都市' },
   },
-  projectionConfig: {
-    type: 'albers',
-    center: [-96, 38],
-    parallels: [29.5, 45.5],
-    scaleMultiplier: 900,
-  },
   macroRegions: [
     {
       id: 'us-west',
