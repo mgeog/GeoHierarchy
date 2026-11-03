@@ -16,6 +16,7 @@ import { italySelection } from '../src/data/selection/italy.ts';
 import { canadaSelection } from '../src/data/selection/canada.ts';
 import { chinaSelection } from '../src/data/selection/china.ts';
 import { indiaSelection } from '../src/data/selection/india.ts';
+import { southKoreaSelection } from '../src/data/selection/southKorea.ts';
 import type { CountrySelection } from '../src/data/selection/apply.ts';
 import stat from '../src/data/statistics.json' with { type: 'json' };
 import fuaSelected from '../src/data/fua-selected.json' with { type: 'json' };
@@ -24,7 +25,7 @@ import { buildSelectedJson } from './select-fua.ts';
 const SELECTIONS: Record<string, CountrySelection> = {
   japan: japanSelection, usa: usaSelection, uk: ukSelection, germany: germanySelection,
   france: franceSelection, italy: italySelection, canada: canadaSelection,
-  china: chinaSelection, india: indiaSelection,
+  china: chinaSelection, india: indiaSelection, 'south-korea': southKoreaSelection,
 };
 
 const publicDir = path.resolve(import.meta.dirname, '../public');

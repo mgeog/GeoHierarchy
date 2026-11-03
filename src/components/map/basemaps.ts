@@ -4,7 +4,8 @@ import { MapTheme } from '../../types/geo';
 export const BASEMAP_TILES = {
   osm: {
     name: 'オープンストリートマップ (標準 OSM)',
-    url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    // OSMF のタイル利用ポリシーが指定する URL（a/b/c のサブドメインは使わない）
+    url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     subdomains: 'abc',
     maxZoom: 19,
@@ -12,14 +13,14 @@ export const BASEMAP_TILES = {
   osmFr: {
     name: 'OSM フランス (高視認性・行政界明瞭)',
     url: 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
-    attribution: '&copy; OpenStreetMap France | &copy; OpenStreetMap contributors',
+    attribution: '&copy; <a href="https://www.openstreetmap.fr">OpenStreetMap France</a> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     subdomains: 'abc',
     maxZoom: 19,
   },
   topo: {
     name: 'OpenTopoMap (地形・等高線・山岳)',
     url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-    attribution: 'Map: &copy; OSM contributors, SRTM | Style: &copy; OpenTopoMap',
+    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
     subdomains: 'abc',
     maxZoom: 17,
   },

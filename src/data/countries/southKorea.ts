@@ -2,201 +2,176 @@ import { CountryAdministrativeData } from '../../types/geo';
 
 export const southKoreaData: CountryAdministrativeData = {
   id: 'south-korea',
-  name: '大韓民国 (韓国)',
-  nameLocal: '대한민국 (Republic of Korea)',
+  name: '大韓民国（韓国）',
+  nameLocal: '대한민국',
   nameEn: 'South Korea',
   flag: '🇰🇷',
-  center: [127.8, 36.2],
-  defaultZoom: 6.6,
+  center: [127.8, 36.1],
+  defaultZoom: 6.4,
   zoomLevels: {
-    level1: 6.6,
-    level2: 7.6,
-    level3: 8.8,
+    level1: 6.4,
+    level2: 7.0,
+    level3: 7.6,
   },
   geoJsonUrl: '/data/south-korea.json',
   geoJsonNameProp: 'name',
-  systemDescription: '大韓民国の行政区域は、第1階層として「広域・地方（5大広域生活圏）」、第2階層として「都道府県・州・首府（広域自治団体17市道・道庁所在地）」、第3階層として「主要都市・特別区（ソウル特別市区部、主要都市）」で構成されています。',
+  systemDescription: '大韓民国は、第1階層として慣習的な広域区分（首都圏・江原圏・忠清圏・湖南圏・嶺南圏・済州圏）、第2階層として「広域自治団体」（1特別市・6広域市・1特別自治市・道・特別自治道。2026年7月に、光州広域市と全羅南道が統合し、全南光州統合特別市となったため、現在は16）、第3階層として道庁所在地と都市圏人口の大きな主要都市で構成されます。',
   levelNames: {
-    level1: { ja: '広域・地方', local: '권역 (5大生活圈)', desc: '首都圏、忠清圏、全羅圏、慶尚圏、江原・済州' },
-    level2: { ja: '都道府県・州・首府', local: '광역자치단체 & 도청소재지', desc: 'ソウル特別市、釜山広域市、京畿道等の17広域自治団体および各首府' },
-    level3: { ja: '主要都市・特別区', local: '주요도시 & 기초구', desc: 'ソウル特別市各区、水原市、城南市等の主要都市' },
+    level1: { ja: '広域・広域圏', local: '권역', desc: '首都圏・江原圏・忠清圏・湖南圏・嶺南圏・済州圏（慣習的な区分）' },
+    level2: { ja: '広域自治団体', local: '광역자치단체', desc: '特別市・広域市・特別自治市・道・特別自治道（16）' },
+    level3: { ja: '道庁所在地・主要都市', local: '도청소재지 및 주요 도시', desc: '道庁所在地と、都市圏人口の大きな都市' },
   },
   macroRegions: [
     {
-      id: 'kr-capital',
-      name: '首都圏 (スドグォン)',
-      nameLocal: '수도권 (Sudogwon)',
-      nameEn: 'Capital Area',
+      id: 'kr-region-capital',
+      name: '首都圏',
+      nameLocal: '수도권',
+      nameEn: 'Capital Region',
       level: 1,
-      centroid: [127.0, 37.5],
-      color: '#d97706', // amber
-      description: 'ソウル特別市、仁川広域市、京畿道。韓国全人口の半数以上（約2600万人）が集中する政治・経済・文化の超中核。',
-      subDivisionIds: ['kr-seoul', 'kr-gyeonggi', 'kr-incheon'],
+      centroid: [126.95, 37.53],
+      color: '#0284c7',
+      description: 'ソウル・仁川・京畿道。人口の約半数が集中する、政治・経済・文化の中心。',
+      subDivisionIds: ['kr-seoul', 'kr-incheon', 'kr-gyeonggi'],
     },
     {
-      id: 'kr-yeongnam',
-      name: '嶺南圏 (慶尚道・釜山)',
-      nameLocal: '영남권 (Yeongnam)',
-      nameEn: 'Yeongnam',
+      id: 'kr-region-gangwon',
+      name: '江原圏',
+      nameLocal: '강원권',
+      nameEn: 'Gangwon Region',
       level: 1,
-      centroid: [128.6, 35.5],
-      color: '#0284c7', // sky
-      description: '韓国第2の都市圏。東南圏臨海工業地域。釜山港、大邱の繊維・IT、蔚山の自動車・造船。歴史の慶州。',
-      subDivisionIds: ['kr-busan', 'kr-daegu', 'kr-gyeongnam'],
+      centroid: [128.30, 37.73],
+      color: '#059669',
+      description: '江原特別自治道。太白山脈と東部の海岸からなる、山がちの地域。',
+      subDivisionIds: ['kr-gangwon'],
     },
     {
-      id: 'kr-honam',
-      name: '湖南圏 (全羅道・光州)',
-      nameLocal: '호남권 (Honam)',
-      nameEn: 'Honam',
+      id: 'kr-region-chungcheong',
+      name: '忠清圏',
+      nameLocal: '충청권',
+      nameEn: 'Chungcheong Region',
       level: 1,
-      centroid: [126.9, 35.1],
-      color: '#059669', // emerald
-      description: '食文化と伝統芸術の地。光州ビエンナーレ、全州ビビンバ・韓屋村、麗水（ヨス）の海洋観光。',
-      subDivisionIds: ['kr-gwangju', 'kr-jeonbuk'],
+      centroid: [127.34, 36.54],
+      color: '#7c3aed',
+      description: '大田・世宗・忠清北道・忠清南道。国土の中央部で、行政機能の一部が世宗に移された。',
+      subDivisionIds: ['kr-daejeon', 'kr-sejong', 'kr-chungbuk', 'kr-chungnam'],
     },
     {
-      id: 'kr-chungcheong',
-      name: '忠清圏 (大田・世宗)',
-      nameLocal: '충청권 (Chungcheong)',
-      nameEn: 'Chungcheong',
+      id: 'kr-region-honam',
+      name: '湖南圏',
+      nameLocal: '호남권',
+      nameEn: 'Honam Region',
       level: 1,
-      centroid: [127.3, 36.4],
-      color: '#7c3aed', // violet
-      description: '韓国の地理的中央部。中央省庁が移転した行政首都・世宗、科学技術研究都市・大田（大徳研究団地）。',
-      subDivisionIds: ['kr-daejeon', 'kr-sejong'],
+      centroid: [127.05, 35.33],
+      color: '#d97706',
+      description: '全北特別自治道と、全南光州統合特別市。西南部の穀倉地帯と、多島海の海岸。',
+      subDivisionIds: ['kr-jeonnam-gwangju', 'kr-jeonbuk'],
     },
     {
-      id: 'kr-jeju',
-      name: '済州特別自治道',
-      nameLocal: '제주특별자치도',
-      nameEn: 'Jeju Island',
+      id: 'kr-region-yeongnam',
+      name: '嶺南圏',
+      nameLocal: '영남권',
+      nameEn: 'Yeongnam Region',
       level: 1,
-      centroid: [126.5, 33.4],
-      color: '#14b8a6', // teal
-      description: '韓国最南端の火山島。世界自然遺産・漢拏山（ハルラサン）とエメラルドグリーンの海。',
-      subDivisionIds: ['kr-jeju-div'],
+      centroid: [128.78, 35.66],
+      color: '#e11d48',
+      description: '釜山・大邱・蔚山・慶尚北道・慶尚南道。洛東江流域で、工業都市が多い。',
+      subDivisionIds: ['kr-busan', 'kr-daegu', 'kr-ulsan', 'kr-gyeongbuk', 'kr-gyeongnam'],
+    },
+    {
+      id: 'kr-region-jeju',
+      name: '済州圏',
+      nameLocal: '제주권',
+      nameEn: 'Jeju Region',
+      level: 1,
+      centroid: [126.55, 33.38],
+      color: '#0d9488',
+      description: '済州特別自治道。火山島で、観光地として知られる。',
+      subDivisionIds: ['kr-jeju'],
     },
   ],
   subDivisions: [
-    // Seoul
     {
-      id: 'kr-seoul',
-      code: '11',
-      name: 'ソウル特別市',
-      nameLocal: '서울특별시 (Seoul)',
-      nameEn: 'Seoul Special City',
-      level: 2,
-      macroRegionId: 'kr-capital',
-      capitalCity: '中区 (鍾路・明洞)',
-      centroid: [126.98, 37.56],
-      population: 9400000,
-      areaKm2: 605,
-      mnemonic: '漢江（ハンガン）を挟む韓国の首都。人口約940万。景福宮、Nソウルタワー、明洞、江南。',
-      geoCoordinates: [
-        [
-          [126.8, 37.6], [127.15, 37.6], [127.15, 37.45], [126.8, 37.45], [126.8, 37.6]
-        ]
-      ],
-      municipalities: [
-        { id: 'm-kr-seoul-01', name: 'ソウル特別市都心 (鍾路・中区)', nameLocal: '종로구 / 중구', nameEn: 'Jongno & Jung District', level: 3, subDivisionId: 'kr-seoul', macroRegionId: 'kr-capital', coordinates: [126.98, 37.57], population: 260000, isCapital: true, isPrefecturalCapital: true, designation: '歴史都心部', notableFor: ['景福宮', '光化門広場', '明洞', '東大門市場'] },
-        { id: 'm-kr-seoul-02', name: '江南区 (カンナム)', nameLocal: '강남구 (Gangnam)', nameEn: 'Gangnam District', level: 3, subDivisionId: 'kr-seoul', macroRegionId: 'kr-capital', coordinates: [127.04, 37.51], population: 530000, designation: '経済・先端ビジネス街', notableFor: ['COEX', 'テヘラン路 (IT街)', 'K-POPの中心'] }
-      ]
+      id: 'kr-seoul', code: 'KR-11', name: 'ソウル特別市', nameLocal: '서울특별시', nameEn: 'Seoul', level: 2,
+      macroRegionId: 'kr-region-capital', capitalCity: 'ソウル', centroid: [126.99, 37.55],
+      municipalities: [],
     },
-    // Gyeonggi-do
     {
-      id: 'kr-gyeonggi',
-      code: '41',
-      name: '京畿道 (キョンギド)',
-      nameLocal: '경기도 (Gyeonggi-do)',
-      nameEn: 'Gyeonggi-do',
-      level: 2,
-      macroRegionId: 'kr-capital',
-      capitalCity: '水原市 (Suwon)',
-      centroid: [127.2, 37.3],
-      population: 13600000,
-      areaKm2: 10184,
-      mnemonic: 'ソウルを取り囲む韓国最大の人口（約1360万人）を有する道。サムスン電子やLGの先端半導体・IT団地。',
-      geoCoordinates: [
-        [
-          [126.6, 38.0], [127.6, 38.0], [127.8, 37.0], [126.8, 37.0], [126.6, 37.4],
-          [126.6, 38.0]
-        ]
-      ],
-      municipalities: [
-        { id: 'm-kr-gyeonggi-01', name: '水原市 (スウォン)', nameLocal: '수원시 (Suwon)', nameEn: 'Suwon', level: 3, subDivisionId: 'kr-gyeonggi', macroRegionId: 'kr-capital', coordinates: [127.02, 37.26], population: 1190000, isPrefecturalCapital: true, designation: '特例市 (人口100万以上)', notableFor: ['世界遺産・水原華城', 'サムスン電子本社', '水原カルビ'] },
-        { id: 'm-kr-gyeonggi-02', name: '城南市 (ソンナム / 板橋)', nameLocal: '성남시 (Seongnam / Pangyo)', nameEn: 'Seongnam', level: 3, subDivisionId: 'kr-gyeonggi', macroRegionId: 'kr-capital', coordinates: [127.12, 37.42], population: 920000, designation: '先端IT都市', notableFor: ['板橋テクノバレー (韓国のシリコンバレー)', 'ネイバー・カカオ本社'] }
-      ]
+      id: 'kr-busan', code: 'KR-26', name: '釜山広域市', nameLocal: '부산광역시', nameEn: 'Busan', level: 2,
+      macroRegionId: 'kr-region-yeongnam', capitalCity: '釜山', centroid: [129.07, 35.21],
+      municipalities: [],
     },
-    // Busan
     {
-      id: 'kr-busan',
-      code: '26',
-      name: '釜山広域市 (プサン)',
-      nameLocal: '부산광역시 (Busan)',
-      nameEn: 'Busan Metropolitan City',
-      level: 2,
-      macroRegionId: 'kr-yeongnam',
-      capitalCity: '蓮堤区 (釜山市庁)',
-      centroid: [129.07, 35.18],
-      population: 3300000,
-      areaKm2: 770,
-      mnemonic: '韓国第2のメガシティにして世界有数のコンテナ港。海雲台（ヘウンデ）ビーチと国際映画祭。',
-      geoCoordinates: [
-        [
-          [128.8, 35.3], [129.3, 35.3], [129.3, 35.0], [128.8, 35.0], [128.8, 35.3]
-        ]
-      ],
-      municipalities: [
-        { id: 'm-kr-busan-01', name: '釜山市中心・海雲台', nameLocal: '부산 도심 & 해운대', nameEn: 'Busan & Haeundae', level: 3, subDivisionId: 'kr-busan', macroRegionId: 'kr-yeongnam', coordinates: [129.07, 35.18], population: 3300000, isPrefecturalCapital: true, designation: '広域市', notableFor: ['海雲台海水浴場', 'チャガルチ市場', '釜山国際映画祭 (BIFF)'] }
-      ]
+      id: 'kr-daegu', code: 'KR-27', name: '大邱広域市', nameLocal: '대구광역시', nameEn: 'Daegu', level: 2,
+      macroRegionId: 'kr-region-yeongnam', capitalCity: '大邱', centroid: [128.57, 35.83],
+      municipalities: [],
     },
-    // Daejeon & Sejong
     {
-      id: 'kr-daejeon',
-      code: '30',
-      name: '大田広域市 (テジョン)',
-      nameLocal: '대전광역시 (Daejeon)',
-      nameEn: 'Daejeon Metropolitan City',
-      level: 2,
-      macroRegionId: 'kr-chungcheong',
-      capitalCity: '西区 (大田市庁)',
-      centroid: [127.38, 36.35],
-      population: 1450000,
-      areaKm2: 540,
-      mnemonic: '韓国の科学技術の中心地。「大徳研究開発特区」とKAIST（韓国科学技術院）。交通の結節点。',
-      geoCoordinates: [
-        [
-          [127.25, 36.45], [127.5, 36.45], [127.5, 36.25], [127.25, 36.25], [127.25, 36.45]
-        ]
-      ],
-      municipalities: [
-        { id: 'm-kr-daejeon-01', name: '大田', nameLocal: '대전 (Daejeon)', nameEn: 'Daejeon', level: 3, subDivisionId: 'kr-daejeon', macroRegionId: 'kr-chungcheong', coordinates: [127.38, 36.35], population: 1450000, isPrefecturalCapital: true, designation: '広域市', notableFor: ['大徳研究団地', 'KAIST', 'エキスポ科学公園'] }
-      ]
+      id: 'kr-incheon', code: 'KR-28', name: '仁川広域市', nameLocal: '인천광역시', nameEn: 'Incheon', level: 2,
+      macroRegionId: 'kr-region-capital', capitalCity: '仁川', centroid: [126.68, 37.5],
+      municipalities: [],
     },
-    // Jeju
     {
-      id: 'kr-jeju-div',
-      code: '50',
-      name: '済州特別自治道',
-      nameLocal: '제주특별자치도 (Jeju)',
-      nameEn: 'Jeju Special Self-Governing Province',
-      level: 2,
-      macroRegionId: 'kr-jeju',
-      capitalCity: '済州市',
-      centroid: [126.53, 33.36],
-      population: 680000,
-      areaKm2: 1850,
-      mnemonic: '高度な自治権を持つ特別自治道。トルハルバンの石像、みかん、城山日出峰。',
-      geoCoordinates: [
-        [
-          [126.2, 33.3], [126.5, 33.6], [126.9, 33.5], [126.7, 33.2], [126.2, 33.3]
-        ]
-      ],
-      municipalities: [
-        { id: 'm-kr-jeju-01', name: '済州市', nameLocal: '제주시 (Jeju City)', nameEn: 'Jeju City', level: 3, subDivisionId: 'kr-jeju-div', macroRegionId: 'kr-jeju', coordinates: [126.53, 33.49], population: 490000, isPrefecturalCapital: true, designation: '行政市', notableFor: ['済州国際空港', '東門市場', '龍頭岩'] },
-        { id: 'm-kr-jeju-02', name: '西帰浦市 (ソギポ)', nameLocal: '서귀포시 (Seogwipo)', nameEn: 'Seogwipo', level: 3, subDivisionId: 'kr-jeju-div', macroRegionId: 'kr-jeju', coordinates: [126.56, 33.25], population: 190000, designation: '行政市', notableFor: ['中文観光団地', '正房の滝', '城山日出峰近傍'] }
-      ]
-    }
-  ]
+      id: 'kr-jeonnam-gwangju', code: 'KR-JG', name: '全南光州統合特別市', nameLocal: '전남광주통합특별시', nameEn: 'Jeonnam-Gwangju', level: 2,
+      macroRegionId: 'kr-region-honam', capitalCity: '光州（代表都市）。庁舎は順天・務安郡・光州市西区に分かれる', centroid: [126.96, 34.94],
+      aliases: ['전남광주특별시'],
+      municipalities: [],
+    },
+    {
+      id: 'kr-daejeon', code: 'KR-30', name: '大田広域市', nameLocal: '대전광역시', nameEn: 'Daejeon', level: 2,
+      macroRegionId: 'kr-region-chungcheong', capitalCity: '大田', centroid: [127.39, 36.34],
+      municipalities: [],
+    },
+    {
+      id: 'kr-ulsan', code: 'KR-31', name: '蔚山広域市', nameLocal: '울산광역시', nameEn: 'Ulsan', level: 2,
+      macroRegionId: 'kr-region-yeongnam', capitalCity: '蔚山', centroid: [129.24, 35.55],
+      municipalities: [],
+    },
+    {
+      id: 'kr-sejong', code: 'KR-50', name: '世宗特別自治市', nameLocal: '세종특별자치시', nameEn: 'Sejong', level: 2,
+      macroRegionId: 'kr-region-chungcheong', capitalCity: '世宗', centroid: [127.26, 36.56],
+      municipalities: [],
+    },
+    {
+      id: 'kr-gyeonggi', code: 'KR-41', name: '京畿道', nameLocal: '경기도', nameEn: 'Gyeonggi', level: 2,
+      macroRegionId: 'kr-region-capital', capitalCity: '水原（議政府にも庁舎）', centroid: [127.18, 37.54],
+      municipalities: [],
+    },
+    {
+      id: 'kr-gangwon', code: 'KR-42', name: '江原特別自治道', nameLocal: '강원특별자치도', nameEn: 'Gangwon', level: 2,
+      macroRegionId: 'kr-region-gangwon', capitalCity: '春川', centroid: [128.3, 37.73],
+      aliases: ['강원도'],
+      municipalities: [],
+    },
+    {
+      id: 'kr-chungbuk', code: 'KR-43', name: '忠清北道', nameLocal: '충청북도', nameEn: 'North Chungcheong', level: 2,
+      macroRegionId: 'kr-region-chungcheong', capitalCity: '清州', centroid: [127.83, 36.74],
+      municipalities: [],
+    },
+    {
+      id: 'kr-chungnam', code: 'KR-44', name: '忠清南道', nameLocal: '충청남도', nameEn: 'South Chungcheong', level: 2,
+      macroRegionId: 'kr-region-chungcheong', capitalCity: '洪城郡（内浦新都市）', centroid: [126.86, 36.53],
+      municipalities: [],
+    },
+    {
+      id: 'kr-jeonbuk', code: 'KR-45', name: '全北特別自治道', nameLocal: '전북특별자치도', nameEn: 'Jeonbuk', level: 2,
+      macroRegionId: 'kr-region-honam', capitalCity: '全州', centroid: [127.14, 35.72],
+      aliases: ['전라북도'],
+      municipalities: [],
+    },
+    {
+      id: 'kr-gyeongbuk', code: 'KR-47', name: '慶尚北道', nameLocal: '경상북도', nameEn: 'North Gyeongsang', level: 2,
+      macroRegionId: 'kr-region-yeongnam', capitalCity: '安東（浦項にも庁舎）', centroid: [128.74, 36.34],
+      municipalities: [],
+    },
+    {
+      id: 'kr-gyeongnam', code: 'KR-48', name: '慶尚南道', nameLocal: '경상남도', nameEn: 'South Gyeongsang', level: 2,
+      macroRegionId: 'kr-region-yeongnam', capitalCity: '昌原（晋州にも庁舎）', centroid: [128.26, 35.37],
+      municipalities: [],
+    },
+    {
+      id: 'kr-jeju', code: 'KR-49', name: '済州特別自治道', nameLocal: '제주특별자치도', nameEn: 'Jeju', level: 2,
+      macroRegionId: 'kr-region-jeju', capitalCity: '済州市', centroid: [126.55, 33.38],
+      municipalities: [],
+    },
+  ],
 };

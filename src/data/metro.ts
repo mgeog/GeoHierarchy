@@ -68,6 +68,10 @@ const OVERRIDES: Record<number, { label?: string; note?: string }> = {
   8334: { label: '襄陽', note: 'GHSL では「Fancheng」（襄陽市の市轄区・樊城）。' },
   10371: { label: '龍港', note: 'GHSL では「龙港市」。' },
   7578: { label: '重慶', note: '直轄市の行政区域は約8万km²に及ぶが、ここでの範囲は、GHSL が推定した都市圏である。' },
+  // --- 韓国 ---
+  94: { label: 'ソウル首都圏', note: 'GHSL では「Seoul」。ソウル・仁川・水原・城南・高陽などが連続した、巨大な都市圏。' },
+  1782: { label: '大田（世宗を含む）', note: 'GHSL では「Daejeon」。世宗特別自治市を含む。' },
+  3057: { label: '釜山（金海を含む）', note: 'GHSL では「Busan」。金海を含む。' },
   // --- インド ---
   7466: { label: 'デリー首都圏', note: 'GHSL では「Delhi [New Delhi]」。デリー連邦直轄領のほか、ウッタル・プラデーシュ州やハリヤーナー州の都市（ノイダ、ガーズィヤーバード、グルグラムなど）に広がる。' },
   7163: { label: 'ムンバイ大都市圏' },

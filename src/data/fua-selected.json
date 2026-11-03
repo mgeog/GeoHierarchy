@@ -3193,6 +3193,206 @@
    "commutingPop2015": 294241
   },
   {
+   "id": 94,
+   "name": "Seoul",
+   "iso": "KOR",
+   "fuaPop2015": 24287447,
+   "fuaAreaKm2": 7053,
+   "ucPop2015": 21941273,
+   "ucAreaKm2": 2586,
+   "commutingPop2015": 2346174
+  },
+  {
+   "id": 3057,
+   "name": "Busan",
+   "iso": "KOR",
+   "fuaPop2015": 4218268,
+   "fuaAreaKm2": 1478,
+   "ucPop2015": 3775705,
+   "ucAreaKm2": 560,
+   "commutingPop2015": 442562
+  },
+  {
+   "id": 2453,
+   "name": "Daegu",
+   "iso": "KOR",
+   "fuaPop2015": 2868257,
+   "fuaAreaKm2": 2251,
+   "ucPop2015": 2474025,
+   "ucAreaKm2": 331,
+   "commutingPop2015": 394232
+  },
+  {
+   "id": 1782,
+   "name": "Daejeon",
+   "iso": "KOR",
+   "fuaPop2015": 1746023,
+   "fuaAreaKm2": 1001,
+   "ucPop2015": 1534182,
+   "ucAreaKm2": 205,
+   "commutingPop2015": 211841
+  },
+  {
+   "id": 2246,
+   "name": "Gwangju",
+   "iso": "KOR",
+   "fuaPop2015": 1683322,
+   "fuaAreaKm2": 1057,
+   "ucPop2015": 1469650,
+   "ucAreaKm2": 194,
+   "commutingPop2015": 213672
+  },
+  {
+   "id": 3211,
+   "name": "Ulsan",
+   "iso": "KOR",
+   "fuaPop2015": 1132432,
+   "fuaAreaKm2": 836,
+   "ucPop2015": 922819,
+   "ucAreaKm2": 199,
+   "commutingPop2015": 209613
+  },
+  {
+   "id": 1604,
+   "name": "Cheongju-si",
+   "iso": "KOR",
+   "fuaPop2015": 887787,
+   "fuaAreaKm2": 622,
+   "ucPop2015": 664464,
+   "ucAreaKm2": 88,
+   "commutingPop2015": 223323
+  },
+  {
+   "id": 1206,
+   "name": "Cheonan-si",
+   "iso": "KOR",
+   "fuaPop2015": 884117,
+   "fuaAreaKm2": 805,
+   "ucPop2015": 465352,
+   "ucAreaKm2": 138,
+   "commutingPop2015": 418765
+  },
+  {
+   "id": 2835,
+   "name": "Changwon",
+   "iso": "KOR",
+   "fuaPop2015": 824884,
+   "fuaAreaKm2": 559,
+   "ucPop2015": 637723,
+   "ucAreaKm2": 121,
+   "commutingPop2015": 187161
+  },
+  {
+   "id": 2098,
+   "name": "Jeonju",
+   "iso": "KOR",
+   "fuaPop2015": 760808,
+   "fuaAreaKm2": 522,
+   "ucPop2015": 628108,
+   "ucAreaKm2": 91,
+   "commutingPop2015": 132700
+  },
+  {
+   "id": 2775,
+   "name": "Pohang-si",
+   "iso": "KOR",
+   "fuaPop2015": 494618,
+   "fuaAreaKm2": 602,
+   "ucPop2015": 359501,
+   "ucAreaKm2": 106,
+   "commutingPop2015": 135116
+  },
+  {
+   "id": 2316,
+   "name": "Gumi-si",
+   "iso": "KOR",
+   "fuaPop2015": 490173,
+   "fuaAreaKm2": 537,
+   "ucPop2015": 332203,
+   "ucAreaKm2": 77,
+   "commutingPop2015": 157970
+  },
+  {
+   "id": 2651,
+   "name": "Jinju-si",
+   "iso": "KOR",
+   "fuaPop2015": 341662,
+   "fuaAreaKm2": 466,
+   "ucPop2015": 203662,
+   "ucAreaKm2": 52,
+   "commutingPop2015": 138001
+  },
+  {
+   "id": 2172,
+   "name": "Mokpo-si",
+   "iso": "KOR",
+   "fuaPop2015": 319221,
+   "fuaAreaKm2": 254,
+   "ucPop2015": 273421,
+   "ucAreaKm2": 61,
+   "commutingPop2015": 45800
+  },
+  {
+   "id": 271,
+   "name": "Dongducheon-si",
+   "iso": "KOR",
+   "fuaPop2015": 299299,
+   "fuaAreaKm2": 377,
+   "ucPop2015": 118005,
+   "ucAreaKm2": 50,
+   "commutingPop2015": 181294
+  },
+  {
+   "id": 1415,
+   "name": "Wonju-si",
+   "iso": "KOR",
+   "fuaPop2015": 283158,
+   "fuaAreaKm2": 297,
+   "ucPop2015": 181058,
+   "ucAreaKm2": 43,
+   "commutingPop2015": 102100
+  },
+  {
+   "id": 2385,
+   "name": "Suncheon-si",
+   "iso": "KOR",
+   "fuaPop2015": 266591,
+   "fuaAreaKm2": 236,
+   "ucPop2015": 158701,
+   "ucAreaKm2": 36,
+   "commutingPop2015": 107890
+  },
+  {
+   "id": 573,
+   "name": "Chuncheon-si",
+   "iso": "KOR",
+   "fuaPop2015": 253983,
+   "fuaAreaKm2": 277,
+   "ucPop2015": 157839,
+   "ucAreaKm2": 40,
+   "commutingPop2015": 96144
+  },
+  {
+   "id": 1512,
+   "name": "Gunsan-si",
+   "iso": "KOR",
+   "fuaPop2015": 250506,
+   "fuaAreaKm2": 338,
+   "ucPop2015": 158532,
+   "ucAreaKm2": 53,
+   "commutingPop2015": 91974
+  },
+  {
+   "id": 1867,
+   "name": "Iksan-si",
+   "iso": "KOR",
+   "fuaPop2015": 235889,
+   "fuaAreaKm2": 312,
+   "ucPop2015": 143186,
+   "ucAreaKm2": 35,
+   "commutingPop2015": 92703
+  },
+  {
    "id": 7244,
    "name": "New York",
    "iso": "USA",
