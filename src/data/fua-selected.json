@@ -1,0 +1,1527 @@
+{
+ "source": "European Commission, JRC. GHS-FUA R2019A (GHS_FUA_UCDB2015_GLOBE_R2019A). CC BY 4.0. 基準年 2015。人口は 1km 格子からの推計値。",
+ "rule": "FUA 人口 1,000,000 以上、または国内上位 20",
+ "fuas": [
+  {
+   "id": 2626,
+   "name": "Toronto",
+   "iso": "CAN",
+   "fuaPop2015": 7278248,
+   "fuaAreaKm2": 8223,
+   "ucPop2015": 6543842,
+   "commutingPop2015": 734406
+  },
+  {
+   "id": 3485,
+   "name": "Montreal",
+   "iso": "CAN",
+   "fuaPop2015": 4089586,
+   "fuaAreaKm2": 5027,
+   "ucPop2015": 3345918,
+   "commutingPop2015": 743668
+  },
+  {
+   "id": 375,
+   "name": "Vancouver",
+   "iso": "CAN",
+   "fuaPop2015": 2407756,
+   "fuaAreaKm2": 1601,
+   "ucPop2015": 2192046,
+   "commutingPop2015": 215710
+  },
+  {
+   "id": 1276,
+   "name": "Calgary",
+   "iso": "CAN",
+   "fuaPop2015": 1382751,
+   "fuaAreaKm2": 2051,
+   "ucPop2015": 1183235,
+   "commutingPop2015": 199517
+  },
+  {
+   "id": 3343,
+   "name": "Ottawa",
+   "iso": "CAN",
+   "fuaPop2015": 1277528,
+   "fuaAreaKm2": 2325,
+   "ucPop2015": 973243,
+   "commutingPop2015": 304285
+  },
+  {
+   "id": 1572,
+   "name": "Edmonton",
+   "iso": "CAN",
+   "fuaPop2015": 1232005,
+   "fuaAreaKm2": 2816,
+   "ucPop2015": 975001,
+   "commutingPop2015": 257004
+  },
+  {
+   "id": 3789,
+   "name": "Quebec",
+   "iso": "CAN",
+   "fuaPop2015": 875582,
+   "fuaAreaKm2": 3177,
+   "ucPop2015": 581981,
+   "commutingPop2015": 293601
+  },
+  {
+   "id": 1837,
+   "name": "Winnipeg",
+   "iso": "CAN",
+   "fuaPop2015": 796277,
+   "fuaAreaKm2": 2789,
+   "ucPop2015": 675489,
+   "commutingPop2015": 120787
+  },
+  {
+   "id": 2360,
+   "name": "Kitchener",
+   "iso": "CAN",
+   "fuaPop2015": 544450,
+   "fuaAreaKm2": 1271,
+   "ucPop2015": 431698,
+   "commutingPop2015": 112752
+  },
+  {
+   "id": 2220,
+   "name": "London",
+   "iso": "CAN",
+   "fuaPop2015": 522401,
+   "fuaAreaKm2": 2505,
+   "ucPop2015": 339167,
+   "commutingPop2015": 183234
+  },
+  {
+   "id": 3865,
+   "name": "Halifax",
+   "iso": "CAN",
+   "fuaPop2015": 382061,
+   "fuaAreaKm2": 1271,
+   "ucPop2015": 209670,
+   "commutingPop2015": 172391
+  },
+  {
+   "id": 28,
+   "name": "Victoria",
+   "iso": "CAN",
+   "fuaPop2015": 354631,
+   "fuaAreaKm2": 523,
+   "ucPop2015": 227671,
+   "commutingPop2015": 126960
+  },
+  {
+   "id": 1996,
+   "name": "Detroit",
+   "iso": "CAN",
+   "fuaPop2015": 352425,
+   "fuaAreaKm2": 1227,
+   "ucPop2015": 263078,
+   "commutingPop2015": 89346
+  },
+  {
+   "id": 2751,
+   "name": "St. Catharines",
+   "iso": "CAN",
+   "fuaPop2015": 347173,
+   "fuaAreaKm2": 825,
+   "ucPop2015": 215144,
+   "commutingPop2015": 132029
+  },
+  {
+   "id": 1751,
+   "name": "Saskatoon",
+   "iso": "CAN",
+   "fuaPop2015": 274495,
+   "fuaAreaKm2": 1131,
+   "ucPop2015": 233298,
+   "commutingPop2015": 41197
+  },
+  {
+   "id": 3035,
+   "name": "Barrie",
+   "iso": "CAN",
+   "fuaPop2015": 231165,
+   "fuaAreaKm2": 1317,
+   "ucPop2015": 131835,
+   "commutingPop2015": 99330
+  },
+  {
+   "id": 1663,
+   "name": "Regina",
+   "iso": "CAN",
+   "fuaPop2015": 221924,
+   "fuaAreaKm2": 720,
+   "ucPop2015": 198023,
+   "commutingPop2015": 23900
+  },
+  {
+   "id": 3709,
+   "name": "Sherbrooke",
+   "iso": "CAN",
+   "fuaPop2015": 216776,
+   "fuaAreaKm2": 956,
+   "ucPop2015": 110652,
+   "commutingPop2015": 106124
+  },
+  {
+   "id": 3902,
+   "name": "St. John's",
+   "iso": "CAN",
+   "fuaPop2015": 203238,
+   "fuaAreaKm2": 534,
+   "ucPop2015": 85082,
+   "commutingPop2015": 118156
+  },
+  {
+   "id": 934,
+   "name": "Abbotsford",
+   "iso": "CAN",
+   "fuaPop2015": 197337,
+   "fuaAreaKm2": 395,
+   "ucPop2015": 112679,
+   "commutingPop2015": 84657
+  },
+  {
+   "id": 536,
+   "name": "Dortmund",
+   "iso": "DEU",
+   "fuaPop2015": 5837625,
+   "fuaAreaKm2": 6303,
+   "ucPop2015": 3691645,
+   "commutingPop2015": 2145980
+  },
+  {
+   "id": 4946,
+   "name": "Berlin",
+   "iso": "DEU",
+   "fuaPop2015": 4290483,
+   "fuaAreaKm2": 3572,
+   "ucPop2015": 3390225,
+   "commutingPop2015": 900258
+  },
+  {
+   "id": 1064,
+   "name": "Cologne",
+   "iso": "DEU",
+   "fuaPop2015": 3178672,
+   "fuaAreaKm2": 3263,
+   "ucPop2015": 1968584,
+   "commutingPop2015": 1210088
+  },
+  {
+   "id": 3093,
+   "name": "Frankfurt am Main",
+   "iso": "DEU",
+   "fuaPop2015": 3025700,
+   "fuaAreaKm2": 3323,
+   "ucPop2015": 1523828,
+   "commutingPop2015": 1501872
+  },
+  {
+   "id": 3793,
+   "name": "Hamburg",
+   "iso": "DEU",
+   "fuaPop2015": 2686300,
+   "fuaAreaKm2": 3206,
+   "ucPop2015": 1677733,
+   "commutingPop2015": 1008567
+  },
+  {
+   "id": 4736,
+   "name": "Munich",
+   "iso": "DEU",
+   "fuaPop2015": 2435209,
+   "fuaAreaKm2": 2638,
+   "ucPop2015": 1573652,
+   "commutingPop2015": 861557
+  },
+  {
+   "id": 3580,
+   "name": "Stuttgart",
+   "iso": "DEU",
+   "fuaPop2015": 2234166,
+   "fuaAreaKm2": 2159,
+   "ucPop2015": 1160180,
+   "commutingPop2015": 1073986
+  },
+  {
+   "id": 3041,
+   "name": "Mannheim",
+   "iso": "DEU",
+   "fuaPop2015": 1695403,
+   "fuaAreaKm2": 2160,
+   "ucPop2015": 663125,
+   "commutingPop2015": 1032277
+  },
+  {
+   "id": 4454,
+   "name": "Nuremberg",
+   "iso": "DEU",
+   "fuaPop2015": 1230839,
+   "fuaAreaKm2": 1874,
+   "ucPop2015": 679088,
+   "commutingPop2015": 551750
+  },
+  {
+   "id": 3667,
+   "name": "Hanover",
+   "iso": "DEU",
+   "fuaPop2015": 1111170,
+   "fuaAreaKm2": 1883,
+   "ucPop2015": 599164,
+   "commutingPop2015": 512006
+  },
+  {
+   "id": 815,
+   "name": "Dusseldorf",
+   "iso": "DEU",
+   "fuaPop2015": 1003149,
+   "fuaAreaKm2": 661,
+   "ucPop2015": 744020,
+   "commutingPop2015": 259129
+  },
+  {
+   "id": 4996,
+   "name": "Dresden",
+   "iso": "DEU",
+   "fuaPop2015": 869884,
+   "fuaAreaKm2": 1587,
+   "ucPop2015": 513723,
+   "commutingPop2015": 356161
+  },
+  {
+   "id": 2877,
+   "name": "Bremen",
+   "iso": "DEU",
+   "fuaPop2015": 868843,
+   "fuaAreaKm2": 1287,
+   "ucPop2015": 506342,
+   "commutingPop2015": 362502
+  },
+  {
+   "id": 1178,
+   "name": "Wuppertal",
+   "iso": "DEU",
+   "fuaPop2015": 843373,
+   "fuaAreaKm2": 596,
+   "ucPop2015": 604861,
+   "commutingPop2015": 238513
+  },
+  {
+   "id": 2988,
+   "name": "Karlsruhe",
+   "iso": "DEU",
+   "fuaPop2015": 794086,
+   "fuaAreaKm2": 1298,
+   "ucPop2015": 286982,
+   "commutingPop2015": 507104
+  },
+  {
+   "id": 2818,
+   "name": "Bielefeld",
+   "iso": "DEU",
+   "fuaPop2015": 750189,
+   "fuaAreaKm2": 947,
+   "ucPop2015": 264947,
+   "commutingPop2015": 485242
+  },
+  {
+   "id": 4788,
+   "name": "Leipzig",
+   "iso": "DEU",
+   "fuaPop2015": 698929,
+   "fuaAreaKm2": 1140,
+   "ucPop2015": 455581,
+   "commutingPop2015": 243348
+  },
+  {
+   "id": 388,
+   "name": "Mönchengladbach",
+   "iso": "DEU",
+   "fuaPop2015": 573225,
+   "fuaAreaKm2": 820,
+   "ucPop2015": 192285,
+   "commutingPop2015": 380940
+  },
+  {
+   "id": 1287,
+   "name": "Saarbruecken",
+   "iso": "DEU",
+   "fuaPop2015": 570240,
+   "fuaAreaKm2": 830,
+   "ucPop2015": 146109,
+   "commutingPop2015": 424131
+  },
+  {
+   "id": 4520,
+   "name": "Augsburg",
+   "iso": "DEU",
+   "fuaPop2015": 547175,
+   "fuaAreaKm2": 984,
+   "ucPop2015": 312094,
+   "commutingPop2015": 235081
+  },
+  {
+   "id": 2702,
+   "name": "Paris",
+   "iso": "FRA",
+   "fuaPop2015": 11236407,
+   "fuaAreaKm2": 6778,
+   "ucPop2015": 9775034,
+   "commutingPop2015": 1461373
+  },
+  {
+   "id": 3718,
+   "name": "Lyon",
+   "iso": "FRA",
+   "fuaPop2015": 2056576,
+   "fuaAreaKm2": 3516,
+   "ucPop2015": 1152368,
+   "commutingPop2015": 904208
+  },
+  {
+   "id": 3911,
+   "name": "Marseille",
+   "iso": "FRA",
+   "fuaPop2015": 1357311,
+   "fuaAreaKm2": 1599,
+   "ucPop2015": 979223,
+   "commutingPop2015": 378087
+  },
+  {
+   "id": 2304,
+   "name": "Toulouse",
+   "iso": "FRA",
+   "fuaPop2015": 1264263,
+   "fuaAreaKm2": 3321,
+   "ucPop2015": 658107,
+   "commutingPop2015": 606155
+  },
+  {
+   "id": 4426,
+   "name": "Nice",
+   "iso": "FRA",
+   "fuaPop2015": 1206198,
+   "fuaAreaKm2": 2109,
+   "ucPop2015": 733095,
+   "commutingPop2015": 473103
+  },
+  {
+   "id": 3200,
+   "name": "Lille",
+   "iso": "FRA",
+   "fuaPop2015": 1205008,
+   "fuaAreaKm2": 966,
+   "ucPop2015": 868705,
+   "commutingPop2015": 336302
+  },
+  {
+   "id": 1397,
+   "name": "Bordeaux",
+   "iso": "FRA",
+   "fuaPop2015": 1045641,
+   "fuaAreaKm2": 2165,
+   "ucPop2015": 585031,
+   "commutingPop2015": 460609
+  },
+  {
+   "id": 2993,
+   "name": "Lens",
+   "iso": "FRA",
+   "fuaPop2015": 951275,
+   "fuaAreaKm2": 1629,
+   "ucPop2015": 287222,
+   "commutingPop2015": 664053
+  },
+  {
+   "id": 954,
+   "name": "Nantes",
+   "iso": "FRA",
+   "fuaPop2015": 895937,
+   "fuaAreaKm2": 2682,
+   "ucPop2015": 436853,
+   "commutingPop2015": 459084
+  },
+  {
+   "id": 4558,
+   "name": "Strasbourg",
+   "iso": "FRA",
+   "fuaPop2015": 735029,
+   "fuaAreaKm2": 1355,
+   "ucPop2015": 406840,
+   "commutingPop2015": 328188
+  },
+  {
+   "id": 2159,
+   "name": "Rouen",
+   "iso": "FRA",
+   "fuaPop2015": 671639,
+   "fuaAreaKm2": 1876,
+   "ucPop2015": 320960,
+   "commutingPop2015": 350679
+  },
+  {
+   "id": 3541,
+   "name": "Montpellier",
+   "iso": "FRA",
+   "fuaPop2015": 649423,
+   "fuaAreaKm2": 1303,
+   "ucPop2015": 293865,
+   "commutingPop2015": 355558
+  },
+  {
+   "id": 4158,
+   "name": "Toulon",
+   "iso": "FRA",
+   "fuaPop2015": 617368,
+   "fuaAreaKm2": 1265,
+   "ucPop2015": 368851,
+   "commutingPop2015": 248517
+  },
+  {
+   "id": 3984,
+   "name": "Grenoble",
+   "iso": "FRA",
+   "fuaPop2015": 610377,
+   "fuaAreaKm2": 1279,
+   "ucPop2015": 338199,
+   "commutingPop2015": 272177
+  },
+  {
+   "id": 824,
+   "name": "Rennes",
+   "iso": "FRA",
+   "fuaPop2015": 569011,
+   "fuaAreaKm2": 1613,
+   "ucPop2015": 227572,
+   "commutingPop2015": 341439
+  },
+  {
+   "id": 4393,
+   "name": "Mulhouse",
+   "iso": "FRA",
+   "fuaPop2015": 456369,
+   "fuaAreaKm2": 1176,
+   "ucPop2015": 189297,
+   "commutingPop2015": 267072
+  },
+  {
+   "id": 3628,
+   "name": "Saint-Étienne",
+   "iso": "FRA",
+   "fuaPop2015": 453895,
+   "fuaAreaKm2": 1031,
+   "ucPop2015": 172766,
+   "commutingPop2015": 281129
+  },
+  {
+   "id": 2085,
+   "name": "Tours",
+   "iso": "FRA",
+   "fuaPop2015": 445493,
+   "fuaAreaKm2": 1606,
+   "ucPop2015": 211591,
+   "commutingPop2015": 233903
+  },
+  {
+   "id": 3759,
+   "name": "Avignon",
+   "iso": "FRA",
+   "fuaPop2015": 430725,
+   "fuaAreaKm2": 1144,
+   "ucPop2015": 82995,
+   "commutingPop2015": 347730
+  },
+  {
+   "id": 3353,
+   "name": "Clermont-Ferrand",
+   "iso": "FRA",
+   "fuaPop2015": 422421,
+   "fuaAreaKm2": 1134,
+   "ucPop2015": 191311,
+   "commutingPop2015": 231110
+  },
+  {
+   "id": 5288,
+   "name": "London",
+   "iso": "GBR",
+   "fuaPop2015": 12598186,
+   "fuaAreaKm2": 6605,
+   "ucPop2015": 10765370,
+   "commutingPop2015": 1832817
+  },
+  {
+   "id": 3304,
+   "name": "Manchester",
+   "iso": "GBR",
+   "fuaPop2015": 3270370,
+   "fuaAreaKm2": 2182,
+   "ucPop2015": 2686209,
+   "commutingPop2015": 584161
+  },
+  {
+   "id": 3799,
+   "name": "Birmingham",
+   "iso": "GBR",
+   "fuaPop2015": 2958885,
+   "fuaAreaKm2": 1786,
+   "ucPop2015": 2561609,
+   "commutingPop2015": 397276
+  },
+  {
+   "id": 4159,
+   "name": "Leeds",
+   "iso": "GBR",
+   "fuaPop2015": 2922158,
+   "fuaAreaKm2": 3044,
+   "ucPop2015": 2054748,
+   "commutingPop2015": 867409
+  },
+  {
+   "id": 955,
+   "name": "Glasgow",
+   "iso": "GBR",
+   "fuaPop2015": 1743356,
+   "fuaAreaKm2": 2350,
+   "ucPop2015": 1284148,
+   "commutingPop2015": 459208
+  },
+  {
+   "id": 4227,
+   "name": "Newcastle upon Tyne",
+   "iso": "GBR",
+   "fuaPop2015": 1687395,
+   "fuaAreaKm2": 2249,
+   "ucPop2015": 1008259,
+   "commutingPop2015": 679136
+  },
+  {
+   "id": 2374,
+   "name": "Liverpool",
+   "iso": "GBR",
+   "fuaPop2015": 1676212,
+   "fuaAreaKm2": 1038,
+   "ucPop2015": 1333733,
+   "commutingPop2015": 342479
+  },
+  {
+   "id": 4767,
+   "name": "Nottingham",
+   "iso": "GBR",
+   "fuaPop2015": 1562399,
+   "fuaAreaKm2": 2248,
+   "ucPop2015": 1008707,
+   "commutingPop2015": 553692
+  },
+  {
+   "id": 4867,
+   "name": "Portsmouth",
+   "iso": "GBR",
+   "fuaPop2015": 1338018,
+   "fuaAreaKm2": 2051,
+   "ucPop2015": 886540,
+   "commutingPop2015": 451477
+  },
+  {
+   "id": 3099,
+   "name": "Bristol",
+   "iso": "GBR",
+   "fuaPop2015": 1213639,
+   "fuaAreaKm2": 1951,
+   "ucPop2015": 684661,
+   "commutingPop2015": 528978
+  },
+  {
+   "id": 4460,
+   "name": "Sheffield",
+   "iso": "GBR",
+   "fuaPop2015": 1145122,
+   "fuaAreaKm2": 1325,
+   "ucPop2015": 778066,
+   "commutingPop2015": 367056
+  },
+  {
+   "id": 2086,
+   "name": "Cardiff",
+   "iso": "GBR",
+   "fuaPop2015": 1141469,
+   "fuaAreaKm2": 1537,
+   "ucPop2015": 484227,
+   "commutingPop2015": 657242
+  },
+  {
+   "id": 242,
+   "name": "Belfast",
+   "iso": "GBR",
+   "fuaPop2015": 947014,
+   "fuaAreaKm2": 2815,
+   "ucPop2015": 457659,
+   "commutingPop2015": 489355
+  },
+  {
+   "id": 5406,
+   "name": "Brighton",
+   "iso": "GBR",
+   "fuaPop2015": 843635,
+   "fuaAreaKm2": 1133,
+   "ucPop2015": 536047,
+   "commutingPop2015": 307588
+  },
+  {
+   "id": 4925,
+   "name": "Leicester",
+   "iso": "GBR",
+   "fuaPop2015": 691529,
+   "fuaAreaKm2": 844,
+   "ucPop2015": 481230,
+   "commutingPop2015": 210299
+  },
+  {
+   "id": 2305,
+   "name": "Edinburgh",
+   "iso": "GBR",
+   "fuaPop2015": 666233,
+   "fuaAreaKm2": 1448,
+   "ucPop2015": 465556,
+   "commutingPop2015": 200677
+  },
+  {
+   "id": 3912,
+   "name": "Bournemouth",
+   "iso": "GBR",
+   "fuaPop2015": 641528,
+   "fuaAreaKm2": 1585,
+   "ucPop2015": 359117,
+   "commutingPop2015": 282411
+  },
+  {
+   "id": 4740,
+   "name": "Middlesbrough",
+   "iso": "GBR",
+   "fuaPop2015": 639462,
+   "fuaAreaKm2": 904,
+   "ucPop2015": 423574,
+   "commutingPop2015": 215888
+  },
+  {
+   "id": 5679,
+   "name": "Southend-on-Sea",
+   "iso": "GBR",
+   "fuaPop2015": 613042,
+   "fuaAreaKm2": 528,
+   "ucPop2015": 350781,
+   "commutingPop2015": 262261
+  },
+  {
+   "id": 4328,
+   "name": "Coventry",
+   "iso": "GBR",
+   "fuaPop2015": 583972,
+   "fuaAreaKm2": 556,
+   "ucPop2015": 428131,
+   "commutingPop2015": 155841
+  },
+  {
+   "id": 1600,
+   "name": "Milan",
+   "iso": "ITA",
+   "fuaPop2015": 5121996,
+   "fuaAreaKm2": 3393,
+   "ucPop2015": 3511173,
+   "commutingPop2015": 1610823
+  },
+  {
+   "id": 4333,
+   "name": "Naples",
+   "iso": "ITA",
+   "fuaPop2015": 4054333,
+   "fuaAreaKm2": 2318,
+   "ucPop2015": 3472375,
+   "commutingPop2015": 581958
+  },
+  {
+   "id": 3881,
+   "name": "Rome",
+   "iso": "ITA",
+   "fuaPop2015": 3501925,
+   "fuaAreaKm2": 2696,
+   "ucPop2015": 2617091,
+   "commutingPop2015": 884834
+  },
+  {
+   "id": 85,
+   "name": "Turin",
+   "iso": "ITA",
+   "fuaPop2015": 1784834,
+   "fuaAreaKm2": 1708,
+   "ucPop2015": 1205385,
+   "commutingPop2015": 579449
+  },
+  {
+   "id": 3106,
+   "name": "Florence",
+   "iso": "ITA",
+   "fuaPop2015": 970041,
+   "fuaAreaKm2": 1205,
+   "ucPop2015": 656570,
+   "commutingPop2015": 313470
+  },
+  {
+   "id": 1943,
+   "name": "Bergamo",
+   "iso": "ITA",
+   "fuaPop2015": 958534,
+   "fuaAreaKm2": 1119,
+   "ucPop2015": 353586,
+   "commutingPop2015": 604948
+  },
+  {
+   "id": 4232,
+   "name": "Palermo",
+   "iso": "ITA",
+   "fuaPop2015": 954443,
+   "fuaAreaKm2": 675,
+   "ucPop2015": 758885,
+   "commutingPop2015": 195558
+  },
+  {
+   "id": 4658,
+   "name": "Catania",
+   "iso": "ITA",
+   "fuaPop2015": 765268,
+   "fuaAreaKm2": 482,
+   "ucPop2015": 555375,
+   "commutingPop2015": 209892
+  },
+  {
+   "id": 1309,
+   "name": "Genoa",
+   "iso": "ITA",
+   "fuaPop2015": 723323,
+   "fuaAreaKm2": 860,
+   "ucPop2015": 542961,
+   "commutingPop2015": 180362
+  },
+  {
+   "id": 3360,
+   "name": "Padua",
+   "iso": "ITA",
+   "fuaPop2015": 714151,
+   "fuaAreaKm2": 904,
+   "ucPop2015": 217448,
+   "commutingPop2015": 496702
+  },
+  {
+   "id": 3157,
+   "name": "Bologna",
+   "iso": "ITA",
+   "fuaPop2015": 648242,
+   "fuaAreaKm2": 900,
+   "ucPop2015": 421342,
+   "commutingPop2015": 226900
+  },
+  {
+   "id": 5004,
+   "name": "Bari",
+   "iso": "ITA",
+   "fuaPop2015": 605823,
+   "fuaAreaKm2": 487,
+   "ucPop2015": 310239,
+   "commutingPop2015": 295584
+  },
+  {
+   "id": 2312,
+   "name": "Brescia",
+   "iso": "ITA",
+   "fuaPop2015": 511888,
+   "fuaAreaKm2": 560,
+   "ucPop2015": 190609,
+   "commutingPop2015": 321279
+  },
+  {
+   "id": 2772,
+   "name": "Verona",
+   "iso": "ITA",
+   "fuaPop2015": 499032,
+   "fuaAreaKm2": 620,
+   "ucPop2015": 200722,
+   "commutingPop2015": 298310
+  },
+  {
+   "id": 4299,
+   "name": "Pescara",
+   "iso": "ITA",
+   "fuaPop2015": 402707,
+   "fuaAreaKm2": 619,
+   "ucPop2015": 212410,
+   "commutingPop2015": 190298
+  },
+  {
+   "id": 3454,
+   "name": "Mestre",
+   "iso": "ITA",
+   "fuaPop2015": 380079,
+   "fuaAreaKm2": 394,
+   "ucPop2015": 156228,
+   "commutingPop2015": 223851
+  },
+  {
+   "id": 4498,
+   "name": "Salerno",
+   "iso": "ITA",
+   "fuaPop2015": 379126,
+   "fuaAreaKm2": 425,
+   "ucPop2015": 227612,
+   "commutingPop2015": 151513
+  },
+  {
+   "id": 2019,
+   "name": "Cagliari",
+   "iso": "ITA",
+   "fuaPop2015": 374106,
+   "fuaAreaKm2": 390,
+   "ucPop2015": 251635,
+   "commutingPop2015": 122471
+  },
+  {
+   "id": 3259,
+   "name": "Vicenza",
+   "iso": "ITA",
+   "fuaPop2015": 306587,
+   "fuaAreaKm2": 538,
+   "ucPop2015": 94715,
+   "commutingPop2015": 211871
+  },
+  {
+   "id": 2832,
+   "name": "Modena",
+   "iso": "ITA",
+   "fuaPop2015": 300393,
+   "fuaAreaKm2": 440,
+   "ucPop2015": 142871,
+   "commutingPop2015": 157523
+  },
+  {
+   "id": 5129,
+   "name": "Tokyo",
+   "iso": "JPN",
+   "fuaPop2015": 36471787,
+   "fuaAreaKm2": 11971,
+   "ucPop2015": 33538533,
+   "commutingPop2015": 2933254
+  },
+  {
+   "id": 3956,
+   "name": "Osaka [Kyoto]",
+   "iso": "JPN",
+   "fuaPop2015": 17621766,
+   "fuaAreaKm2": 10090,
+   "ucPop2015": 15857216,
+   "commutingPop2015": 1764549
+  },
+  {
+   "id": 4532,
+   "name": "Nagoya",
+   "iso": "JPN",
+   "fuaPop2015": 9590442,
+   "fuaAreaKm2": 7350,
+   "ucPop2015": 7891116,
+   "commutingPop2015": 1699326
+  },
+  {
+   "id": 708,
+   "name": "Fukuoka",
+   "iso": "JPN",
+   "fuaPop2015": 2998821,
+   "fuaAreaKm2": 1938,
+   "ucPop2015": 2341184,
+   "commutingPop2015": 657637
+  },
+  {
+   "id": 5005,
+   "name": "Takasaki [Maebashi]",
+   "iso": "JPN",
+   "fuaPop2015": 2237876,
+   "fuaAreaKm2": 2717,
+   "ucPop2015": 1173901,
+   "commutingPop2015": 1063975
+  },
+  {
+   "id": 266,
+   "name": "Sapporo",
+   "iso": "JPN",
+   "fuaPop2015": 2222113,
+   "fuaAreaKm2": 1544,
+   "ucPop2015": 1894557,
+   "commutingPop2015": 327556
+  },
+  {
+   "id": 2648,
+   "name": "Hiroshima",
+   "iso": "JPN",
+   "fuaPop2015": 1633747,
+   "fuaAreaKm2": 1553,
+   "ucPop2015": 1285669,
+   "commutingPop2015": 348078
+  },
+  {
+   "id": 843,
+   "name": "Kitakyushu",
+   "iso": "JPN",
+   "fuaPop2015": 1589886,
+   "fuaAreaKm2": 1535,
+   "ucPop2015": 1203250,
+   "commutingPop2015": 386637
+  },
+  {
+   "id": 4822,
+   "name": "Sendai",
+   "iso": "JPN",
+   "fuaPop2015": 1517061,
+   "fuaAreaKm2": 1419,
+   "ucPop2015": 1142678,
+   "commutingPop2015": 374383
+  },
+  {
+   "id": 3549,
+   "name": "Okayama",
+   "iso": "JPN",
+   "fuaPop2015": 1417357,
+   "fuaAreaKm2": 1816,
+   "ucPop2015": 829536,
+   "commutingPop2015": 587820
+  },
+  {
+   "id": 4199,
+   "name": "Naha",
+   "iso": "JPN",
+   "fuaPop2015": 1160097,
+   "fuaAreaKm2": 691,
+   "ucPop2015": 942036,
+   "commutingPop2015": 218060
+  },
+  {
+   "id": 5222,
+   "name": "Shizuoka",
+   "iso": "JPN",
+   "fuaPop2015": 1153826,
+   "fuaAreaKm2": 1120,
+   "ucPop2015": 897703,
+   "commutingPop2015": 256123
+  },
+  {
+   "id": 5091,
+   "name": "Hamamatsu",
+   "iso": "JPN",
+   "fuaPop2015": 1099105,
+   "fuaAreaKm2": 1219,
+   "ucPop2015": 718870,
+   "commutingPop2015": 380235
+  },
+  {
+   "id": 2382,
+   "name": "Kumamoto",
+   "iso": "JPN",
+   "fuaPop2015": 1068108,
+   "fuaAreaKm2": 1123,
+   "ucPop2015": 605471,
+   "commutingPop2015": 462636
+  },
+  {
+   "id": 5258,
+   "name": "Mishima",
+   "iso": "JPN",
+   "fuaPop2015": 959950,
+   "fuaAreaKm2": 977,
+   "ucPop2015": 658590,
+   "commutingPop2015": 301360
+  },
+  {
+   "id": 5309,
+   "name": "Mito",
+   "iso": "JPN",
+   "fuaPop2015": 925248,
+   "fuaAreaKm2": 1269,
+   "ucPop2015": 447270,
+   "commutingPop2015": 477978
+  },
+  {
+   "id": 4400,
+   "name": "Niigata",
+   "iso": "JPN",
+   "fuaPop2015": 885233,
+   "fuaAreaKm2": 981,
+   "ucPop2015": 372503,
+   "commutingPop2015": 512731
+  },
+  {
+   "id": 4267,
+   "name": "Toyama",
+   "iso": "JPN",
+   "fuaPop2015": 825189,
+   "fuaAreaKm2": 952,
+   "ucPop2015": 355033,
+   "commutingPop2015": 470155
+  },
+  {
+   "id": 5149,
+   "name": "Utsunomiya",
+   "iso": "JPN",
+   "fuaPop2015": 815284,
+   "fuaAreaKm2": 959,
+   "ucPop2015": 312681,
+   "commutingPop2015": 502603
+  },
+  {
+   "id": 4367,
+   "name": "Moriyama [Otsu]",
+   "iso": "JPN",
+   "fuaPop2015": 809124,
+   "fuaAreaKm2": 889,
+   "ucPop2015": 514884,
+   "commutingPop2015": 294241
+  },
+  {
+   "id": 7244,
+   "name": "New York",
+   "iso": "USA",
+   "fuaPop2015": 19523053,
+   "fuaAreaKm2": 17489,
+   "ucPop2015": 16668394,
+   "commutingPop2015": 2854659
+  },
+  {
+   "id": 1642,
+   "name": "Los Angeles",
+   "iso": "USA",
+   "fuaPop2015": 15655357,
+   "fuaAreaKm2": 10407,
+   "ucPop2015": 14865831,
+   "commutingPop2015": 789527
+  },
+  {
+   "id": 6654,
+   "name": "Chicago",
+   "iso": "USA",
+   "fuaPop2015": 8797569,
+   "fuaAreaKm2": 13185,
+   "ucPop2015": 7398069,
+   "commutingPop2015": 1399500
+  },
+  {
+   "id": 5543,
+   "name": "Dallas",
+   "iso": "USA",
+   "fuaPop2015": 7077558,
+   "fuaAreaKm2": 19826,
+   "ucPop2015": 5405265,
+   "commutingPop2015": 1672293
+  },
+  {
+   "id": 5511,
+   "name": "Houston",
+   "iso": "USA",
+   "fuaPop2015": 6442256,
+   "fuaAreaKm2": 15114,
+   "ucPop2015": 4989092,
+   "commutingPop2015": 1453164
+  },
+  {
+   "id": 7165,
+   "name": "Philadelphia",
+   "iso": "USA",
+   "fuaPop2015": 6113871,
+   "fuaAreaKm2": 11525,
+   "ucPop2015": 3502597,
+   "commutingPop2015": 2611274
+  },
+  {
+   "id": 6442,
+   "name": "Miami",
+   "iso": "USA",
+   "fuaPop2015": 5808585,
+   "fuaAreaKm2": 6494,
+   "ucPop2015": 5536125,
+   "commutingPop2015": 272461
+  },
+  {
+   "id": 7068,
+   "name": "Washington D.C.",
+   "iso": "USA",
+   "fuaPop2015": 5638694,
+   "fuaAreaKm2": 7446,
+   "ucPop2015": 4047673,
+   "commutingPop2015": 1591021
+  },
+  {
+   "id": 6451,
+   "name": "Atlanta",
+   "iso": "USA",
+   "fuaPop2015": 5591339,
+   "fuaAreaKm2": 12348,
+   "ucPop2015": 1775863,
+   "commutingPop2015": 3815476
+  },
+  {
+   "id": 1255,
+   "name": "San Jose",
+   "iso": "USA",
+   "fuaPop2015": 5118912,
+   "fuaAreaKm2": 4038,
+   "ucPop2015": 4710667,
+   "commutingPop2015": 408245
+  },
+  {
+   "id": 4211,
+   "name": "Phoenix",
+   "iso": "USA",
+   "fuaPop2015": 4567289,
+   "fuaAreaKm2": 9707,
+   "ucPop2015": 3669962,
+   "commutingPop2015": 897327
+  },
+  {
+   "id": 6948,
+   "name": "Detroit",
+   "iso": "USA",
+   "fuaPop2015": 4065589,
+   "fuaAreaKm2": 8184,
+   "ucPop2015": 3024761,
+   "commutingPop2015": 1040828
+  },
+  {
+   "id": 4510,
+   "name": "Seattle",
+   "iso": "USA",
+   "fuaPop2015": 3866487,
+   "fuaAreaKm2": 8328,
+   "ucPop2015": 2678205,
+   "commutingPop2015": 1188282
+  },
+  {
+   "id": 6433,
+   "name": "Minneapolis [Saint Paul]",
+   "iso": "USA",
+   "fuaPop2015": 3273027,
+   "fuaAreaKm2": 9833,
+   "ucPop2015": 1975918,
+   "commutingPop2015": 1297109
+  },
+  {
+   "id": 2204,
+   "name": "Tijuana",
+   "iso": "USA",
+   "fuaPop2015": 3177732,
+   "fuaAreaKm2": 3940,
+   "ucPop2015": 2831244,
+   "commutingPop2015": 346489
+  },
+  {
+   "id": 5332,
+   "name": "Denver",
+   "iso": "USA",
+   "fuaPop2015": 2928613,
+   "fuaAreaKm2": 6917,
+   "ucPop2015": 2320560,
+   "commutingPop2015": 608053
+  },
+  {
+   "id": 7347,
+   "name": "Boston",
+   "iso": "USA",
+   "fuaPop2015": 2703582,
+   "fuaAreaKm2": 2800,
+   "ucPop2015": 2063274,
+   "commutingPop2015": 640307
+  },
+  {
+   "id": 6237,
+   "name": "Tampa",
+   "iso": "USA",
+   "fuaPop2015": 2678158,
+   "fuaAreaKm2": 4168,
+   "ucPop2015": 1996767,
+   "commutingPop2015": 681391
+  },
+  {
+   "id": 6192,
+   "name": "St. Louis",
+   "iso": "USA",
+   "fuaPop2015": 2469860,
+   "fuaAreaKm2": 6517,
+   "ucPop2015": 1498420,
+   "commutingPop2015": 971440
+  },
+  {
+   "id": 6487,
+   "name": "Orlando",
+   "iso": "USA",
+   "fuaPop2015": 2399059,
+   "fuaAreaKm2": 5531,
+   "ucPop2015": 1361960,
+   "commutingPop2015": 1037098
+  },
+  {
+   "id": 4444,
+   "name": "Portland",
+   "iso": "USA",
+   "fuaPop2015": 2273466,
+   "fuaAreaKm2": 6026,
+   "ucPop2015": 1655686,
+   "commutingPop2015": 617780
+  },
+  {
+   "id": 7123,
+   "name": "Baltimore",
+   "iso": "USA",
+   "fuaPop2015": 2265091,
+   "fuaAreaKm2": 4070,
+   "ucPop2015": 1360858,
+   "commutingPop2015": 904233
+  },
+  {
+   "id": 4143,
+   "name": "Las Vegas",
+   "iso": "USA",
+   "fuaPop2015": 2250989,
+   "fuaAreaKm2": 1623,
+   "ucPop2015": 2029110,
+   "commutingPop2015": 221879
+  },
+  {
+   "id": 5229,
+   "name": "San Antonio",
+   "iso": "USA",
+   "fuaPop2015": 2222516,
+   "fuaAreaKm2": 6233,
+   "ucPop2015": 1483927,
+   "commutingPop2015": 738589
+  },
+  {
+   "id": 3652,
+   "name": "Sacramento",
+   "iso": "USA",
+   "fuaPop2015": 2051326,
+   "fuaAreaKm2": 3863,
+   "ucPop2015": 1528104,
+   "commutingPop2015": 523222
+  },
+  {
+   "id": 6851,
+   "name": "Charlotte",
+   "iso": "USA",
+   "fuaPop2015": 2020478,
+   "fuaAreaKm2": 5134,
+   "ucPop2015": 370497,
+   "commutingPop2015": 1649981
+  },
+  {
+   "id": 7020,
+   "name": "Pittsburgh",
+   "iso": "USA",
+   "fuaPop2015": 1980861,
+   "fuaAreaKm2": 6150,
+   "ucPop2015": 765065,
+   "commutingPop2015": 1215796
+  },
+  {
+   "id": 5961,
+   "name": "Kansas City",
+   "iso": "USA",
+   "fuaPop2015": 1966035,
+   "fuaAreaKm2": 7540,
+   "ucPop2015": 1129297,
+   "commutingPop2015": 836738
+  },
+  {
+   "id": 6790,
+   "name": "Cincinnati",
+   "iso": "USA",
+   "fuaPop2015": 1927622,
+   "fuaAreaKm2": 5802,
+   "ucPop2015": 955725,
+   "commutingPop2015": 971898
+  },
+  {
+   "id": 6720,
+   "name": "Indianapolis",
+   "iso": "USA",
+   "fuaPop2015": 1897003,
+   "fuaAreaKm2": 7597,
+   "ucPop2015": 1086020,
+   "commutingPop2015": 810983
+  },
+  {
+   "id": 5349,
+   "name": "Austin",
+   "iso": "USA",
+   "fuaPop2015": 1894806,
+   "fuaAreaKm2": 6117,
+   "ucPop2015": 1063621,
+   "commutingPop2015": 831185
+  },
+  {
+   "id": 6887,
+   "name": "Columbus",
+   "iso": "USA",
+   "fuaPop2015": 1885222,
+   "fuaAreaKm2": 8211,
+   "ucPop2015": 1138151,
+   "commutingPop2015": 747071
+  },
+  {
+   "id": 6990,
+   "name": "Cleveland",
+   "iso": "USA",
+   "fuaPop2015": 1880820,
+   "fuaAreaKm2": 4770,
+   "ucPop2015": 1188875,
+   "commutingPop2015": 691945
+  },
+  {
+   "id": 7050,
+   "name": "Virginia Beach",
+   "iso": "USA",
+   "fuaPop2015": 1624469,
+   "fuaAreaKm2": 3949,
+   "ucPop2015": 1145098,
+   "commutingPop2015": 479371
+  },
+  {
+   "id": 6769,
+   "name": "Milwaukee",
+   "iso": "USA",
+   "fuaPop2015": 1617648,
+   "fuaAreaKm2": 4542,
+   "ucPop2015": 1101830,
+   "commutingPop2015": 515818
+  },
+  {
+   "id": 6942,
+   "name": "Raleigh",
+   "iso": "USA",
+   "fuaPop2015": 1611391,
+   "fuaAreaKm2": 3950,
+   "ucPop2015": 441064,
+   "commutingPop2015": 1170327
+  },
+  {
+   "id": 7312,
+   "name": "Providence",
+   "iso": "USA",
+   "fuaPop2015": 1448457,
+   "fuaAreaKm2": 3751,
+   "ucPop2015": 752587,
+   "commutingPop2015": 695870
+  },
+  {
+   "id": 6630,
+   "name": "Louisville",
+   "iso": "USA",
+   "fuaPop2015": 1304467,
+   "fuaAreaKm2": 6849,
+   "ucPop2015": 750695,
+   "commutingPop2015": 553772
+  },
+  {
+   "id": 6047,
+   "name": "Memphis",
+   "iso": "USA",
+   "fuaPop2015": 1215391,
+   "fuaAreaKm2": 4050,
+   "ucPop2015": 613849,
+   "commutingPop2015": 601543
+  },
+  {
+   "id": 5705,
+   "name": "Oklahoma City",
+   "iso": "USA",
+   "fuaPop2015": 1177498,
+   "fuaAreaKm2": 4831,
+   "ucPop2015": 784074,
+   "commutingPop2015": 393425
+  },
+  {
+   "id": 4881,
+   "name": "Salt Lake City",
+   "iso": "USA",
+   "fuaPop2015": 1166374,
+   "fuaAreaKm2": 1738,
+   "ucPop2015": 972715,
+   "commutingPop2015": 193660
+  },
+  {
+   "id": 6574,
+   "name": "Jacksonville",
+   "iso": "USA",
+   "fuaPop2015": 1136540,
+   "fuaAreaKm2": 3558,
+   "ucPop2015": 458081,
+   "commutingPop2015": 678459
+  },
+  {
+   "id": 6350,
+   "name": "Nashville",
+   "iso": "USA",
+   "fuaPop2015": 1096307,
+   "fuaAreaKm2": 3489,
+   "ucPop2015": 273129,
+   "commutingPop2015": 823178
+  },
+  {
+   "id": 7277,
+   "name": "Bridgeport",
+   "iso": "USA",
+   "fuaPop2015": 1091715,
+   "fuaAreaKm2": 2197,
+   "ucPop2015": 541499,
+   "commutingPop2015": 550216
+  },
+  {
+   "id": 7141,
+   "name": "Buffalo",
+   "iso": "USA",
+   "fuaPop2015": 1085097,
+   "fuaAreaKm2": 3623,
+   "ucPop2015": 659916,
+   "commutingPop2015": 425182
+  },
+  {
+   "id": 7032,
+   "name": "Richmond",
+   "iso": "USA",
+   "fuaPop2015": 1082918,
+   "fuaAreaKm2": 2792,
+   "ucPop2015": 244212,
+   "commutingPop2015": 838706
+  },
+  {
+   "id": 7302,
+   "name": "Hartford",
+   "iso": "USA",
+   "fuaPop2015": 1050203,
+   "fuaAreaKm2": 2440,
+   "ucPop2015": 313699,
+   "commutingPop2015": 736505
+  },
+  {
+   "id": 7195,
+   "name": "Allentown",
+   "iso": "USA",
+   "fuaPop2015": 1036070,
+   "fuaAreaKm2": 4365,
+   "ucPop2015": 465504,
+   "commutingPop2015": 570565
+  },
+  {
+   "id": 4278,
+   "name": "Tucson",
+   "iso": "USA",
+   "fuaPop2015": 1023085,
+   "fuaAreaKm2": 3229,
+   "ucPop2015": 588176,
+   "commutingPop2015": 434908
+  }
+ ]
+}

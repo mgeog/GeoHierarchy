@@ -1,0 +1,63 @@
+import { Municipality } from '../../types/geo';
+import { CountrySelection } from './apply';
+
+export const italySelection: CountrySelection = {
+  iso3: 'ITA',
+  nationalCapital: 'm-it-laz-01',
+  capitals: {
+    'it-lom': 'm-it-lom-01',
+    'it-pie': 'm-it-pie-01',
+    'it-lig': 'm-it-lig-01',
+    'it-vda': 'm-it-vda-01',
+    'it-ven': 'm-it-ven-01',
+    'it-emr': 'm-it-emr-01',
+    'it-taa': 'm-it-taa-01',
+    'it-fvg': 'm-it-fvg-01',
+    'it-tos': 'm-it-tos-01',
+    'it-laz': 'm-it-laz-01',
+    'it-umb': 'm-it-umb-01',
+    'it-mar': 'm-it-mar-01',
+    'it-cam': 'm-it-cam-01',
+    'it-pug': 'm-it-pug-01',
+    'it-cal': 'm-it-cal-01',
+    'it-bas': 'm-it-bas-01',
+    'it-abr': 'm-it-abr-01',
+    'it-mol': 'm-it-mol-01',
+    'it-sic': 'm-it-sic-01',
+    'it-sar': 'm-it-sar-01',
+  },
+  fua: {
+    'm-it-lom-01': 1600,
+    'm-it-cam-01': 4333,
+    'm-it-laz-01': 3881,
+    'm-it-pie-01': 85,
+    'm-it-tos-01': 3106,
+    'm-it-lom-02': 1943,
+    'm-it-sic-01': 4232,
+    'm-it-sic-02': 4658,
+    'm-it-lig-01': 1309,
+    'm-it-emr-01': 3157,
+    'm-it-pug-01': 5004,
+    'm-it-ven-02': 2772,
+    'm-it-abr-02': 4299,
+    'm-it-ven-01': 3454,
+    'm-it-cam-02': 4498,
+    'm-it-sar-01': 2019,
+    'm-it-ven-03': 3360,
+    'm-it-ven-04': 3259,
+    'm-it-lom-03': 2312,
+    'm-it-emr-02': 2832,
+  },
+  additions: {
+    'it-ven': [
+      { id: 'm-it-ven-03', name: 'パドヴァ', nameLocal: 'Padova', nameEn: 'Padua', level: 3, subDivisionId: 'it-ven', macroRegionId: 'it-ne', coordinates: [11.88, 45.41], designation: '大都市圏の中心都市' },
+      { id: 'm-it-ven-04', name: 'ヴィチェンツァ', nameLocal: 'Vicenza', nameEn: 'Vicenza', level: 3, subDivisionId: 'it-ven', macroRegionId: 'it-ne', coordinates: [11.55, 45.55], designation: '大都市圏の中心都市' },
+    ],
+    'it-lom': [
+      { id: 'm-it-lom-03', name: 'ブレシア', nameLocal: 'Brescia', nameEn: 'Brescia', level: 3, subDivisionId: 'it-lom', macroRegionId: 'it-nw', coordinates: [10.22, 45.54], designation: '大都市圏の中心都市' },
+    ],
+    'it-emr': [
+      { id: 'm-it-emr-02', name: 'モデナ', nameLocal: 'Modena', nameEn: 'Modena', level: 3, subDivisionId: 'it-emr', macroRegionId: 'it-ne', coordinates: [10.93, 44.65], designation: '大都市圏の中心都市' },
+    ],
+  } satisfies Record<string, Municipality[]>,
+};

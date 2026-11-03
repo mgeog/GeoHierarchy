@@ -102,7 +102,8 @@ export const QuizPanel: React.FC<QuizPanelProps> = ({
     // Level 3: Municipalities
     if (levelChoice === 3 || levelChoice === 'all') {
       country.subDivisions.forEach((sub) => {
-        sub.municipalities.forEach((m) => {
+        // 出題対象は共通基準を満たす Tier A の都市のみ（Tier B は国別の補助枠）
+        sub.municipalities.filter((m) => m.tier !== 'B').forEach((m) => {
           pool.push({
             level: 3,
             targetId: m.id,

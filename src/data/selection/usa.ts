@@ -1,0 +1,240 @@
+import { Municipality } from '../../types/geo';
+import { CountrySelection } from './apply';
+
+export const usaSelection: CountrySelection = {
+  iso3: 'USA',
+  nationalCapital: 'm-us-dc-01',
+  capitals: {
+    'us-ca': 'm-us-ca-03',
+    'us-az': 'm-us-az-01',
+    'us-co': 'm-us-co-01',
+    'us-ut': 'm-us-ut-01',
+    'us-id': 'm-us-id-01',
+    'us-wy': 'm-us-wy-01',
+    'us-hi': 'm-us-hi-01',
+    'us-oh': 'm-us-oh-01',
+    'us-in': 'm-us-in-01',
+    'us-ia': 'm-us-ia-01',
+    'us-tx': 'm-us-tx-03',
+    'us-ga': 'm-us-ga-01',
+    'us-tn': 'm-us-tn-01',
+    'us-ok': 'm-us-ok-01',
+    'us-ar': 'm-us-ar-01',
+    'us-ms': 'm-us-ms-01',
+    'us-wv': 'm-us-wv-01',
+    'us-ma': 'm-us-ma-01',
+    'us-ri': 'm-us-ri-01',
+    'us-wa': 'm-us-wa-02',
+    'us-or': 'm-us-or-02',
+    'us-nv': 'm-us-nv-02',
+    'us-mt': 'm-us-mt-02',
+    'us-nm': 'm-us-nm-02',
+    'us-ak': 'm-us-ak-02',
+    'us-il': 'm-us-il-02',
+    'us-mi': 'm-us-mi-02',
+    'us-wi': 'm-us-wi-02',
+    'us-mn': 'm-us-mn-02',
+    'us-mo': 'm-us-mo-02',
+    'us-nd': 'm-us-nd-02',
+    'us-sd': 'm-us-sd-02',
+    'us-ne': 'm-us-ne-02',
+    'us-ks': 'm-us-ks-02',
+    'us-fl': 'm-us-fl-03',
+    'us-nc': 'm-us-nc-02',
+    'us-va': 'm-us-va-02',
+    'us-sc': 'm-us-sc-02',
+    'us-al': 'm-us-al-02',
+    'us-la': 'm-us-la-02',
+    'us-ky': 'm-us-ky-02',
+    'us-md': 'm-us-md-02',
+    'us-de': 'm-us-de-02',
+    'us-ny': 'm-us-ny-03',
+    'us-pa': 'm-us-pa-02',
+    'us-nj': 'm-us-nj-02',
+    'us-ct': 'm-us-ct-02',
+    'us-nh': 'm-us-nh-02',
+    'us-vt': 'm-us-vt-02',
+    'us-me': 'm-us-me-02',
+    'us-dc': 'm-us-dc-01',
+  },
+  fua: {
+    'm-us-ny-01': 7244,
+    'm-us-ca-01': 1642,
+    'm-us-il-01': 6654,
+    'm-us-tx-02': 5543,
+    'm-us-tx-01': 5511,
+    'm-us-pa-01': 7165,
+    'm-us-fl-01': 6442,
+    'm-us-ga-01': 6451,
+    'm-us-ca-02': 1255,
+    'm-us-az-01': 4211,
+    'm-us-mi-01': 6948,
+    'm-us-wa-01': 4510,
+    'm-us-mn-01': 6433,
+    'm-us-co-01': 5332,
+    'm-us-ma-01': 7347,
+    'm-us-mo-01': 6192,
+    'm-us-fl-02': 6487,
+    'm-us-or-01': 4444,
+    'm-us-md-01': 7123,
+    'm-us-nv-01': 4143,
+    'm-us-ca-03': 3652,
+    'm-us-nc-01': 6851,
+    'm-us-in-01': 6720,
+    'm-us-tx-03': 5349,
+    'm-us-oh-01': 6887,
+    'm-us-va-01': 7050,
+    'm-us-wi-01': 6769,
+    'm-us-ri-01': 7312,
+    'm-us-ky-01': 6630,
+    'm-us-ok-01': 5705,
+    'm-us-ut-01': 4881,
+    'm-us-tn-01': 6350,
+    'm-us-ct-01': 7277,
+    'm-us-ny-02': 7141,
+    'm-us-mo-03': 5961,
+    'm-us-fl-04': 6237,
+    'm-us-fl-05': 6574,
+    'm-us-nc-02': 6942,
+    'm-us-va-02': 7032,
+    'm-us-pa-03': 7020,
+    'm-us-pa-04': 7195,
+    'm-us-ct-02': 7302,
+    'm-us-dc-01': 7068,
+    'm-us-ca-04': 2204,
+    'm-us-tx-04': 5229,
+    'm-us-oh-02': 6790,
+    'm-us-oh-03': 6990,
+    'm-us-tn-02': 6047,
+    'm-us-az-02': 4278,
+  },
+  subDivisionAdditions: [
+    {
+      id: 'us-dc', code: 'DC', name: 'ワシントンD.C. (コロンビア特別区)', nameLocal: 'District of Columbia', nameEn: 'District of Columbia', level: 2,
+      macroRegionId: 'us-south', capitalCity: 'ワシントンD.C. (Washington, D.C.)', centroid: [-77.03, 38.9],
+      population: 689545, areaKm2: 177,
+      description: '州に属さない連邦区。連邦議会の管轄下にあり、合衆国の首都が置かれる。',
+      aliases: ['Washington, D.C.', 'Washington DC'],
+      municipalities: [],
+    },
+  ],
+  additions: {
+    'us-wa': [
+      { id: 'm-us-wa-02', name: 'オリンピア', nameLocal: 'Olympia', nameEn: 'Olympia', level: 3, subDivisionId: 'us-wa', macroRegionId: 'us-west', coordinates: [-122.9, 47.04], designation: '州都' },
+    ],
+    'us-or': [
+      { id: 'm-us-or-02', name: 'セイラム', nameLocal: 'Salem', nameEn: 'Salem', level: 3, subDivisionId: 'us-or', macroRegionId: 'us-west', coordinates: [-123.04, 44.94], designation: '州都' },
+    ],
+    'us-nv': [
+      { id: 'm-us-nv-02', name: 'カーソンシティ', nameLocal: 'Carson City', nameEn: 'Carson City', level: 3, subDivisionId: 'us-nv', macroRegionId: 'us-west', coordinates: [-119.77, 39.16], designation: '州都' },
+    ],
+    'us-mt': [
+      { id: 'm-us-mt-02', name: 'ヘレナ', nameLocal: 'Helena', nameEn: 'Helena', level: 3, subDivisionId: 'us-mt', macroRegionId: 'us-west', coordinates: [-112.04, 46.59], designation: '州都' },
+    ],
+    'us-nm': [
+      { id: 'm-us-nm-02', name: 'サンタフェ', nameLocal: 'Santa Fe', nameEn: 'Santa Fe', level: 3, subDivisionId: 'us-nm', macroRegionId: 'us-west', coordinates: [-105.94, 35.69], designation: '州都' },
+    ],
+    'us-ak': [
+      { id: 'm-us-ak-02', name: 'ジュノー', nameLocal: 'Juneau', nameEn: 'Juneau', level: 3, subDivisionId: 'us-ak', macroRegionId: 'us-west', coordinates: [-134.42, 58.3], designation: '州都' },
+    ],
+    'us-il': [
+      { id: 'm-us-il-02', name: 'スプリングフィールド', nameLocal: 'Springfield', nameEn: 'Springfield', level: 3, subDivisionId: 'us-il', macroRegionId: 'us-midwest', coordinates: [-89.65, 39.8], designation: '州都' },
+    ],
+    'us-mi': [
+      { id: 'm-us-mi-02', name: 'ランシング', nameLocal: 'Lansing', nameEn: 'Lansing', level: 3, subDivisionId: 'us-mi', macroRegionId: 'us-midwest', coordinates: [-84.56, 42.73], designation: '州都' },
+    ],
+    'us-wi': [
+      { id: 'm-us-wi-02', name: 'マディソン', nameLocal: 'Madison', nameEn: 'Madison', level: 3, subDivisionId: 'us-wi', macroRegionId: 'us-midwest', coordinates: [-89.4, 43.07], designation: '州都' },
+    ],
+    'us-mn': [
+      { id: 'm-us-mn-02', name: 'セントポール', nameLocal: 'Saint Paul', nameEn: 'Saint Paul', level: 3, subDivisionId: 'us-mn', macroRegionId: 'us-midwest', coordinates: [-93.09, 44.95], designation: '州都' },
+    ],
+    'us-mo': [
+      { id: 'm-us-mo-02', name: 'ジェファーソンシティ', nameLocal: 'Jefferson City', nameEn: 'Jefferson City', level: 3, subDivisionId: 'us-mo', macroRegionId: 'us-midwest', coordinates: [-92.17, 38.58], designation: '州都' },
+      { id: 'm-us-mo-03', name: 'カンザスシティ', nameLocal: 'Kansas City', nameEn: 'Kansas City', level: 3, subDivisionId: 'us-mo', macroRegionId: 'us-midwest', coordinates: [-94.58, 39.1], designation: '大都市圏の中心都市' },
+    ],
+    'us-nd': [
+      { id: 'm-us-nd-02', name: 'ビスマーク', nameLocal: 'Bismarck', nameEn: 'Bismarck', level: 3, subDivisionId: 'us-nd', macroRegionId: 'us-midwest', coordinates: [-100.78, 46.81], designation: '州都' },
+    ],
+    'us-sd': [
+      { id: 'm-us-sd-02', name: 'ピア', nameLocal: 'Pierre', nameEn: 'Pierre', level: 3, subDivisionId: 'us-sd', macroRegionId: 'us-midwest', coordinates: [-100.35, 44.37], designation: '州都' },
+    ],
+    'us-ne': [
+      { id: 'm-us-ne-02', name: 'リンカーン', nameLocal: 'Lincoln', nameEn: 'Lincoln', level: 3, subDivisionId: 'us-ne', macroRegionId: 'us-midwest', coordinates: [-96.7, 40.81], designation: '州都' },
+    ],
+    'us-ks': [
+      { id: 'm-us-ks-02', name: 'トピカ', nameLocal: 'Topeka', nameEn: 'Topeka', level: 3, subDivisionId: 'us-ks', macroRegionId: 'us-midwest', coordinates: [-95.68, 39.05], designation: '州都' },
+    ],
+    'us-fl': [
+      { id: 'm-us-fl-03', name: 'タラハシー', nameLocal: 'Tallahassee', nameEn: 'Tallahassee', level: 3, subDivisionId: 'us-fl', macroRegionId: 'us-south', coordinates: [-84.28, 30.44], designation: '州都' },
+      { id: 'm-us-fl-04', name: 'タンパ', nameLocal: 'Tampa', nameEn: 'Tampa', level: 3, subDivisionId: 'us-fl', macroRegionId: 'us-south', coordinates: [-82.46, 27.95], designation: '大都市圏の中心都市' },
+      { id: 'm-us-fl-05', name: 'ジャクソンビル', nameLocal: 'Jacksonville', nameEn: 'Jacksonville', level: 3, subDivisionId: 'us-fl', macroRegionId: 'us-south', coordinates: [-81.66, 30.33], designation: '大都市圏の中心都市' },
+    ],
+    'us-nc': [
+      { id: 'm-us-nc-02', name: 'ローリー', nameLocal: 'Raleigh', nameEn: 'Raleigh', level: 3, subDivisionId: 'us-nc', macroRegionId: 'us-south', coordinates: [-78.64, 35.78], designation: '州都' },
+    ],
+    'us-va': [
+      { id: 'm-us-va-02', name: 'リッチモンド', nameLocal: 'Richmond', nameEn: 'Richmond', level: 3, subDivisionId: 'us-va', macroRegionId: 'us-south', coordinates: [-77.44, 37.54], designation: '州都' },
+    ],
+    'us-sc': [
+      { id: 'm-us-sc-02', name: 'コロンビア', nameLocal: 'Columbia', nameEn: 'Columbia', level: 3, subDivisionId: 'us-sc', macroRegionId: 'us-south', coordinates: [-81.03, 34.0], designation: '州都' },
+    ],
+    'us-al': [
+      { id: 'm-us-al-02', name: 'モントゴメリー', nameLocal: 'Montgomery', nameEn: 'Montgomery', level: 3, subDivisionId: 'us-al', macroRegionId: 'us-south', coordinates: [-86.3, 32.38], designation: '州都' },
+    ],
+    'us-la': [
+      { id: 'm-us-la-02', name: 'バトンルージュ', nameLocal: 'Baton Rouge', nameEn: 'Baton Rouge', level: 3, subDivisionId: 'us-la', macroRegionId: 'us-south', coordinates: [-91.15, 30.45], designation: '州都' },
+    ],
+    'us-ky': [
+      { id: 'm-us-ky-02', name: 'フランクフォート', nameLocal: 'Frankfort', nameEn: 'Frankfort', level: 3, subDivisionId: 'us-ky', macroRegionId: 'us-south', coordinates: [-84.87, 38.2], designation: '州都' },
+    ],
+    'us-md': [
+      { id: 'm-us-md-02', name: 'アナポリス', nameLocal: 'Annapolis', nameEn: 'Annapolis', level: 3, subDivisionId: 'us-md', macroRegionId: 'us-south', coordinates: [-76.49, 38.98], designation: '州都' },
+    ],
+    'us-de': [
+      { id: 'm-us-de-02', name: 'ドーバー', nameLocal: 'Dover', nameEn: 'Dover', level: 3, subDivisionId: 'us-de', macroRegionId: 'us-south', coordinates: [-75.52, 39.16], designation: '州都' },
+    ],
+    'us-ny': [
+      { id: 'm-us-ny-03', name: 'オールバニ', nameLocal: 'Albany', nameEn: 'Albany', level: 3, subDivisionId: 'us-ny', macroRegionId: 'us-northeast', coordinates: [-73.76, 42.65], designation: '州都' },
+    ],
+    'us-pa': [
+      { id: 'm-us-pa-02', name: 'ハリスバーグ', nameLocal: 'Harrisburg', nameEn: 'Harrisburg', level: 3, subDivisionId: 'us-pa', macroRegionId: 'us-northeast', coordinates: [-76.88, 40.27], designation: '州都' },
+      { id: 'm-us-pa-03', name: 'ピッツバーグ', nameLocal: 'Pittsburgh', nameEn: 'Pittsburgh', level: 3, subDivisionId: 'us-pa', macroRegionId: 'us-northeast', coordinates: [-80.0, 40.44], designation: '大都市圏の中心都市' },
+      { id: 'm-us-pa-04', name: 'アレンタウン', nameLocal: 'Allentown', nameEn: 'Allentown', level: 3, subDivisionId: 'us-pa', macroRegionId: 'us-northeast', coordinates: [-75.47, 40.6], designation: '大都市圏の中心都市' },
+    ],
+    'us-nj': [
+      { id: 'm-us-nj-02', name: 'トレントン', nameLocal: 'Trenton', nameEn: 'Trenton', level: 3, subDivisionId: 'us-nj', macroRegionId: 'us-northeast', coordinates: [-74.76, 40.22], designation: '州都' },
+    ],
+    'us-ct': [
+      { id: 'm-us-ct-02', name: 'ハートフォード', nameLocal: 'Hartford', nameEn: 'Hartford', level: 3, subDivisionId: 'us-ct', macroRegionId: 'us-northeast', coordinates: [-72.68, 41.76], designation: '州都' },
+    ],
+    'us-nh': [
+      { id: 'm-us-nh-02', name: 'コンコード', nameLocal: 'Concord', nameEn: 'Concord', level: 3, subDivisionId: 'us-nh', macroRegionId: 'us-northeast', coordinates: [-71.54, 43.21], designation: '州都' },
+    ],
+    'us-vt': [
+      { id: 'm-us-vt-02', name: 'モントピリア', nameLocal: 'Montpelier', nameEn: 'Montpelier', level: 3, subDivisionId: 'us-vt', macroRegionId: 'us-northeast', coordinates: [-72.58, 44.26], designation: '州都' },
+    ],
+    'us-me': [
+      { id: 'm-us-me-02', name: 'オーガスタ', nameLocal: 'Augusta', nameEn: 'Augusta', level: 3, subDivisionId: 'us-me', macroRegionId: 'us-northeast', coordinates: [-69.78, 44.31], designation: '州都' },
+    ],
+    'us-dc': [
+      { id: 'm-us-dc-01', name: 'ワシントンD.C.', nameLocal: 'Washington, D.C.', nameEn: 'Washington, D.C.', level: 3, subDivisionId: 'us-dc', macroRegionId: 'us-south', coordinates: [-77.04, 38.91], designation: '首都・連邦区' },
+    ],
+    'us-ca': [
+      { id: 'm-us-ca-04', name: 'サンディエゴ', nameLocal: 'San Diego', nameEn: 'San Diego', level: 3, subDivisionId: 'us-ca', macroRegionId: 'us-west', coordinates: [-117.16, 32.72], designation: '大都市圏の中心都市' },
+    ],
+    'us-tx': [
+      { id: 'm-us-tx-04', name: 'サンアントニオ', nameLocal: 'San Antonio', nameEn: 'San Antonio', level: 3, subDivisionId: 'us-tx', macroRegionId: 'us-south', coordinates: [-98.49, 29.42], designation: '大都市圏の中心都市' },
+    ],
+    'us-oh': [
+      { id: 'm-us-oh-02', name: 'シンシナティ', nameLocal: 'Cincinnati', nameEn: 'Cincinnati', level: 3, subDivisionId: 'us-oh', macroRegionId: 'us-midwest', coordinates: [-84.51, 39.1], designation: '大都市圏の中心都市' },
+      { id: 'm-us-oh-03', name: 'クリーブランド', nameLocal: 'Cleveland', nameEn: 'Cleveland', level: 3, subDivisionId: 'us-oh', macroRegionId: 'us-midwest', coordinates: [-81.69, 41.5], designation: '大都市圏の中心都市' },
+    ],
+    'us-tn': [
+      { id: 'm-us-tn-02', name: 'メンフィス', nameLocal: 'Memphis', nameEn: 'Memphis', level: 3, subDivisionId: 'us-tn', macroRegionId: 'us-south', coordinates: [-90.05, 35.15], designation: '大都市圏の中心都市' },
+    ],
+    'us-az': [
+      { id: 'm-us-az-02', name: 'ツーソン', nameLocal: 'Tucson', nameEn: 'Tucson', level: 3, subDivisionId: 'us-az', macroRegionId: 'us-west', coordinates: [-110.93, 32.22], designation: '大都市圏の中心都市' },
+    ],
+  } satisfies Record<string, Municipality[]>,
+};

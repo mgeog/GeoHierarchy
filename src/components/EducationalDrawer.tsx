@@ -3,6 +3,7 @@ import {
   CountryAdministrativeData,
   MacroRegion,
   Municipality,
+  SelectionCriterion,
   SubDivision,
 } from '../types/geo';
 import {
@@ -17,6 +18,13 @@ import {
   ExternalLink,
   Award,
 } from 'lucide-react';
+
+const CRITERION_LABEL: Record<SelectionCriterion, string> = {
+  R1: '国の首都',
+  R2: '第2階層の首府',
+  R2p: '第2階層の代表都市（地域内で都市圏人口が最大）',
+  R3: '主要都市圏の中心都市（都市圏人口100万以上、または国内上位20）',
+};
 
 interface EducationalDrawerProps {
   country: CountryAdministrativeData;
@@ -152,6 +160,25 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
             </div>
           )}
 
+          {type === 'municipality' && (item as Municipality).tier && (
+            <div className="p-2.5 rounded-lg bg-stone-50 dark:bg-stone-800/60 border border-stone-200/60 dark:border-stone-700/60 col-span-2">
+              <div className="text-[10px] text-stone-500 dark:text-stone-400 flex items-center gap-1 mb-0.5">
+                <Award className="w-3 h-3 text-sky-600" />
+                <span>選定基準</span>
+              </div>
+              <div className="text-xs text-stone-900 dark:text-stone-100">
+                {(item as Municipality).tier === 'A'
+                  ? ((item as Municipality).criteria ?? []).map((c) => CRITERION_LABEL[c]).join(' / ')
+                  : '補助枠（国別の学習用。共通基準には該当しない）'}
+              </div>
+              {(item as Municipality).metroPopulation ? (
+                <div className="text-[10px] text-stone-500 mt-1">
+                  都市圏人口 {(item as Municipality).metroPopulation!.toLocaleString()} 人（GHS-FUA R2019A、2015年の推計値）
+                </div>
+              ) : null}
+            </div>
+          )}
+
           {displayPopulation ? (
             <div className="p-2.5 rounded-lg bg-stone-50 dark:bg-stone-800/60 border border-stone-200/60 dark:border-stone-700/60">
               <div className="text-[10px] text-stone-500 dark:text-stone-400 flex items-center gap-1 mb-0.5">
@@ -270,9 +297,19 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
                           首府
                         </span>
                       )}
+                      {m.tier === 'B' && (
+                        <span className="text-[9px] px-1 py-0.2 rounded bg-stone-200 text-stone-600 font-bold">
+                          補助
+                        </span>
+                      )}
                     </div>
                     <div className="text-[10px] text-stone-500">
-                      {m.designation || '都市'} · {m.population?.toLocaleString()}人
+                      {m.designation || '都市'}
+                      {m.population
+                        ? ` · ${m.population.toLocaleString()}人`
+                        : m.metroPopulation
+                        ? ` · 都市圏 約${Math.round(m.metroPopulation / 10000).toLocaleString()}万人`
+                        : ''}
                     </div>
                   </div>
                   <ChevronRight className="w-3.5 h-3.5 text-stone-400 group-hover:translate-x-0.5 transition-transform" />

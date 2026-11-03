@@ -1,5 +1,15 @@
 export type AdminLevel = 1 | 2 | 3;
 
+/**
+ * 第3階層の選定基準（docs/ROADMAP.md 参照）
+ * R1: 国の首都 / R2: 第2階層の首府 / R2p: 首府を持たない第2階層の代表都市（地域内で FUA 人口が最大）
+ * R3: FUA 人口 100 万以上、または国内の FUA 人口上位 20 都市の中心都市
+ */
+export type SelectionCriterion = 'R1' | 'R2' | 'R2p' | 'R3';
+
+/** A: 共通基準を満たす都市（クイズの既定対象） / B: 国別の追加枠（補助的に表示） */
+export type CityTier = 'A' | 'B';
+
 export interface Municipality {
   id: string;
   name: string;
@@ -16,6 +26,13 @@ export interface Municipality {
   description?: string;
   trivia?: string;
   notableFor?: string[];
+  // --- 選定レイヤー（src/data/selection）から導出される項目 ---
+  tier?: CityTier;
+  criteria?: SelectionCriterion[];
+  /** GHS-FUA R2019A の eFUA_ID（R3 の代表都市のみ） */
+  fuaId?: number;
+  /** 当該 FUA の 2015 年人口（1km 格子からの推計値） */
+  metroPopulation?: number;
 }
 
 export interface SubDivision {

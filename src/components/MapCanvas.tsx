@@ -825,15 +825,16 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
         const isCapitalCity = city.isCapital || city.isPrefecturalCapital;
         const isShowPermanentBadge = isSelected || effectiveLevel === 3;
 
-        const radius = city.isCapital ? 7 : city.isPrefecturalCapital ? 5.5 : 4.5;
-        const color = city.isCapital ? '#e11d48' : city.isPrefecturalCapital ? '#0284c7' : '#10b981';
+        const isTierB = city.tier === 'B';
+        const radius = city.isCapital ? 7 : city.isPrefecturalCapital ? 5.5 : isTierB ? 3.5 : 4.5;
+        const color = city.isCapital ? '#e11d48' : city.isPrefecturalCapital ? '#0284c7' : isTierB ? '#94a3b8' : '#10b981';
 
         const marker = L.circleMarker([lat, lon], {
           radius: isSelected ? radius * 1.5 : radius,
           fillColor: color,
           color: '#ffffff',
           weight: 2,
-          fillOpacity: 0.9,
+          fillOpacity: isTierB ? 0.6 : 0.9,
         });
 
         const labelText = isBlindMode
@@ -848,7 +849,8 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
             `<div class="flex items-center gap-1 font-bold">
               <span>${labelText}</span>
               ${city.isCapital ? '<span class="text-[9px] px-1 bg-rose-600 text-white rounded">首都</span>' : ''}
-              ${city.population ? `<span class="text-[9px] font-normal text-slate-300">(${(city.population / 10000).toFixed(0)}万)</span>` : ''}
+              ${isTierB ? '<span class="text-[9px] px-1 bg-slate-500 text-white rounded">補助</span>' : ''}
+              ${city.population ? `<span class="text-[9px] font-normal text-slate-300">(${(city.population / 10000).toFixed(0)}万)</span>` : city.metroPopulation ? `<span class="text-[9px] font-normal text-slate-300">(都市圏${(city.metroPopulation / 10000).toFixed(0)}万)</span>` : ''}
             </div>`,
             {
               permanent: true,
@@ -865,6 +867,11 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
               ${
                 city.population
                   ? `<div style="font-size:10px;color:#cbd5e1">人口: ${city.population.toLocaleString()}人</div>`
+                  : ''
+              }
+              ${
+                city.metroPopulation
+                  ? `<div style="font-size:10px;color:#cbd5e1">都市圏人口(推計・2015): ${city.metroPopulation.toLocaleString()}人</div>`
                   : ''
               }
             </div>`,

@@ -6,17 +6,26 @@ import { germanyData } from './germany';
 import { franceData } from './france';
 import { italyData } from './italy';
 import { canadaData } from './canada';
+import { applySelection } from '../selection/apply';
+import { japanSelection } from '../selection/japan';
+import { usaSelection } from '../selection/usa';
+import { ukSelection } from '../selection/uk';
+import { germanySelection } from '../selection/germany';
+import { franceSelection } from '../selection/france';
+import { italySelection } from '../selection/italy';
+import { canadaSelection } from '../selection/canada';
 
 // 韓国 (southKorea.ts, public/data/south-korea.json) は第2階層が未完成のため未登録。
 // 17市道の整備後に再登録する。
+// 第3階層は、元データに第3階層の選定基準（docs/ROADMAP.md）を適用して導出する。
 export const COUNTRIES: Record<string, CountryAdministrativeData> = {
-  japan: japanData,
-  usa: usaData,
-  uk: ukData,
-  germany: germanyData,
-  france: franceData,
-  italy: italyData,
-  canada: canadaData,
+  japan: applySelection(japanData, japanSelection),
+  usa: applySelection(usaData, usaSelection),
+  uk: applySelection(ukData, ukSelection),
+  germany: applySelection(germanyData, germanySelection),
+  france: applySelection(franceData, franceSelection),
+  italy: applySelection(italyData, italySelection),
+  canada: applySelection(canadaData, canadaSelection),
 };
 
 export const COUNTRY_LIST: { id: string; name: string; flag: string; continent: string; isG7: boolean }[] = [
