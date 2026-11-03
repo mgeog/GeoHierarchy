@@ -4,7 +4,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { geoContains } from 'd3-geo';
+import { geoArea, geoContains } from 'd3-geo';
 import { COUNTRIES } from '../src/data/countries/index.ts';
 import { buildFeatureIndex, findKeyCollisions, matchSubDivision } from '../src/utils/featureMatching.ts';
 import { japanSelection } from '../src/data/selection/japan.ts';
@@ -33,6 +33,27 @@ const warn = (id: string, msg: string) => { warnCount++; console.warn(`  △ [${
 // FUA 選定結果が属性表と同期していること
 if (buildSelectedJson() !== fs.readFileSync(path.resolve(import.meta.dirname, '../src/data/fua-selected.json'), 'utf8')) {
   err('fua', 'src/data/fua-selected.json が data-src/fua-attributes.json と同期していません（bun scripts/select-fua.ts）');
+}
+
+// 都市圏の境界（public/data/fua.json）：選定 FUA と 1 対 1 で、面積が属性表と一致し、容量が予算内であること
+{
+  console.log('\nfua-geometry');
+  const file = path.join(publicDir, 'data/fua.json');
+  const gj = JSON.parse(fs.readFileSync(file, 'utf8')) as { features: ({ type: 'Feature'; properties: { id: number }; geometry: never })[] };
+  const rows = new Map((fuaSelected.fuas as { id: number; name: string; fuaAreaKm2: number }[]).map((f) => [f.id, f]));
+  const seen = new Set<number>();
+  for (const f of gj.features) {
+    const row = rows.get(f.properties.id);
+    if (!row) { err('fua-geometry', `選定されていない FUA ${f.properties.id} の境界がある`); continue; }
+    if (seen.has(f.properties.id)) err('fua-geometry', `FUA ${f.properties.id} の境界が重複`);
+    seen.add(f.properties.id);
+    const area = geoArea(f) * 6371.0088 ** 2;
+    if (Math.abs(area / row.fuaAreaKm2 - 1) > 0.03) err('fua-geometry', `${row.name} (${row.id}): 境界の面積 ${Math.round(area)} km² が属性表の ${row.fuaAreaKm2} km² と 3% 以上乖離`);
+  }
+  for (const id of rows.keys()) if (!seen.has(id)) err('fua-geometry', `FUA ${id} (${rows.get(id)!.name}) の境界がない`);
+  const kb = fs.statSync(file).size / 1024;
+  if (kb > 800) err('fua-geometry', `fua.json が ${Math.round(kb)} KB（予算 800 KB 超）`);
+  console.log(`  ${gj.features.length} 件 / ${Math.round(kb)} KB`);
 }
 
 for (const [countryId, c] of Object.entries(COUNTRIES)) {

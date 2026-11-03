@@ -45,6 +45,8 @@ interface EducationalDrawerProps {
   onSelectSubdivision: (sub: SubDivision) => void;
   onSelectMunicipality: (m: Municipality) => void;
   onStartQuizForEntity: (item: MacroRegion | SubDivision | Municipality) => void;
+  /** 都市圏比較を、指定した FUA を選択した状態で開く */
+  onOpenMetro: (fuaId: number) => void;
 }
 
 export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
@@ -54,6 +56,7 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
   onSelectSubdivision,
   onSelectMunicipality,
   onStartQuizForEntity,
+  onOpenMetro,
 }) => {
   if (!selectedEntity) return null;
 
@@ -188,6 +191,14 @@ export const EducationalDrawer: React.FC<EducationalDrawerProps> = ({
                   都市圏人口 {(item as Municipality).metroPopulation!.toLocaleString()} 人（GHS-FUA R2019A、2015年の推計値）
                 </div>
               ) : null}
+              {(item as Municipality).fuaId !== undefined && (
+                <button
+                  onClick={() => onOpenMetro((item as Municipality).fuaId!)}
+                  className="mt-2 text-xs font-semibold text-sky-700 dark:text-sky-400 hover:underline cursor-pointer"
+                >
+                  この都市圏を、他と同じ縮尺で比べる →
+                </button>
+              )}
             </div>
           )}
 

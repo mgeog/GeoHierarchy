@@ -19,6 +19,9 @@ const QuizPanel = lazy(() => import('./components/QuizPanel').then((m) => ({ def
 const HierarchyComparisonView = lazy(() =>
   import('./components/HierarchyComparisonView').then((m) => ({ default: m.HierarchyComparisonView })),
 );
+const MetroComparisonView = lazy(() =>
+  import('./components/MetroComparisonView').then((m) => ({ default: m.MetroComparisonView })),
+);
 const SearchModal = lazy(() => import('./components/SearchModal').then((m) => ({ default: m.SearchModal })));
 const AboutModal = lazy(() => import('./components/AboutModal').then((m) => ({ default: m.AboutModal })));
 
@@ -57,6 +60,8 @@ export default function App() {
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
   const [isComparisonOpen, setIsComparisonOpen] = useState<boolean>(false);
   const [isAboutOpen, setIsAboutOpen] = useState<boolean>(false);
+  // 都市圏比較：開いたときに先頭で選択する都市圏（詳細パネルから開く場合）
+  const [metroView, setMetroView] = useState<{ fuaId?: number } | null>(null);
 
   const currentCountry: CountryAdministrativeData = getCountryData(countryId);
 
@@ -79,6 +84,7 @@ export default function App() {
         setIsSearchOpen(false);
         setIsComparisonOpen(false);
         setIsAboutOpen(false);
+        setMetroView(null);
         setSelectedEntity(null);
       }
     };
@@ -145,6 +151,7 @@ export default function App() {
         }}
         onOpenSearch={() => setIsSearchOpen(true)}
         onOpenComparison={() => setIsComparisonOpen(true)}
+        onOpenMetro={() => setMetroView({})}
         onOpenAbout={() => setIsAboutOpen(true)}
       />
 
@@ -207,6 +214,7 @@ export default function App() {
               setSelectedEntity({ type: 'municipality', item: m });
               setDisplayMode(3);
             }}
+            onOpenMetro={(fuaId) => setMetroView({ fuaId })}
             onStartQuizForEntity={() => {
               setMode('quiz');
               setSelectedEntity(null);
@@ -235,6 +243,7 @@ export default function App() {
       )}
 
       {isAboutOpen && <AboutModal onClose={() => setIsAboutOpen(false)} />}
+      {metroView && <MetroComparisonView onClose={() => setMetroView(null)} initialFuaId={metroView.fuaId} />}
       </Suspense>
     </div>
   );

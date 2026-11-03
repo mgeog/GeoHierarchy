@@ -26,7 +26,7 @@ export function selectFuas(all: Fua[]): Fua[] {
 const root = path.resolve(import.meta.dirname, '..');
 export function buildSelectedJson(): string {
   const src = JSON.parse(fs.readFileSync(path.join(root, 'data-src/fua-attributes.json'), 'utf8'));
-  const selected = selectFuas(src.fuas).map(({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, commutingPop2015 }) => ({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, commutingPop2015 }));
+  const selected = selectFuas(src.fuas).map(({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, ucAreaKm2, commutingPop2015 }) => ({ id, name, iso, fuaPop2015, fuaAreaKm2, ucPop2015, ucAreaKm2, commutingPop2015 }));
   return JSON.stringify({ source: src.source, rule: `FUA 人口 ${R3_MIN_POPULATION.toLocaleString()} 以上、または国内上位 ${R3_TOP_N}`, fuas: selected }, null, 1) + '\n';
 }
 

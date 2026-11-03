@@ -6,6 +6,7 @@ import {
   Compass,
   Trophy,
   GitCompare,
+  Building2,
   Search,
   BookOpen,
   HelpCircle,
@@ -18,6 +19,7 @@ interface HeaderProps {
   onChangeMode: (mode: MapMode) => void;
   onOpenSearch: () => void;
   onOpenComparison: () => void;
+  onOpenMetro: () => void;
   onOpenAbout: () => void;
 }
 
@@ -28,6 +30,7 @@ export const Header: React.FC<HeaderProps> = ({
   onChangeMode,
   onOpenSearch,
   onOpenComparison,
+  onOpenMetro,
   onOpenAbout,
 }) => {
   return (
@@ -118,6 +121,14 @@ export const Header: React.FC<HeaderProps> = ({
           <GitCompare className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
           <span>各国の制度比較</span>
         </button>
+
+        <button
+          onClick={onOpenMetro}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-all cursor-pointer"
+        >
+          <Building2 className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
+          <span>都市圏比較</span>
+        </button>
       </div>
 
       {/* Right Actions: Search & Guide */}
@@ -143,6 +154,14 @@ export const Header: React.FC<HeaderProps> = ({
             aria-label="各国の制度比較"
           >
             <GitCompare className="w-4 h-4" />
+          </button>
+          <button
+            onClick={onOpenMetro}
+            className="p-1.5 rounded-lg border bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 border-stone-200 dark:border-stone-700 cursor-pointer"
+            title="都市圏の比較"
+            aria-label="都市圏の比較"
+          >
+            <Building2 className="w-4 h-4" />
           </button>
         </div>
 
