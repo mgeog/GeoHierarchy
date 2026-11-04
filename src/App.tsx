@@ -31,7 +31,7 @@ export default function App() {
   const [displayMode, setDisplayMode] = useState<HierarchyDisplayMode>(2);
   const [theme, setTheme] = useState<MapTheme>('educational');
   const [isBlindMode, setIsBlindMode] = useState<boolean>(false);
-  const [isBilingual, setIsBilingual] = useState<boolean>(() => typeof window === 'undefined' || window.innerWidth >= 640);
+  const [isBilingual, setIsBilingual] = useState<boolean>(false);
 
   // Selected item for Educational Inspection Drawer
   const [selectedEntity, setSelectedEntity] = useState<{

@@ -35,19 +35,18 @@ export function useLabelVisibility(
     const candidates: LabelCandidate[] = [];
     const selectedKey = selectedEntity ? `${selectedEntity.type}:${selectedEntity.item.id}` : null;
 
-    if (effectiveLevel <= 2) {
+    if (effectiveLevel === 1) {
       for (const macro of country.macroRegions) {
         const p = map.latLngToContainerPoint([macro.centroid[1], macro.centroid[0]]);
-        const dominant = effectiveLevel === 1;
         const text = labelText(macro.name, macro.nameEn, { isBlindMode, isBilingual });
-        const height = dominant ? 34 : 18;
+        const height = 26;
         candidates.push({
           id: macroLabelId(macro.id),
           x: p.x,
           y: p.y - height / 2,
-          width: estimateTextWidth(text, dominant ? 12 : 10) + (dominant ? 28 : 16),
+          width: estimateTextWidth(text, 13) + 28,
           height,
-          priority: dominant ? 1000 : 10,
+          priority: 1000,
           forced: selectedKey === `macro:${macro.id}`,
         });
       }
@@ -59,12 +58,12 @@ export function useLabelVisibility(
       const p = map.latLngToContainerPoint([sub.centroid[1], sub.centroid[0]]);
       const dominant = effectiveLevel === 2;
       const text = labelText(sub.name, sub.nameEn, { isBlindMode, isBilingual });
-      const height = dominant ? 30 : 17;
+      const height = dominant ? 20 : 15;
       candidates.push({
         id: subLabelId(sub.id),
         x: p.x,
         y: p.y - height / 2,
-        width: estimateTextWidth(text, dominant ? 11 : 9) + 16,
+        width: estimateTextWidth(text, dominant ? 12 : 10) + 16,
         height,
         priority: dominant ? 100 + Math.log10(Math.max(sub.population ?? 1, 1)) * 10 : 300,
         forced: selectedKey === `subdivision:${sub.id}`,

@@ -9,6 +9,26 @@ import {
 } from '../../types/geo';
 import { MAP_THEMES } from '../../utils/theme';
 
+/** 区画の境界線の色。背景（地図・塗り）に対して、十分なコントラストが出る濃さにする */
+const BORDER_COLOR: Record<MapTheme, string> = {
+  educational: '#1e293b',
+  textbook: '#44331f',
+  blueprint: '#bae6fd',
+  minimal: '#18181b',
+};
+
+/** 境界線の下に敷く縁取り（ケーシング）。背景地図の線や文字の上でも、境界線が途切れて見えない */
+export function computeCasingStyle(theme: MapTheme, effectiveLevel: AdminLevel): L.PathOptions {
+  return {
+    fill: false,
+    color: theme === 'blueprint' ? '#0f172a' : '#ffffff',
+    opacity: 0.85,
+    weight: effectiveLevel === 1 ? 3.8 : 4.4,
+    interactive: false,
+    lineJoin: 'round',
+  };
+}
+
 export interface FeatureStyleContext {
   macro: MacroRegion | undefined;
   selectedEntity: SelectedEntity | null;
@@ -37,26 +57,24 @@ export function computeFeatureStyle(sub: SubDivision | undefined, ctx: FeatureSt
   if (feedbackColor) fillColor = feedbackColor;
   else if (isSelected || isMacroSelected) fillColor = '#0284c7';
 
-  let fillOpacity = 0.32;
-  if (theme === 'blueprint') fillOpacity = 0.55;
-  else if (theme === 'minimal') fillOpacity = 0.22;
-  else if (theme === 'textbook') fillOpacity = 0.38;
+  // 塗りは薄く保ち、区画の区別は境界線で行う（背景地図が透けても、線が読める）
+  let fillOpacity = 0.26;
+  if (theme === 'blueprint') fillOpacity = 0.4;
+  else if (theme === 'minimal') fillOpacity = 0.2;
+  else if (theme === 'textbook') fillOpacity = 0.32;
   if (effectiveLevel === 1) fillOpacity += 0.1;
-  if (isSelected || isMacroSelected) fillOpacity = 0.65;
-  if (feedbackColor) fillOpacity = 0.8;
+  if (isSelected || isMacroSelected) fillOpacity = 0.55;
+  if (feedbackColor) fillOpacity = 0.75;
 
-  let strokeColor = themeStyles.subdivisionStroke;
+  let strokeColor = BORDER_COLOR[theme];
   if (feedbackColor) strokeColor = feedbackColor;
-  else if (isSelected) strokeColor = '#0284c7';
-  else if (theme === 'blueprint') strokeColor = '#38bdf8';
-  else if (theme === 'minimal') strokeColor = '#0f172a';
-  else if (effectiveLevel === 1) strokeColor = '#64748b';
+  else if (isSelected) strokeColor = '#0369a1';
 
   return {
     fillColor,
     fillOpacity,
     color: strokeColor,
-    weight: isSelected ? 3.5 : effectiveLevel === 1 ? 1.2 : 1.8,
-    dashArray: effectiveLevel === 1 ? '3, 4' : undefined,
+    opacity: 1,
+    weight: isSelected ? 3 : effectiveLevel === 1 ? 1.4 : 1.8,
   };
 }
