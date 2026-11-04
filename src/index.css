@@ -6,6 +6,11 @@
   --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 }
 
+/* 背景地図は無彩色に落とし、区画の塗りと境界線を主役にする（衛星写真は、そのまま） */
+.edu-basemap-muted .leaflet-tile-pane {
+  filter: grayscale(1) contrast(0.88) brightness(1.07);
+}
+
 /* Leaflet clean cartographic styling */
 .leaflet-container {
   font-family: inherit;

@@ -73,7 +73,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
   };
 
   return (
-    <div className="relative w-full h-full overflow-hidden select-none">
+    <div className={`relative w-full h-full overflow-hidden select-none ${basemap === 'satellite' ? '' : 'edu-basemap-muted'}`}>
       <div ref={containerRef} className="w-full h-full z-0" />
 
       {loading && (

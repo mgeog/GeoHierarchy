@@ -12,7 +12,7 @@ import {
   SelectedEntity,
 } from '../../types/geo';
 import { FeatureIndex, matchSubDivision } from '../../utils/featureMatching';
-import { computeFeatureStyle } from './featureStyle';
+import { computeCasingStyle, computeFeatureStyle } from './featureStyle';
 import { escapeHtml, labelText, LabelOptions } from './labels';
 import { useLatest } from './useLatest';
 
@@ -35,6 +35,7 @@ interface Params extends LabelOptions {
 /** 第2階層ポリゴン（GeoJSON）のレイヤー。生成はデータ・表記設定の変化時のみ、見た目の更新は setStyle で行う */
 export function usePolygonLayer(p: Params) {
   const layerRef = useRef<L.GeoJSON | null>(null);
+  const casingRef = useRef<L.GeoJSON | null>(null);
   const latest = useLatest(p);
 
   const styleOf = (feature?: Feature) => {
@@ -53,6 +54,9 @@ export function usePolygonLayer(p: Params) {
 
   useEffect(() => {
     if (!map || !geoJson) return;
+    // 先に縁取りを敷き、その上に、操作できる区画を重ねる
+    const casing = L.geoJSON(geoJson, { style: () => computeCasingStyle(latest.current.theme, latest.current.effectiveLevel), interactive: false }).addTo(map);
+    casingRef.current = casing;
     const layer = L.geoJSON(geoJson, {
       style: (feature) => styleOf(feature),
       onEachFeature: (feature, featureLayer) => {
@@ -72,7 +76,7 @@ export function usePolygonLayer(p: Params) {
         featureLayer.on({
           mouseover: (e) => {
             const l = e.target as L.Path;
-            l.setStyle({ weight: 3.5, color: '#38bdf8', fillOpacity: 0.6 });
+            l.setStyle({ weight: 3, color: '#0284c7', fillOpacity: 0.5 });
             l.bringToFront();
           },
           mouseout: (e) => layerRef.current?.resetStyle(e.target),
@@ -92,13 +96,16 @@ export function usePolygonLayer(p: Params) {
     layerRef.current = layer;
     return () => {
       layer.remove();
+      casing.remove();
       layerRef.current = null;
+      casingRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, geoJson, country, featureIndex, isBlindMode, isBilingual]);
 
   useEffect(() => {
     layerRef.current?.setStyle((feature) => styleOf(feature as Feature));
+    casingRef.current?.setStyle(computeCasingStyle(p.theme, p.effectiveLevel));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [p.theme, p.effectiveLevel, p.selectedEntity, p.feedback, p.macroMap, p.map, p.geoJson]);
 }

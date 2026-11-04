@@ -23,26 +23,23 @@ interface Common extends LabelOptions {
   onSelectEntity: (entity: SelectedEntity | null) => void;
 }
 
-/** 第1階層：広域区分の重心バッジ（第1階層で主役、第2階層で控えめ、第3階層で非表示） */
+/** 第1階層：広域区分の重心バッジ（第1階層のみ） */
 export function useMacroMarkers(p: Common & { visibleLabels: Set<string> | null }) {
   const latest = useLatest(p);
   const { map, country, effectiveLevel, isBlindMode, isBilingual, visibleLabels } = p;
 
   useEffect(() => {
-    if (!map || effectiveLevel > 2) return;
+    if (!map || effectiveLevel !== 1) return;
     const group = L.layerGroup().addTo(map);
-    const dominant = effectiveLevel === 1;
 
     for (const macro of country.macroRegions) {
       if (visibleLabels && !visibleLabels.has(macroLabelId(macro.id))) continue;
       const text = escapeHtml(labelText(macro.name, macro.nameEn, { isBlindMode, isBilingual }));
       const html = `
-        <div style="transform:translate(-50%,-50%);display:inline-flex;flex-direction:column;align-items:center;
-          padding:${dominant ? '4px 10px' : '2px 6px'};border-radius:8px;background:rgba(255,255,255,0.92);
-          border:2px solid ${macro.color};box-shadow:0 4px 6px -1px rgba(0,0,0,0.15);font-weight:700;
-          font-size:${dominant ? '12px' : '10px'};color:#1e293b;white-space:nowrap;pointer-events:auto;cursor:pointer;">
-          <span>${text}</span>
-          ${dominant ? `<span style="font-size:9px;color:#64748b;font-weight:500">第1階層 (${macro.subDivisionIds.length}区画)</span>` : ''}
+        <div style="transform:translate(-50%,-50%);display:inline-block;padding:3px 10px;border-radius:999px;
+          background:#ffffff;border:2px solid ${macro.color};box-shadow:0 1px 3px rgba(0,0,0,0.2);
+          font-weight:700;font-size:13px;color:#0f172a;white-space:nowrap;pointer-events:auto;cursor:pointer;">
+          ${text}
         </div>`;
       const marker = L.marker([macro.centroid[1], macro.centroid[0]], {
         icon: L.divIcon({ html, className: 'edu-macro-icon', iconSize: [0, 0] }),
@@ -73,21 +70,17 @@ export function useSubDivisionMarkers(p: Common & { visibleLabels: Set<string> |
     if (!map || effectiveLevel < 2) return;
     const group = L.layerGroup().addTo(map);
     const dominant = effectiveLevel === 2;
-    const macroColor = new Map(country.macroRegions.map((m) => [m.id, m.color]));
 
     for (const sub of country.subDivisions) {
       if (visibleLabels && !visibleLabels.has(subLabelId(sub.id))) continue;
       const selected = selectedEntity?.type === 'subdivision' && selectedEntity.item.id === sub.id;
       const text = escapeHtml(labelText(sub.name, sub.nameEn, { isBlindMode, isBilingual }));
-      const stroke = macroColor.get(sub.macroRegionId) ?? '#0284c7';
       const html = `
-        <div style="transform:translate(-50%,-50%);display:inline-flex;flex-direction:column;align-items:center;
-          padding:${dominant ? '3px 8px' : '2px 5px'};border-radius:6px;
-          background:${selected ? '#0284c7' : 'rgba(255,255,255,0.94)'};color:${selected ? '#ffffff' : '#0f172a'};
-          border:1.5px solid ${selected ? '#0369a1' : stroke};box-shadow:0 2px 5px rgba(0,0,0,0.18);
-          font-weight:700;font-size:${dominant ? '11px' : '9px'};white-space:nowrap;pointer-events:auto;cursor:pointer;">
-          <span>${text}</span>
-          ${dominant ? `<span style="font-size:8px;color:${selected ? '#e0f2fe' : '#64748b'};font-weight:500">${escapeHtml(sub.capitalCity)}</span>` : ''}
+        <div style="transform:translate(-50%,-50%);display:inline-block;padding:${dominant ? '2px 7px' : '1px 5px'};border-radius:4px;
+          background:${selected ? '#0369a1' : 'rgba(255,255,255,0.92)'};color:${selected ? '#ffffff' : '#0f172a'};
+          border:1px solid ${selected ? '#0369a1' : '#94a3b8'};
+          font-weight:700;font-size:${dominant ? '12px' : '10px'};white-space:nowrap;pointer-events:auto;cursor:pointer;">
+          ${text}
         </div>`;
       const marker = L.marker([sub.centroid[1], sub.centroid[0]], {
         icon: L.divIcon({ html, className: 'edu-sub-icon', iconSize: [0, 0] }),
@@ -141,11 +134,6 @@ export function useCityMarkers(p: Common & { visibleLabels: Set<string> | null }
         const text = escapeHtml(labelText(city.name, city.nameEn, { isBlindMode, isBilingual }, '•••'));
         const labelShown =
           selected || (effectiveLevel === 3 && (!visibleLabels || visibleLabels.has(cityLabelId(city.id))));
-        const populationBadge = city.population
-          ? `<span class="text-[9px] font-normal text-slate-300">(${(city.population / 10000).toFixed(0)}万)</span>`
-          : city.metroPopulation
-          ? `<span class="text-[9px] font-normal text-slate-300">(都市圏${(city.metroPopulation / 10000).toFixed(0)}万)</span>`
-          : '';
 
         if (labelShown) {
           marker.bindTooltip(
@@ -153,7 +141,6 @@ export function useCityMarkers(p: Common & { visibleLabels: Set<string> | null }
               <span>${text}</span>
               ${city.isCapital ? '<span class="text-[9px] px-1 bg-rose-600 text-white rounded">首都</span>' : ''}
               ${tierB ? '<span class="text-[9px] px-1 bg-slate-500 text-white rounded">補助</span>' : ''}
-              ${populationBadge}
             </div>`,
             { permanent: true, direction: 'bottom', offset: [0, 8], className: 'edu-city-permanent-badge' },
           );
